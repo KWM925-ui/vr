@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "scope": "CAD_DESIGN_SOFTWARE_PROFILE_NOT_MEASURED",
+  "sourceSha256": {
+    "tmp\\independent_ux_review_20261030\\hardware_cad\\native_state_probe\\after_rebuild.json": "b3db9bb1eb0cbce47ca897ffd7b85bde9b078b8bbf8f8bea860838fffdba9008",
+    "tmp\\independent_ux_review_20261030\\hardware_cad\\key_parts\\018f5bb8e110e62c.json": "87127ea9449b93cabfbf8c962972207ea3e0c0c66dbe298416fd78f8586d3738",
+    "tmp\\independent_ux_review_20261030\\hardware_cad\\reference_reconciliation\\reconciliation.json": "23d30b894568d70017c7e5191c039caffab877c1a5ab6fc48b26b042786c9db1",
+    "10月11日修改\\1.34 船桨.SLDPRT": "2a1fa1fe23e844e754886b46b0c4232a026c3b59544f86972155fc51a12e2171",
+    "10月11日修改\\2.1 铝型材框架.SLDASM": "bb9b6b5cd3e2e785505fc411766fd5b7f08c687bd6c0787d78632d42cb81d29b",
+    "DragonBoatVR\\Assets\\StreamingAssets\\tendon_rig.json": "c83caf69b3eb3f5f16bbaef8677394e8af2177faea287e355ad84a76e4b5912f",
+    "DragonBoatVR\\Assets\\StreamingAssets\\paddle_geometry.json": "1cc605c7e3d8a3bc6cde25a47434e61202f48d736dff1c52a39b8f6485786944",
+    "tools\\build_cad_tendon_profile.py": "ad3f1b094fd0f0c2a033e5b5228e5983c88fb1f7c9294e90a8cc71ec4d13d33f"
+  },
+  "registration": {
+    "rotationRows": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    ],
+    "translationM": [
+      -0.041624430004280066,
+      -0.047981118815837664,
+      1.9930000000000063
+    ],
+    "virtualReferenceGripM": [
+      0.44755950570106506,
+      1.1659258604049683,
+      0.0
+    ],
+    "virtualReferenceBladeM": [
+      0.44755950570106506,
+      0.16592586040496826,
+      0.0
+    ],
+    "virtualReferenceBladeRotationRows": [
+      [
+        -1.0,
+        -1.8941820859821274e-16,
+        -2.6700097662679467e-48
+      ],
+      [
+        -1.8941820859821274e-16,
+        1.0,
+        -2.670009766267948e-48
+      ],
+      [
+        2.6700097662679473e-48,
+        -2.6700097662679473e-48,
+        -1.0
+      ]
+    ],
+    "basis": "level right-side placement; not a measured platform mounting"
+  },
+  "nativePaddleTipY": -1.2,
+  "tendons": [
+    {
+      "motorId": 1,
+      "sourceGuide": "1.18 万向轮-5",
+      "guideAssemblyM": [
+        0.769906979220815,
+        0.39444960634820553,
+        0.9699999999999988
+      ],
+      "holePartM": [
+        0.0,
+        -0.74,
+        0.0
+      ],
+      "holeBrepFaces": [
+        46
+      ],
+      "boreRadiusM": 0.004000000000000001,
+      "holeAssemblyM": [
+        0.4639069792208059,
+        0.48918393570534513,
+        1.9930000000000063
+      ],
+      "anchorBoatM": [
+        0.35282517634392546,
+        0.7219258604049773,
+        1.0230000000000077
+      ],
+      "attachmentRegistrationErrorM": 5.551115123125783e-17,
+      "attachmentFromBladeTipM": [
+        0.0,
+        0.45999999999999996,
+        0.0
+      ],
+      "guideAssignment": "design inference"
+    },
+    {
+      "motorId": 2,
+      "sourceGuide": "1.18 万向轮-2",
+      "guideAssemblyM": [
+        -0.13009302077919185,
+        0.10694960634820375,
+        0.9700000000000034
+      ],
+      "holePartM": [
+        0.08,
+        -1.19,
+        0.0
+      ],
+      "holeBrepFaces": [
+        48,
+        52
+      ],
+      "boreRadiusM": 0.004000000000000007,
+      "holeAssemblyM": [
+        0.01390697922080597,
+        0.40918393570534517,
+        1.9930000000000063
+      ],
+      "anchorBoatM": [
+        0.06532517634392368,
+        -0.17807413959502952,
+        1.0230000000000028
+      ],
+      "attachmentRegistrationErrorM": 5.551115123125783e-17,
+      "attachmentFromBladeTipM": [
+        0.08,
+        0.010000000000000009,
+        0.0
+      ],
+      "guideAssignment": "named reference"
+    },
+    {
+      "motorId": 3,
+      "sourceGuide": "1.18 万向轮-1",
+      "guideAssemblyM": [
+        -0.1300930207791941,
+        0.6819496063482019,
+        0.9700000000000029
+      ],
+      "holePartM": [
+        -0.08,
+        -1.19,
+        0.0
+      ],
+      "holeBrepFaces": [
+        49
+      ],
+      "boreRadiusM": 0.004000000000000007,
+      "holeAssemblyM": [
+        0.01390697922080597,
+        0.5691839357053452,
+        1.9930000000000063
+      ],
+      "anchorBoatM": [
+        0.6403251763439218,
+        -0.17807413959503177,
+        1.0230000000000035
+      ],
+      "attachmentRegistrationErrorM": 3.204011719521536e-49,
+      "attachmentFromBladeTipM": [
+        -0.08,
+        0.010000000000000009,
+        0.0
+      ],
+      "guideAssignment": "design inference"
+    }
+  ],
+  "excludedCentreHole": {
+    "pointPartM": [
+      0.0,
+      -1.19,
+      0.0
+    ],
+    "faces": [
+      47
+    ]
+  },
+  "nativeCordSketchesUsedAsAnchors": false,
+  "retained": {
+    "charLengthM": 0.6000000238418579,
+    "minTensionsN": [
+      5.0,
+      5.0,
+      5.0
+    ],
+    "maxTensionsN": [
+      300.0,
+      300.0,
+      300.0
+    ]
+  },
+  "originalProfileSha256": "c83caf69b3eb3f5f16bbaef8677394e8af2177faea287e355ad84a76e4b5912f",
+  "generatedProfileSha256": "954005a65a7a686f600ffe2251e90a447c5e2979bc6c2ff6c3d5f271e34260f4"
+}

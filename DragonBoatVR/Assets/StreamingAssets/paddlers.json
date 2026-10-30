@@ -1,0 +1,9 @@
+{
+  "provenance": "ASSUMED_SOFTWARE_FIXTURE: single-person equivalent mass; not measured boat data",
+  "measured": false,
+  "equivalentBoatMassKg": 150,
+  "inputTimeoutSeconds": 0.1,
+  "paddlers": [
+    { "id": "paddler-1", "leftSide": false, "strokesPerMinute": 45, "phaseOffset01": 0 }
+  ]
+}

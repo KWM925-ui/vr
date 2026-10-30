@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "modelId": "ornament",
+  "width": 1024,
+  "height": 64,
+  "minimumZ": -4.020000035227,
+  "maximumZ": 4.0200000165517,
+  "minimumY": -0.28000005520869997,
+  "referenceY": 0.05,
+  "minimumX": -0.7883339877232001,
+  "maximumX": 0.78833395,
+  "sourceObjSha256": "e558242dcda89d015c830a044173beee9c99ff4b5fca2db218edd7c7c8ae6bd7",
+  "dataSha256": "7c0963bbdf096072096880367b8b8b9eb91fc2d63d732b61791cea4cc0cc53c0"
+}

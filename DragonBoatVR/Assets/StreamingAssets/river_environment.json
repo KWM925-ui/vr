@@ -1,0 +1,10 @@
+{
+  "provenance": "UNMEASURED_FIRST_VERSION_RIVER_ENVIRONMENT: operator-selected calm/windy multipliers preserve the existing wave components and phase. Current is a separate uniform horizontal background flow, heading 0 degrees world +Z and 90 degrees world +X. These are replaceable prototype settings, not measured Xiangjiang or Guangdong water conditions.",
+  "measured": false,
+  "calmIntensity": 0.12,
+  "windyIntensity": 0.65,
+  "defaultCurrentSpeedMps": 0.08,
+  "defaultCurrentHeadingDegrees": 0.0,
+  "maximumCurrentSpeedMps": 0.35,
+  "transitionSeconds": 2.0
+}

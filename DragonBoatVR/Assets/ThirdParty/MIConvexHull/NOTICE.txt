@@ -1,0 +1,12 @@
+MIConvexHull, MIT License.
+Copyright David Sehnal, Matthew Campbell; see unchanged LICENSE.txt.
+Source: https://github.com/DesignEngrLab/MIConvexHull
+Pinned commit: 6134f1c380dec3170376bf3f4d37d19a6ce0e880
+
+Unchanged .NET Standard convex-hull core, shared by the Unity Editor and Player.
+The Editor rebuilds complete convex faces for each CoACD-generated part and
+checks the native vertex/polygon budget before it becomes an asset. The camera
+prepares the displayed hull's visibility witnesses once at startup in Player.
+No binaries, WPF packages, examples or triangulation API files are included.
+Native Unity/PhysX remains the runtime collision engine.
+Download hashes: tmp/contact_audio_20261028/research/MIConvexHull/download_manifest.json.

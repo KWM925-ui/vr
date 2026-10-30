@@ -1,0 +1,16 @@
+CoACD 1.0.14, MIT License, copyright 2022 Xinyue Wei.
+Project: https://github.com/SarahWeiii/CoACD
+Package: https://pypi.org/project/coacd/1.0.14/
+The unchanged native library is from the official Windows cp39-abi3 wheel.
+The package license and verified wheel download manifest are retained here.
+
+This Windows x64 library is enabled for the Unity Editor only. It generates
+separate collision assets; shipped Players use Unity's native PhysX and do
+not load CoACD, MIConvexHull or a separate collision solver.
+
+CoacdNative.cs adapts the public CoACD C ABI and releases native mesh arrays
+after copying their data. It does not reimplement convex decomposition.
+The pinned package's ctypes declarations are archived in
+tmp/contact_audio_20261028/research/CoACD/coacd/__init__.py.
+CoACD's real-metric threshold describes the algorithm's distance objective;
+runtime contact geometry and approximation error are verified separately.

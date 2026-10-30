@@ -1,0 +1,11 @@
+Tree Creaking
+Original recording: Department64. Cleanup and normalization: AntumDeluge.
+Source: https://opengameart.org/content/tree-creaking
+Canonical page: https://opengameart.org/node/132362
+Asset: https://opengameart.org/sites/default/files/tree_creak.ogg
+License: CC0 1.0 Universal. See Department64-CC0.txt.
+License text mirror: https://raw.githubusercontent.com/spdx/license-list-data/main/text/CC0-1.0.txt
+Downloaded asset SHA256: 465356e0e32e71a5c29fda529a0ac23af7791c62e3bd862e8cb2961eb104e1b1
+Used as three contiguous 1.2-second excerpts (0.6, 2.5, 4.4 s) with 20 ms edge fades.
+Unity resamples to mono 22050 Hz at import. No granular synthesis.
+This is a timber-creak effect, not a measured recording of the simulated boat.

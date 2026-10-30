@@ -1,0 +1,17 @@
+# Acceptance manifests use SHA-256 of the exact source and asset bytes.
+# Preserve existing line endings on add/checkout, regardless of core.autocrlf.
+* -text
+
+*.cs diff=csharp
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.hdr binary
+*.wav binary
+*.ogg binary
+*.mp3 binary
+*.dll binary
+*.pdf binary
+*.docx binary
+*.SLDPRT binary
+*.SLDASM binary

@@ -1,0 +1,8 @@
+packet_sequence,source_id,channel_id,sample_sequence,raw_units,raw,valid,saturated,device_time_us,sample_time_us,has_raw,raw_text
+4294967295,software-csv-example,CH1,4294967295,example-count,123,true,false,1000000,1000000,true,software fixture only
+4294967295,software-csv-example,CH2,4294967295,example-count,234,true,false,1000000,1000001,true,software fixture only
+4294967295,software-csv-example,CH3,4294967295,example-count,345,true,false,1000000,1000002,true,software fixture only
+4294967295,software-csv-example,CH4,4294967295,example-count,456,true,false,1000000,1000003,true,software fixture only
+0,software-csv-example,CH1,0,example-count,124,1,0,1020000,1020000,1,software fixture only
+0,software-csv-example,CH2,0,example-count,235,1,0,1020000,1020001,1,software fixture only
+0,software-csv-example,CH4,0,example-count,,false,false,1020000,1020003,false,no raw observation

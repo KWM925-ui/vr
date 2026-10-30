@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "version": "pcb-four-channel-unassigned-v1",
+  "sourceId": "unassigned-pcb",
+  "enableLoopbackUdp": false,
+  "loopbackPort": 9874,
+  "channels": [
+    { "channelId": "CH1", "mapping": "Unassigned", "rawUnits": "raw", "maximumAgeSeconds": 0.1, "rawRangeConfigured": false, "minimumRaw": 0, "maximumRaw": 0, "calibration": { "mode": 0, "measured": false, "sourceId": "", "version": "", "evidence": "", "rawZero": 0, "scaleNPerRaw": 0, "points": [], "forceRangeConfigured": false, "minimumForceN": 0, "maximumForceN": 0 } },
+    { "channelId": "CH2", "mapping": "Unassigned", "rawUnits": "raw", "maximumAgeSeconds": 0.1, "rawRangeConfigured": false, "minimumRaw": 0, "maximumRaw": 0, "calibration": { "mode": 0, "measured": false, "sourceId": "", "version": "", "evidence": "", "rawZero": 0, "scaleNPerRaw": 0, "points": [], "forceRangeConfigured": false, "minimumForceN": 0, "maximumForceN": 0 } },
+    { "channelId": "CH3", "mapping": "Unassigned", "rawUnits": "raw", "maximumAgeSeconds": 0.1, "rawRangeConfigured": false, "minimumRaw": 0, "maximumRaw": 0, "calibration": { "mode": 0, "measured": false, "sourceId": "", "version": "", "evidence": "", "rawZero": 0, "scaleNPerRaw": 0, "points": [], "forceRangeConfigured": false, "minimumForceN": 0, "maximumForceN": 0 } },
+    { "channelId": "CH4", "mapping": "Unassigned", "rawUnits": "raw", "maximumAgeSeconds": 0.1, "rawRangeConfigured": false, "minimumRaw": 0, "maximumRaw": 0, "calibration": { "mode": 0, "measured": false, "sourceId": "", "version": "", "evidence": "", "rawZero": 0, "scaleNPerRaw": 0, "points": [], "forceRangeConfigured": false, "minimumForceN": 0, "maximumForceN": 0 } }
+  ]
+}

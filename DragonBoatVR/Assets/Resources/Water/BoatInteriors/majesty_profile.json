@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "modelId": "majesty",
+  "width": 1024,
+  "height": 64,
+  "minimumZ": -4.02000026946594,
+  "maximumZ": 4.020000269961881,
+  "minimumY": -0.28000002210200003,
+  "referenceY": 0.05,
+  "minimumX": -0.5075595584800001,
+  "maximumX": 0.507559550524,
+  "sourceObjSha256": "ab03f4ee4d66a51114c034a260229811408130e491ad8587252cb86f7a0d07c1",
+  "dataSha256": "cc1836fe492b538f09ce8cf1528b3f3b66e1a1e565122fbddeb921f1894e2efd"
+}

@@ -1,0 +1,97 @@
+{
+  "provenance": "Unmeasured paired-joint Stewart software geometry; .8m base/.55m top/.6m height retained; not hardware measurements; actuator range and joint/collision limits require hardware validation",
+  "measured": false,
+  "useExplicitJointGeometry": true,
+  "geometryAssumed": true,
+  "baseRadius": 0.8,
+  "topRadius": 0.55,
+  "neutralHeight": 0.6,
+  "minActuatorLengthsMm": [
+    300,
+    300,
+    300,
+    300,
+    300,
+    300
+  ],
+  "maxActuatorLengthsMm": [
+    1100,
+    1100,
+    1100,
+    1100,
+    1100,
+    1100
+  ],
+  "lengthLimitsAssumed": true,
+  "maxHeaveMeters": 0.15,
+  "maxTranslationMeters": 0.12,
+  "maxTiltDegrees": 18,
+  "maxYawDegrees": 8,
+  "accelToTranslation": 0.02,
+  "accelToYaw": 2,
+  "servoLagTimeConstant": 0.025,
+  "explicitBaseJointsLocal": [
+    {
+      "x": 0.772740661,
+      "y": 0,
+      "z": 0.207055236
+    },
+    {
+      "x": -0.207055236,
+      "y": 0,
+      "z": 0.772740661
+    },
+    {
+      "x": -0.565685425,
+      "y": 0,
+      "z": 0.565685425
+    },
+    {
+      "x": -0.565685425,
+      "y": 0,
+      "z": -0.565685425
+    },
+    {
+      "x": -0.207055236,
+      "y": 0,
+      "z": -0.772740661
+    },
+    {
+      "x": 0.772740661,
+      "y": 0,
+      "z": -0.207055236
+    }
+  ],
+  "explicitTopJointsLocal": [
+    {
+      "x": 0.38890873,
+      "y": 0,
+      "z": 0.38890873
+    },
+    {
+      "x": 0.142350475,
+      "y": 0,
+      "z": 0.531259204
+    },
+    {
+      "x": -0.531259204,
+      "y": 0,
+      "z": 0.142350475
+    },
+    {
+      "x": -0.531259204,
+      "y": 0,
+      "z": -0.142350475
+    },
+    {
+      "x": 0.142350475,
+      "y": 0,
+      "z": -0.531259204
+    },
+    {
+      "x": 0.38890873,
+      "y": 0,
+      "z": -0.38890873
+    }
+  ]
+}

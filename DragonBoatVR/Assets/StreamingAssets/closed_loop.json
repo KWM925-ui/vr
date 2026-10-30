@@ -1,0 +1,17 @@
+{
+  "enabled": true,
+  "measured": false,
+  "provenance": "UNMEASURED_SOFTWARE_PLANT: independent localhost UDP process, compliant grip, lagged tension servos and six length servos; replace with measured dynamics and firmware",
+  "pythonExecutable": "python.exe",
+  "feedbackTimeoutSeconds": 0.1,
+  "motorTauSeconds": 0.035,
+  "motorSlewNPerSecond": 2000,
+  "platformTauSeconds": 0.06,
+  "platformSpeedMmPerSecond": 500,
+  "gripStiffnessNPerM": 1600,
+  "gripDampingNsPerM": 100,
+  "gripMassKg": 2,
+  "angularStiffness": 30,
+  "angularDamping": 3,
+  "angularInertia": 0.15
+}

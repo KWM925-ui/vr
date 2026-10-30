@@ -1,0 +1,10 @@
+{
+  "provenance": "UNMEASURED_RECTANGULAR_PROTOTYPE: retained 0.17 x 0.42 m visual outline, single-face reference area; local +Y points to rigid paddle reference, +Z is blade normal. 1.0 m reference offset and sensor installation transform are provisional, not physical measurements. Replace with measured rigid-paddle geometry and mounting transform. The reference is not a constrained hand pivot.",
+  "measured": false,
+  "bladeAreaM2": 0.0714,
+  "bladeLengthM": 0.42,
+  "bladeThicknessM": 0.025,
+  "referenceToBladeCentreM": 1.0,
+  "sensorToReferencePositionM": {"x": 0, "y": 0, "z": 0},
+  "sensorToReferenceEulerDeg": {"x": 0, "y": 0, "z": 0}
+}

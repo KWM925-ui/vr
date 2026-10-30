@@ -1,0 +1,7 @@
+# dragon boat ornament materials
+newmtl head_gold
+Kd 0.831 0.686 0.216
+newmtl hull_red
+Kd 0.620 0.169 0.145
+newmtl deco_gold
+Kd 0.831 0.686 0.216

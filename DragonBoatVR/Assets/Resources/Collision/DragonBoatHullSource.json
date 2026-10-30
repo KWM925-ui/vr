@@ -1,0 +1,2662 @@
+{
+    "schemaVersion": 2,
+    "provenance": "UNMEASURED_COMPOUND_COLLISION_APPROXIMATION_OF_DISPLAYED_WOOD",
+    "decompositionEngine": "CoACD 1.0.14",
+    "nativeLibrarySha256": "a32e801d260b774ebc723edfc05e45e179c09d0d2355592c64cbff490698e806",
+    "convexHullCommit": "6134f1c380dec3170376bf3f4d37d19a6ce0e880",
+    "sourceObjSha256": "ab03f4ee4d66a51114c034a260229811408130e491ad8587252cb86f7a0d07c1",
+    "sourceImportSha256": "fcab122cadb99f9f29b5008261153f79a545b5eb9d87f65212f533912551e092",
+    "decompositionThresholdM": 0.02500000037252903,
+    "preprocessResolution": 200,
+    "randomSeed": 20261028,
+    "maximumVerticesPerPart": 120,
+    "mergeParts": true,
+    "sharedFaceOverlapM": 0.004999999888241291,
+    "sourceVertices": 64203,
+    "sourceTriangles": 104742,
+    "collisionVertices": 24153,
+    "collisionTriangles": 46214,
+    "sourceMin": {
+        "x": -0.5075595378875732,
+        "y": -0.2800000309944153,
+        "z": -4.0
+    },
+    "sourceMax": {
+        "x": 0.5075595378875732,
+        "y": 0.557263970375061,
+        "z": 4.0
+    },
+    "modelLocalPosition": {
+        "x": -0.013347398489713669,
+        "y": 0.08816325664520264,
+        "z": -0.014568138867616654
+    },
+    "modelLocalScale": {
+        "x": 4.028793811798096,
+        "y": 4.028793811798096,
+        "z": 4.028793811798096
+    },
+    "modelLocalRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+    },
+    "parts": [
+        {
+            "name": "DragonBoatCollision_0000",
+            "vertices": 115,
+            "triangles": 226
+        },
+        {
+            "name": "DragonBoatCollision_0001",
+            "vertices": 120,
+            "triangles": 236
+        },
+        {
+            "name": "DragonBoatCollision_0002",
+            "vertices": 113,
+            "triangles": 222
+        },
+        {
+            "name": "DragonBoatCollision_0003",
+            "vertices": 103,
+            "triangles": 202
+        },
+        {
+            "name": "DragonBoatCollision_0004",
+            "vertices": 115,
+            "triangles": 226
+        },
+        {
+            "name": "DragonBoatCollision_0005",
+            "vertices": 120,
+            "triangles": 236
+        },
+        {
+            "name": "DragonBoatCollision_0006",
+            "vertices": 114,
+            "triangles": 224
+        },
+        {
+            "name": "DragonBoatCollision_0007",
+            "vertices": 118,
+            "triangles": 232
+        },
+        {
+            "name": "DragonBoatCollision_0008",
+            "vertices": 107,
+            "triangles": 210
+        },
+        {
+            "name": "DragonBoatCollision_0009",
+            "vertices": 111,
+            "triangles": 218
+        },
+        {
+            "name": "DragonBoatCollision_0010",
+            "vertices": 79,
+            "triangles": 154
+        },
+        {
+            "name": "DragonBoatCollision_0011",
+            "vertices": 73,
+            "triangles": 142
+        },
+        {
+            "name": "DragonBoatCollision_0012",
+            "vertices": 120,
+            "triangles": 236
+        },
+        {
+            "name": "DragonBoatCollision_0013",
+            "vertices": 43,
+            "triangles": 82
+        },
+        {
+            "name": "DragonBoatCollision_0014",
+            "vertices": 82,
+            "triangles": 160
+        },
+        {
+            "name": "DragonBoatCollision_0015",
+            "vertices": 31,
+            "triangles": 58
+        },
+        {
+            "name": "DragonBoatCollision_0016",
+            "vertices": 105,
+            "triangles": 206
+        },
+        {
+            "name": "DragonBoatCollision_0017",
+            "vertices": 91,
+            "triangles": 178
+        },
+        {
+            "name": "DragonBoatCollision_0018",
+            "vertices": 18,
+            "triangles": 32
+        },
+        {
+            "name": "DragonBoatCollision_0019",
+            "vertices": 16,
+            "triangles": 28
+        },
+        {
+            "name": "DragonBoatCollision_0020",
+            "vertices": 32,
+            "triangles": 60
+        },
+        {
+            "name": "DragonBoatCollision_0021",
+            "vertices": 72,
+            "triangles": 140
+        },
+        {
+            "name": "DragonBoatCollision_0022",
+            "vertices": 100,
+            "triangles": 196
+        },
+        {
+            "name": "DragonBoatCollision_0023",
+            "vertices": 94,
+            "triangles": 184
+        },
+        {
+            "name": "DragonBoatCollision_0024",
+            "vertices": 92,
+            "triangles": 180
+        },
+        {
+            "name": "DragonBoatCollision_0025",
+            "vertices": 115,
+            "triangles": 226
+        },
+        {
+            "name": "DragonBoatCollision_0026",
+            "vertices": 108,
+            "triangles": 212
+        },
+        {
+            "name": "DragonBoatCollision_0027",
+            "vertices": 81,
+            "triangles": 158
+        },
+        {
+            "name": "DragonBoatCollision_0028",
+            "vertices": 113,
+            "triangles": 222
+        },
+        {
+            "name": "DragonBoatCollision_0029",
+            "vertices": 52,
+            "triangles": 100
+        },
+        {
+            "name": "DragonBoatCollision_0030",
+            "vertices": 48,
+            "triangles": 92
+        },
+        {
+            "name": "DragonBoatCollision_0031",
+            "vertices": 78,
+            "triangles": 152
+        },
+        {
+            "name": "DragonBoatCollision_0032",
+            "vertices": 76,
+            "triangles": 148
+        },
+        {
+            "name": "DragonBoatCollision_0033",
+            "vertices": 29,
+            "triangles": 54
+        },
+        {
+            "name": "DragonBoatCollision_0034",
+            "vertices": 28,
+            "triangles": 52
+        },
+        {
+            "name": "DragonBoatCollision_0035",
+            "vertices": 40,
+            "triangles": 76
+        },
+        {
+            "name": "DragonBoatCollision_0036",
+            "vertices": 106,
+            "triangles": 208
+        },
+        {
+            "name": "DragonBoatCollision_0037",
+            "vertices": 66,
+            "triangles": 128
+        },
+        {
+            "name": "DragonBoatCollision_0038",
+            "vertices": 91,
+            "triangles": 178
+        },
+        {
+            "name": "DragonBoatCollision_0039",
+            "vertices": 78,
+            "triangles": 152
+        },
+        {
+            "name": "DragonBoatCollision_0040",
+            "vertices": 74,
+            "triangles": 144
+        },
+        {
+            "name": "DragonBoatCollision_0041",
+            "vertices": 60,
+            "triangles": 116
+        },
+        {
+            "name": "DragonBoatCollision_0042",
+            "vertices": 24,
+            "triangles": 44
+        },
+        {
+            "name": "DragonBoatCollision_0043",
+            "vertices": 106,
+            "triangles": 208
+        },
+        {
+            "name": "DragonBoatCollision_0044",
+            "vertices": 94,
+            "triangles": 184
+        },
+        {
+            "name": "DragonBoatCollision_0045",
+            "vertices": 69,
+            "triangles": 134
+        },
+        {
+            "name": "DragonBoatCollision_0046",
+            "vertices": 107,
+            "triangles": 210
+        },
+        {
+            "name": "DragonBoatCollision_0047",
+            "vertices": 91,
+            "triangles": 178
+        },
+        {
+            "name": "DragonBoatCollision_0048",
+            "vertices": 70,
+            "triangles": 136
+        },
+        {
+            "name": "DragonBoatCollision_0049",
+            "vertices": 59,
+            "triangles": 114
+        },
+        {
+            "name": "DragonBoatCollision_0050",
+            "vertices": 111,
+            "triangles": 218
+        },
+        {
+            "name": "DragonBoatCollision_0051",
+            "vertices": 46,
+            "triangles": 88
+        },
+        {
+            "name": "DragonBoatCollision_0052",
+            "vertices": 38,
+            "triangles": 72
+        },
+        {
+            "name": "DragonBoatCollision_0053",
+            "vertices": 51,
+            "triangles": 98
+        },
+        {
+            "name": "DragonBoatCollision_0054",
+            "vertices": 20,
+            "triangles": 36
+        },
+        {
+            "name": "DragonBoatCollision_0055",
+            "vertices": 66,
+            "triangles": 128
+        },
+        {
+            "name": "DragonBoatCollision_0056",
+            "vertices": 90,
+            "triangles": 176
+        },
+        {
+            "name": "DragonBoatCollision_0057",
+            "vertices": 33,
+            "triangles": 62
+        },
+        {
+            "name": "DragonBoatCollision_0058",
+            "vertices": 31,
+            "triangles": 58
+        },
+        {
+            "name": "DragonBoatCollision_0059",
+            "vertices": 88,
+            "triangles": 172
+        },
+        {
+            "name": "DragonBoatCollision_0060",
+            "vertices": 51,
+            "triangles": 98
+        },
+        {
+            "name": "DragonBoatCollision_0061",
+            "vertices": 67,
+            "triangles": 130
+        },
+        {
+            "name": "DragonBoatCollision_0062",
+            "vertices": 82,
+            "triangles": 160
+        },
+        {
+            "name": "DragonBoatCollision_0063",
+            "vertices": 90,
+            "triangles": 176
+        },
+        {
+            "name": "DragonBoatCollision_0064",
+            "vertices": 109,
+            "triangles": 214
+        },
+        {
+            "name": "DragonBoatCollision_0065",
+            "vertices": 104,
+            "triangles": 204
+        },
+        {
+            "name": "DragonBoatCollision_0066",
+            "vertices": 48,
+            "triangles": 92
+        },
+        {
+            "name": "DragonBoatCollision_0067",
+            "vertices": 77,
+            "triangles": 150
+        },
+        {
+            "name": "DragonBoatCollision_0068",
+            "vertices": 89,
+            "triangles": 174
+        },
+        {
+            "name": "DragonBoatCollision_0069",
+            "vertices": 57,
+            "triangles": 110
+        },
+        {
+            "name": "DragonBoatCollision_0070",
+            "vertices": 100,
+            "triangles": 196
+        },
+        {
+            "name": "DragonBoatCollision_0071",
+            "vertices": 70,
+            "triangles": 136
+        },
+        {
+            "name": "DragonBoatCollision_0072",
+            "vertices": 108,
+            "triangles": 212
+        },
+        {
+            "name": "DragonBoatCollision_0073",
+            "vertices": 116,
+            "triangles": 228
+        },
+        {
+            "name": "DragonBoatCollision_0074",
+            "vertices": 110,
+            "triangles": 216
+        },
+        {
+            "name": "DragonBoatCollision_0075",
+            "vertices": 110,
+            "triangles": 216
+        },
+        {
+            "name": "DragonBoatCollision_0076",
+            "vertices": 58,
+            "triangles": 112
+        },
+        {
+            "name": "DragonBoatCollision_0077",
+            "vertices": 70,
+            "triangles": 136
+        },
+        {
+            "name": "DragonBoatCollision_0078",
+            "vertices": 98,
+            "triangles": 192
+        },
+        {
+            "name": "DragonBoatCollision_0079",
+            "vertices": 9,
+            "triangles": 14
+        },
+        {
+            "name": "DragonBoatCollision_0080",
+            "vertices": 28,
+            "triangles": 52
+        },
+        {
+            "name": "DragonBoatCollision_0081",
+            "vertices": 23,
+            "triangles": 42
+        },
+        {
+            "name": "DragonBoatCollision_0082",
+            "vertices": 117,
+            "triangles": 230
+        },
+        {
+            "name": "DragonBoatCollision_0083",
+            "vertices": 48,
+            "triangles": 92
+        },
+        {
+            "name": "DragonBoatCollision_0084",
+            "vertices": 63,
+            "triangles": 122
+        },
+        {
+            "name": "DragonBoatCollision_0085",
+            "vertices": 32,
+            "triangles": 60
+        },
+        {
+            "name": "DragonBoatCollision_0086",
+            "vertices": 55,
+            "triangles": 106
+        },
+        {
+            "name": "DragonBoatCollision_0087",
+            "vertices": 66,
+            "triangles": 128
+        },
+        {
+            "name": "DragonBoatCollision_0088",
+            "vertices": 75,
+            "triangles": 146
+        },
+        {
+            "name": "DragonBoatCollision_0089",
+            "vertices": 75,
+            "triangles": 146
+        },
+        {
+            "name": "DragonBoatCollision_0090",
+            "vertices": 98,
+            "triangles": 192
+        },
+        {
+            "name": "DragonBoatCollision_0091",
+            "vertices": 85,
+            "triangles": 166
+        },
+        {
+            "name": "DragonBoatCollision_0092",
+            "vertices": 55,
+            "triangles": 106
+        },
+        {
+            "name": "DragonBoatCollision_0093",
+            "vertices": 20,
+            "triangles": 36
+        },
+        {
+            "name": "DragonBoatCollision_0094",
+            "vertices": 16,
+            "triangles": 28
+        },
+        {
+            "name": "DragonBoatCollision_0095",
+            "vertices": 42,
+            "triangles": 80
+        },
+        {
+            "name": "DragonBoatCollision_0096",
+            "vertices": 105,
+            "triangles": 206
+        },
+        {
+            "name": "DragonBoatCollision_0097",
+            "vertices": 19,
+            "triangles": 34
+        },
+        {
+            "name": "DragonBoatCollision_0098",
+            "vertices": 22,
+            "triangles": 40
+        },
+        {
+            "name": "DragonBoatCollision_0099",
+            "vertices": 24,
+            "triangles": 44
+        },
+        {
+            "name": "DragonBoatCollision_0100",
+            "vertices": 46,
+            "triangles": 88
+        },
+        {
+            "name": "DragonBoatCollision_0101",
+            "vertices": 31,
+            "triangles": 58
+        },
+        {
+            "name": "DragonBoatCollision_0102",
+            "vertices": 116,
+            "triangles": 228
+        },
+        {
+            "name": "DragonBoatCollision_0103",
+            "vertices": 74,
+            "triangles": 144
+        },
+        {
+            "name": "DragonBoatCollision_0104",
+            "vertices": 39,
+            "triangles": 74
+        },
+        {
+            "name": "DragonBoatCollision_0105",
+            "vertices": 20,
+            "triangles": 36
+        },
+        {
+            "name": "DragonBoatCollision_0106",
+            "vertices": 50,
+            "triangles": 96
+        },
+        {
+            "name": "DragonBoatCollision_0107",
+            "vertices": 22,
+            "triangles": 40
+        },
+        {
+            "name": "DragonBoatCollision_0108",
+            "vertices": 46,
+            "triangles": 88
+        },
+        {
+            "name": "DragonBoatCollision_0109",
+            "vertices": 75,
+            "triangles": 146
+        },
+        {
+            "name": "DragonBoatCollision_0110",
+            "vertices": 55,
+            "triangles": 106
+        },
+        {
+            "name": "DragonBoatCollision_0111",
+            "vertices": 40,
+            "triangles": 76
+        },
+        {
+            "name": "DragonBoatCollision_0112",
+            "vertices": 47,
+            "triangles": 90
+        },
+        {
+            "name": "DragonBoatCollision_0113",
+            "vertices": 53,
+            "triangles": 102
+        },
+        {
+            "name": "DragonBoatCollision_0114",
+            "vertices": 57,
+            "triangles": 110
+        },
+        {
+            "name": "DragonBoatCollision_0115",
+            "vertices": 50,
+            "triangles": 96
+        },
+        {
+            "name": "DragonBoatCollision_0116",
+            "vertices": 92,
+            "triangles": 180
+        },
+        {
+            "name": "DragonBoatCollision_0117",
+            "vertices": 103,
+            "triangles": 202
+        },
+        {
+            "name": "DragonBoatCollision_0118",
+            "vertices": 100,
+            "triangles": 196
+        },
+        {
+            "name": "DragonBoatCollision_0119",
+            "vertices": 64,
+            "triangles": 124
+        },
+        {
+            "name": "DragonBoatCollision_0120",
+            "vertices": 74,
+            "triangles": 144
+        },
+        {
+            "name": "DragonBoatCollision_0121",
+            "vertices": 25,
+            "triangles": 46
+        },
+        {
+            "name": "DragonBoatCollision_0122",
+            "vertices": 16,
+            "triangles": 28
+        },
+        {
+            "name": "DragonBoatCollision_0123",
+            "vertices": 34,
+            "triangles": 64
+        },
+        {
+            "name": "DragonBoatCollision_0124",
+            "vertices": 77,
+            "triangles": 150
+        },
+        {
+            "name": "DragonBoatCollision_0125",
+            "vertices": 93,
+            "triangles": 182
+        },
+        {
+            "name": "DragonBoatCollision_0126",
+            "vertices": 118,
+            "triangles": 232
+        },
+        {
+            "name": "DragonBoatCollision_0127",
+            "vertices": 65,
+            "triangles": 126
+        },
+        {
+            "name": "DragonBoatCollision_0128",
+            "vertices": 74,
+            "triangles": 144
+        },
+        {
+            "name": "DragonBoatCollision_0129",
+            "vertices": 62,
+            "triangles": 120
+        },
+        {
+            "name": "DragonBoatCollision_0130",
+            "vertices": 73,
+            "triangles": 142
+        },
+        {
+            "name": "DragonBoatCollision_0131",
+            "vertices": 75,
+            "triangles": 146
+        },
+        {
+            "name": "DragonBoatCollision_0132",
+            "vertices": 70,
+            "triangles": 136
+        },
+        {
+            "name": "DragonBoatCollision_0133",
+            "vertices": 101,
+            "triangles": 198
+        },
+        {
+            "name": "DragonBoatCollision_0134",
+            "vertices": 115,
+            "triangles": 226
+        },
+        {
+            "name": "DragonBoatCollision_0135",
+            "vertices": 41,
+            "triangles": 78
+        },
+        {
+            "name": "DragonBoatCollision_0136",
+            "vertices": 41,
+            "triangles": 78
+        },
+        {
+            "name": "DragonBoatCollision_0137",
+            "vertices": 82,
+            "triangles": 160
+        },
+        {
+            "name": "DragonBoatCollision_0138",
+            "vertices": 98,
+            "triangles": 192
+        },
+        {
+            "name": "DragonBoatCollision_0139",
+            "vertices": 89,
+            "triangles": 174
+        },
+        {
+            "name": "DragonBoatCollision_0140",
+            "vertices": 33,
+            "triangles": 62
+        },
+        {
+            "name": "DragonBoatCollision_0141",
+            "vertices": 43,
+            "triangles": 82
+        },
+        {
+            "name": "DragonBoatCollision_0142",
+            "vertices": 102,
+            "triangles": 200
+        },
+        {
+            "name": "DragonBoatCollision_0143",
+            "vertices": 62,
+            "triangles": 120
+        },
+        {
+            "name": "DragonBoatCollision_0144",
+            "vertices": 73,
+            "triangles": 142
+        },
+        {
+            "name": "DragonBoatCollision_0145",
+            "vertices": 58,
+            "triangles": 112
+        },
+        {
+            "name": "DragonBoatCollision_0146",
+            "vertices": 95,
+            "triangles": 186
+        },
+        {
+            "name": "DragonBoatCollision_0147",
+            "vertices": 112,
+            "triangles": 220
+        },
+        {
+            "name": "DragonBoatCollision_0148",
+            "vertices": 56,
+            "triangles": 108
+        },
+        {
+            "name": "DragonBoatCollision_0149",
+            "vertices": 38,
+            "triangles": 72
+        },
+        {
+            "name": "DragonBoatCollision_0150",
+            "vertices": 84,
+            "triangles": 164
+        },
+        {
+            "name": "DragonBoatCollision_0151",
+            "vertices": 63,
+            "triangles": 122
+        },
+        {
+            "name": "DragonBoatCollision_0152",
+            "vertices": 60,
+            "triangles": 116
+        },
+        {
+            "name": "DragonBoatCollision_0153",
+            "vertices": 61,
+            "triangles": 118
+        },
+        {
+            "name": "DragonBoatCollision_0154",
+            "vertices": 68,
+            "triangles": 132
+        },
+        {
+            "name": "DragonBoatCollision_0155",
+            "vertices": 18,
+            "triangles": 32
+        },
+        {
+            "name": "DragonBoatCollision_0156",
+            "vertices": 35,
+            "triangles": 66
+        },
+        {
+            "name": "DragonBoatCollision_0157",
+            "vertices": 75,
+            "triangles": 146
+        },
+        {
+            "name": "DragonBoatCollision_0158",
+            "vertices": 32,
+            "triangles": 60
+        },
+        {
+            "name": "DragonBoatCollision_0159",
+            "vertices": 77,
+            "triangles": 150
+        },
+        {
+            "name": "DragonBoatCollision_0160",
+            "vertices": 41,
+            "triangles": 78
+        },
+        {
+            "name": "DragonBoatCollision_0161",
+            "vertices": 60,
+            "triangles": 116
+        },
+        {
+            "name": "DragonBoatCollision_0162",
+            "vertices": 76,
+            "triangles": 148
+        },
+        {
+            "name": "DragonBoatCollision_0163",
+            "vertices": 30,
+            "triangles": 56
+        },
+        {
+            "name": "DragonBoatCollision_0164",
+            "vertices": 28,
+            "triangles": 52
+        },
+        {
+            "name": "DragonBoatCollision_0165",
+            "vertices": 67,
+            "triangles": 130
+        },
+        {
+            "name": "DragonBoatCollision_0166",
+            "vertices": 65,
+            "triangles": 126
+        },
+        {
+            "name": "DragonBoatCollision_0167",
+            "vertices": 85,
+            "triangles": 166
+        },
+        {
+            "name": "DragonBoatCollision_0168",
+            "vertices": 96,
+            "triangles": 188
+        },
+        {
+            "name": "DragonBoatCollision_0169",
+            "vertices": 27,
+            "triangles": 50
+        },
+        {
+            "name": "DragonBoatCollision_0170",
+            "vertices": 60,
+            "triangles": 116
+        },
+        {
+            "name": "DragonBoatCollision_0171",
+            "vertices": 53,
+            "triangles": 102
+        },
+        {
+            "name": "DragonBoatCollision_0172",
+            "vertices": 72,
+            "triangles": 140
+        },
+        {
+            "name": "DragonBoatCollision_0173",
+            "vertices": 55,
+            "triangles": 106
+        },
+        {
+            "name": "DragonBoatCollision_0174",
+            "vertices": 41,
+            "triangles": 78
+        },
+        {
+            "name": "DragonBoatCollision_0175",
+            "vertices": 30,
+            "triangles": 56
+        },
+        {
+            "name": "DragonBoatCollision_0176",
+            "vertices": 43,
+            "triangles": 82
+        },
+        {
+            "name": "DragonBoatCollision_0177",
+            "vertices": 30,
+            "triangles": 56
+        },
+        {
+            "name": "DragonBoatCollision_0178",
+            "vertices": 27,
+            "triangles": 50
+        },
+        {
+            "name": "DragonBoatCollision_0179",
+            "vertices": 49,
+            "triangles": 94
+        },
+        {
+            "name": "DragonBoatCollision_0180",
+            "vertices": 29,
+            "triangles": 54
+        },
+        {
+            "name": "DragonBoatCollision_0181",
+            "vertices": 57,
+            "triangles": 110
+        },
+        {
+            "name": "DragonBoatCollision_0182",
+            "vertices": 35,
+            "triangles": 66
+        },
+        {
+            "name": "DragonBoatCollision_0183",
+            "vertices": 83,
+            "triangles": 162
+        },
+        {
+            "name": "DragonBoatCollision_0184",
+            "vertices": 59,
+            "triangles": 114
+        },
+        {
+            "name": "DragonBoatCollision_0185",
+            "vertices": 42,
+            "triangles": 80
+        },
+        {
+            "name": "DragonBoatCollision_0186",
+            "vertices": 25,
+            "triangles": 46
+        },
+        {
+            "name": "DragonBoatCollision_0187",
+            "vertices": 20,
+            "triangles": 36
+        },
+        {
+            "name": "DragonBoatCollision_0188",
+            "vertices": 26,
+            "triangles": 48
+        },
+        {
+            "name": "DragonBoatCollision_0189",
+            "vertices": 109,
+            "triangles": 214
+        },
+        {
+            "name": "DragonBoatCollision_0190",
+            "vertices": 57,
+            "triangles": 110
+        },
+        {
+            "name": "DragonBoatCollision_0191",
+            "vertices": 21,
+            "triangles": 38
+        },
+        {
+            "name": "DragonBoatCollision_0192",
+            "vertices": 23,
+            "triangles": 42
+        },
+        {
+            "name": "DragonBoatCollision_0193",
+            "vertices": 110,
+            "triangles": 216
+        },
+        {
+            "name": "DragonBoatCollision_0194",
+            "vertices": 46,
+            "triangles": 88
+        },
+        {
+            "name": "DragonBoatCollision_0195",
+            "vertices": 11,
+            "triangles": 18
+        },
+        {
+            "name": "DragonBoatCollision_0196",
+            "vertices": 57,
+            "triangles": 110
+        },
+        {
+            "name": "DragonBoatCollision_0197",
+            "vertices": 99,
+            "triangles": 194
+        },
+        {
+            "name": "DragonBoatCollision_0198",
+            "vertices": 56,
+            "triangles": 108
+        },
+        {
+            "name": "DragonBoatCollision_0199",
+            "vertices": 49,
+            "triangles": 94
+        },
+        {
+            "name": "DragonBoatCollision_0200",
+            "vertices": 34,
+            "triangles": 64
+        },
+        {
+            "name": "DragonBoatCollision_0201",
+            "vertices": 30,
+            "triangles": 56
+        },
+        {
+            "name": "DragonBoatCollision_0202",
+            "vertices": 42,
+            "triangles": 80
+        },
+        {
+            "name": "DragonBoatCollision_0203",
+            "vertices": 77,
+            "triangles": 150
+        },
+        {
+            "name": "DragonBoatCollision_0204",
+            "vertices": 43,
+            "triangles": 82
+        },
+        {
+            "name": "DragonBoatCollision_0205",
+            "vertices": 9,
+            "triangles": 14
+        },
+        {
+            "name": "DragonBoatCollision_0206",
+            "vertices": 16,
+            "triangles": 28
+        },
+        {
+            "name": "DragonBoatCollision_0207",
+            "vertices": 18,
+            "triangles": 32
+        },
+        {
+            "name": "DragonBoatCollision_0208",
+            "vertices": 63,
+            "triangles": 122
+        },
+        {
+            "name": "DragonBoatCollision_0209",
+            "vertices": 65,
+            "triangles": 126
+        },
+        {
+            "name": "DragonBoatCollision_0210",
+            "vertices": 44,
+            "triangles": 84
+        },
+        {
+            "name": "DragonBoatCollision_0211",
+            "vertices": 11,
+            "triangles": 18
+        },
+        {
+            "name": "DragonBoatCollision_0212",
+            "vertices": 43,
+            "triangles": 82
+        },
+        {
+            "name": "DragonBoatCollision_0213",
+            "vertices": 33,
+            "triangles": 62
+        },
+        {
+            "name": "DragonBoatCollision_0214",
+            "vertices": 13,
+            "triangles": 22
+        },
+        {
+            "name": "DragonBoatCollision_0215",
+            "vertices": 36,
+            "triangles": 68
+        },
+        {
+            "name": "DragonBoatCollision_0216",
+            "vertices": 52,
+            "triangles": 100
+        },
+        {
+            "name": "DragonBoatCollision_0217",
+            "vertices": 117,
+            "triangles": 230
+        },
+        {
+            "name": "DragonBoatCollision_0218",
+            "vertices": 27,
+            "triangles": 50
+        },
+        {
+            "name": "DragonBoatCollision_0219",
+            "vertices": 33,
+            "triangles": 62
+        },
+        {
+            "name": "DragonBoatCollision_0220",
+            "vertices": 50,
+            "triangles": 96
+        },
+        {
+            "name": "DragonBoatCollision_0221",
+            "vertices": 10,
+            "triangles": 16
+        },
+        {
+            "name": "DragonBoatCollision_0222",
+            "vertices": 61,
+            "triangles": 118
+        },
+        {
+            "name": "DragonBoatCollision_0223",
+            "vertices": 43,
+            "triangles": 82
+        },
+        {
+            "name": "DragonBoatCollision_0224",
+            "vertices": 27,
+            "triangles": 50
+        },
+        {
+            "name": "DragonBoatCollision_0225",
+            "vertices": 57,
+            "triangles": 110
+        },
+        {
+            "name": "DragonBoatCollision_0226",
+            "vertices": 49,
+            "triangles": 94
+        },
+        {
+            "name": "DragonBoatCollision_0227",
+            "vertices": 58,
+            "triangles": 112
+        },
+        {
+            "name": "DragonBoatCollision_0228",
+            "vertices": 37,
+            "triangles": 70
+        },
+        {
+            "name": "DragonBoatCollision_0229",
+            "vertices": 48,
+            "triangles": 92
+        },
+        {
+            "name": "DragonBoatCollision_0230",
+            "vertices": 74,
+            "triangles": 144
+        },
+        {
+            "name": "DragonBoatCollision_0231",
+            "vertices": 79,
+            "triangles": 154
+        },
+        {
+            "name": "DragonBoatCollision_0232",
+            "vertices": 101,
+            "triangles": 198
+        },
+        {
+            "name": "DragonBoatCollision_0233",
+            "vertices": 116,
+            "triangles": 228
+        },
+        {
+            "name": "DragonBoatCollision_0234",
+            "vertices": 101,
+            "triangles": 198
+        },
+        {
+            "name": "DragonBoatCollision_0235",
+            "vertices": 35,
+            "triangles": 66
+        },
+        {
+            "name": "DragonBoatCollision_0236",
+            "vertices": 13,
+            "triangles": 22
+        },
+        {
+            "name": "DragonBoatCollision_0237",
+            "vertices": 19,
+            "triangles": 34
+        },
+        {
+            "name": "DragonBoatCollision_0238",
+            "vertices": 10,
+            "triangles": 16
+        },
+        {
+            "name": "DragonBoatCollision_0239",
+            "vertices": 27,
+            "triangles": 50
+        },
+        {
+            "name": "DragonBoatCollision_0240",
+            "vertices": 56,
+            "triangles": 108
+        },
+        {
+            "name": "DragonBoatCollision_0241",
+            "vertices": 79,
+            "triangles": 154
+        },
+        {
+            "name": "DragonBoatCollision_0242",
+            "vertices": 105,
+            "triangles": 206
+        },
+        {
+            "name": "DragonBoatCollision_0243",
+            "vertices": 28,
+            "triangles": 52
+        },
+        {
+            "name": "DragonBoatCollision_0244",
+            "vertices": 25,
+            "triangles": 46
+        },
+        {
+            "name": "DragonBoatCollision_0245",
+            "vertices": 24,
+            "triangles": 44
+        },
+        {
+            "name": "DragonBoatCollision_0246",
+            "vertices": 8,
+            "triangles": 12
+        },
+        {
+            "name": "DragonBoatCollision_0247",
+            "vertices": 11,
+            "triangles": 18
+        },
+        {
+            "name": "DragonBoatCollision_0248",
+            "vertices": 20,
+            "triangles": 36
+        },
+        {
+            "name": "DragonBoatCollision_0249",
+            "vertices": 21,
+            "triangles": 38
+        },
+        {
+            "name": "DragonBoatCollision_0250",
+            "vertices": 83,
+            "triangles": 162
+        },
+        {
+            "name": "DragonBoatCollision_0251",
+            "vertices": 41,
+            "triangles": 78
+        },
+        {
+            "name": "DragonBoatCollision_0252",
+            "vertices": 21,
+            "triangles": 38
+        },
+        {
+            "name": "DragonBoatCollision_0253",
+            "vertices": 60,
+            "triangles": 116
+        },
+        {
+            "name": "DragonBoatCollision_0254",
+            "vertices": 38,
+            "triangles": 72
+        },
+        {
+            "name": "DragonBoatCollision_0255",
+            "vertices": 60,
+            "triangles": 116
+        },
+        {
+            "name": "DragonBoatCollision_0256",
+            "vertices": 51,
+            "triangles": 98
+        },
+        {
+            "name": "DragonBoatCollision_0257",
+            "vertices": 51,
+            "triangles": 98
+        },
+        {
+            "name": "DragonBoatCollision_0258",
+            "vertices": 12,
+            "triangles": 20
+        },
+        {
+            "name": "DragonBoatCollision_0259",
+            "vertices": 23,
+            "triangles": 42
+        },
+        {
+            "name": "DragonBoatCollision_0260",
+            "vertices": 78,
+            "triangles": 152
+        },
+        {
+            "name": "DragonBoatCollision_0261",
+            "vertices": 24,
+            "triangles": 44
+        },
+        {
+            "name": "DragonBoatCollision_0262",
+            "vertices": 68,
+            "triangles": 132
+        },
+        {
+            "name": "DragonBoatCollision_0263",
+            "vertices": 31,
+            "triangles": 58
+        },
+        {
+            "name": "DragonBoatCollision_0264",
+            "vertices": 60,
+            "triangles": 116
+        },
+        {
+            "name": "DragonBoatCollision_0265",
+            "vertices": 59,
+            "triangles": 114
+        },
+        {
+            "name": "DragonBoatCollision_0266",
+            "vertices": 49,
+            "triangles": 94
+        },
+        {
+            "name": "DragonBoatCollision_0267",
+            "vertices": 44,
+            "triangles": 84
+        },
+        {
+            "name": "DragonBoatCollision_0268",
+            "vertices": 11,
+            "triangles": 18
+        },
+        {
+            "name": "DragonBoatCollision_0269",
+            "vertices": 23,
+            "triangles": 42
+        },
+        {
+            "name": "DragonBoatCollision_0270",
+            "vertices": 24,
+            "triangles": 44
+        },
+        {
+            "name": "DragonBoatCollision_0271",
+            "vertices": 50,
+            "triangles": 96
+        },
+        {
+            "name": "DragonBoatCollision_0272",
+            "vertices": 43,
+            "triangles": 82
+        },
+        {
+            "name": "DragonBoatCollision_0273",
+            "vertices": 51,
+            "triangles": 98
+        },
+        {
+            "name": "DragonBoatCollision_0274",
+            "vertices": 17,
+            "triangles": 30
+        },
+        {
+            "name": "DragonBoatCollision_0275",
+            "vertices": 27,
+            "triangles": 50
+        },
+        {
+            "name": "DragonBoatCollision_0276",
+            "vertices": 47,
+            "triangles": 90
+        },
+        {
+            "name": "DragonBoatCollision_0277",
+            "vertices": 56,
+            "triangles": 108
+        },
+        {
+            "name": "DragonBoatCollision_0278",
+            "vertices": 64,
+            "triangles": 124
+        },
+        {
+            "name": "DragonBoatCollision_0279",
+            "vertices": 20,
+            "triangles": 36
+        },
+        {
+            "name": "DragonBoatCollision_0280",
+            "vertices": 17,
+            "triangles": 30
+        },
+        {
+            "name": "DragonBoatCollision_0281",
+            "vertices": 12,
+            "triangles": 20
+        },
+        {
+            "name": "DragonBoatCollision_0282",
+            "vertices": 34,
+            "triangles": 64
+        },
+        {
+            "name": "DragonBoatCollision_0283",
+            "vertices": 32,
+            "triangles": 60
+        },
+        {
+            "name": "DragonBoatCollision_0284",
+            "vertices": 31,
+            "triangles": 58
+        },
+        {
+            "name": "DragonBoatCollision_0285",
+            "vertices": 29,
+            "triangles": 54
+        },
+        {
+            "name": "DragonBoatCollision_0286",
+            "vertices": 22,
+            "triangles": 40
+        },
+        {
+            "name": "DragonBoatCollision_0287",
+            "vertices": 35,
+            "triangles": 66
+        },
+        {
+            "name": "DragonBoatCollision_0288",
+            "vertices": 31,
+            "triangles": 58
+        },
+        {
+            "name": "DragonBoatCollision_0289",
+            "vertices": 32,
+            "triangles": 60
+        },
+        {
+            "name": "DragonBoatCollision_0290",
+            "vertices": 80,
+            "triangles": 156
+        },
+        {
+            "name": "DragonBoatCollision_0291",
+            "vertices": 84,
+            "triangles": 164
+        },
+        {
+            "name": "DragonBoatCollision_0292",
+            "vertices": 50,
+            "triangles": 96
+        },
+        {
+            "name": "DragonBoatCollision_0293",
+            "vertices": 16,
+            "triangles": 28
+        },
+        {
+            "name": "DragonBoatCollision_0294",
+            "vertices": 90,
+            "triangles": 176
+        },
+        {
+            "name": "DragonBoatCollision_0295",
+            "vertices": 15,
+            "triangles": 26
+        },
+        {
+            "name": "DragonBoatCollision_0296",
+            "vertices": 52,
+            "triangles": 100
+        },
+        {
+            "name": "DragonBoatCollision_0297",
+            "vertices": 12,
+            "triangles": 20
+        },
+        {
+            "name": "DragonBoatCollision_0298",
+            "vertices": 29,
+            "triangles": 54
+        },
+        {
+            "name": "DragonBoatCollision_0299",
+            "vertices": 21,
+            "triangles": 38
+        },
+        {
+            "name": "DragonBoatCollision_0300",
+            "vertices": 29,
+            "triangles": 54
+        },
+        {
+            "name": "DragonBoatCollision_0301",
+            "vertices": 44,
+            "triangles": 84
+        },
+        {
+            "name": "DragonBoatCollision_0302",
+            "vertices": 38,
+            "triangles": 72
+        },
+        {
+            "name": "DragonBoatCollision_0303",
+            "vertices": 31,
+            "triangles": 58
+        },
+        {
+            "name": "DragonBoatCollision_0304",
+            "vertices": 24,
+            "triangles": 44
+        },
+        {
+            "name": "DragonBoatCollision_0305",
+            "vertices": 17,
+            "triangles": 30
+        },
+        {
+            "name": "DragonBoatCollision_0306",
+            "vertices": 55,
+            "triangles": 106
+        },
+        {
+            "name": "DragonBoatCollision_0307",
+            "vertices": 41,
+            "triangles": 78
+        },
+        {
+            "name": "DragonBoatCollision_0308",
+            "vertices": 24,
+            "triangles": 44
+        },
+        {
+            "name": "DragonBoatCollision_0309",
+            "vertices": 46,
+            "triangles": 88
+        },
+        {
+            "name": "DragonBoatCollision_0310",
+            "vertices": 17,
+            "triangles": 30
+        },
+        {
+            "name": "DragonBoatCollision_0311",
+            "vertices": 42,
+            "triangles": 80
+        },
+        {
+            "name": "DragonBoatCollision_0312",
+            "vertices": 45,
+            "triangles": 86
+        },
+        {
+            "name": "DragonBoatCollision_0313",
+            "vertices": 75,
+            "triangles": 146
+        },
+        {
+            "name": "DragonBoatCollision_0314",
+            "vertices": 56,
+            "triangles": 108
+        },
+        {
+            "name": "DragonBoatCollision_0315",
+            "vertices": 50,
+            "triangles": 96
+        },
+        {
+            "name": "DragonBoatCollision_0316",
+            "vertices": 20,
+            "triangles": 36
+        },
+        {
+            "name": "DragonBoatCollision_0317",
+            "vertices": 38,
+            "triangles": 72
+        },
+        {
+            "name": "DragonBoatCollision_0318",
+            "vertices": 41,
+            "triangles": 78
+        },
+        {
+            "name": "DragonBoatCollision_0319",
+            "vertices": 41,
+            "triangles": 78
+        },
+        {
+            "name": "DragonBoatCollision_0320",
+            "vertices": 42,
+            "triangles": 80
+        },
+        {
+            "name": "DragonBoatCollision_0321",
+            "vertices": 8,
+            "triangles": 12
+        },
+        {
+            "name": "DragonBoatCollision_0322",
+            "vertices": 84,
+            "triangles": 164
+        },
+        {
+            "name": "DragonBoatCollision_0323",
+            "vertices": 92,
+            "triangles": 180
+        },
+        {
+            "name": "DragonBoatCollision_0324",
+            "vertices": 44,
+            "triangles": 84
+        },
+        {
+            "name": "DragonBoatCollision_0325",
+            "vertices": 10,
+            "triangles": 16
+        },
+        {
+            "name": "DragonBoatCollision_0326",
+            "vertices": 17,
+            "triangles": 30
+        },
+        {
+            "name": "DragonBoatCollision_0327",
+            "vertices": 17,
+            "triangles": 30
+        },
+        {
+            "name": "DragonBoatCollision_0328",
+            "vertices": 18,
+            "triangles": 32
+        },
+        {
+            "name": "DragonBoatCollision_0329",
+            "vertices": 51,
+            "triangles": 98
+        },
+        {
+            "name": "DragonBoatCollision_0330",
+            "vertices": 65,
+            "triangles": 126
+        },
+        {
+            "name": "DragonBoatCollision_0331",
+            "vertices": 23,
+            "triangles": 42
+        },
+        {
+            "name": "DragonBoatCollision_0332",
+            "vertices": 20,
+            "triangles": 36
+        },
+        {
+            "name": "DragonBoatCollision_0333",
+            "vertices": 53,
+            "triangles": 102
+        },
+        {
+            "name": "DragonBoatCollision_0334",
+            "vertices": 17,
+            "triangles": 30
+        },
+        {
+            "name": "DragonBoatCollision_0335",
+            "vertices": 26,
+            "triangles": 48
+        },
+        {
+            "name": "DragonBoatCollision_0336",
+            "vertices": 57,
+            "triangles": 110
+        },
+        {
+            "name": "DragonBoatCollision_0337",
+            "vertices": 35,
+            "triangles": 66
+        },
+        {
+            "name": "DragonBoatCollision_0338",
+            "vertices": 120,
+            "triangles": 236
+        },
+        {
+            "name": "DragonBoatCollision_0339",
+            "vertices": 24,
+            "triangles": 44
+        },
+        {
+            "name": "DragonBoatCollision_0340",
+            "vertices": 29,
+            "triangles": 54
+        },
+        {
+            "name": "DragonBoatCollision_0341",
+            "vertices": 11,
+            "triangles": 18
+        },
+        {
+            "name": "DragonBoatCollision_0342",
+            "vertices": 37,
+            "triangles": 70
+        },
+        {
+            "name": "DragonBoatCollision_0343",
+            "vertices": 63,
+            "triangles": 122
+        },
+        {
+            "name": "DragonBoatCollision_0344",
+            "vertices": 24,
+            "triangles": 44
+        },
+        {
+            "name": "DragonBoatCollision_0345",
+            "vertices": 28,
+            "triangles": 52
+        },
+        {
+            "name": "DragonBoatCollision_0346",
+            "vertices": 12,
+            "triangles": 20
+        },
+        {
+            "name": "DragonBoatCollision_0347",
+            "vertices": 14,
+            "triangles": 24
+        },
+        {
+            "name": "DragonBoatCollision_0348",
+            "vertices": 12,
+            "triangles": 20
+        },
+        {
+            "name": "DragonBoatCollision_0349",
+            "vertices": 25,
+            "triangles": 46
+        },
+        {
+            "name": "DragonBoatCollision_0350",
+            "vertices": 43,
+            "triangles": 82
+        },
+        {
+            "name": "DragonBoatCollision_0351",
+            "vertices": 15,
+            "triangles": 26
+        },
+        {
+            "name": "DragonBoatCollision_0352",
+            "vertices": 42,
+            "triangles": 80
+        },
+        {
+            "name": "DragonBoatCollision_0353",
+            "vertices": 40,
+            "triangles": 76
+        },
+        {
+            "name": "DragonBoatCollision_0354",
+            "vertices": 21,
+            "triangles": 38
+        },
+        {
+            "name": "DragonBoatCollision_0355",
+            "vertices": 51,
+            "triangles": 98
+        },
+        {
+            "name": "DragonBoatCollision_0356",
+            "vertices": 28,
+            "triangles": 52
+        },
+        {
+            "name": "DragonBoatCollision_0357",
+            "vertices": 12,
+            "triangles": 20
+        },
+        {
+            "name": "DragonBoatCollision_0358",
+            "vertices": 10,
+            "triangles": 16
+        },
+        {
+            "name": "DragonBoatCollision_0359",
+            "vertices": 33,
+            "triangles": 62
+        },
+        {
+            "name": "DragonBoatCollision_0360",
+            "vertices": 38,
+            "triangles": 72
+        },
+        {
+            "name": "DragonBoatCollision_0361",
+            "vertices": 40,
+            "triangles": 76
+        },
+        {
+            "name": "DragonBoatCollision_0362",
+            "vertices": 40,
+            "triangles": 76
+        },
+        {
+            "name": "DragonBoatCollision_0363",
+            "vertices": 48,
+            "triangles": 92
+        },
+        {
+            "name": "DragonBoatCollision_0364",
+            "vertices": 23,
+            "triangles": 42
+        },
+        {
+            "name": "DragonBoatCollision_0365",
+            "vertices": 22,
+            "triangles": 40
+        },
+        {
+            "name": "DragonBoatCollision_0366",
+            "vertices": 11,
+            "triangles": 18
+        },
+        {
+            "name": "DragonBoatCollision_0367",
+            "vertices": 11,
+            "triangles": 18
+        },
+        {
+            "name": "DragonBoatCollision_0368",
+            "vertices": 11,
+            "triangles": 18
+        },
+        {
+            "name": "DragonBoatCollision_0369",
+            "vertices": 10,
+            "triangles": 16
+        },
+        {
+            "name": "DragonBoatCollision_0370",
+            "vertices": 14,
+            "triangles": 24
+        },
+        {
+            "name": "DragonBoatCollision_0371",
+            "vertices": 31,
+            "triangles": 58
+        },
+        {
+            "name": "DragonBoatCollision_0372",
+            "vertices": 10,
+            "triangles": 16
+        },
+        {
+            "name": "DragonBoatCollision_0373",
+            "vertices": 34,
+            "triangles": 64
+        },
+        {
+            "name": "DragonBoatCollision_0374",
+            "vertices": 23,
+            "triangles": 42
+        },
+        {
+            "name": "DragonBoatCollision_0375",
+            "vertices": 14,
+            "triangles": 24
+        },
+        {
+            "name": "DragonBoatCollision_0376",
+            "vertices": 34,
+            "triangles": 64
+        },
+        {
+            "name": "DragonBoatCollision_0377",
+            "vertices": 30,
+            "triangles": 56
+        },
+        {
+            "name": "DragonBoatCollision_0378",
+            "vertices": 23,
+            "triangles": 42
+        },
+        {
+            "name": "DragonBoatCollision_0379",
+            "vertices": 19,
+            "triangles": 34
+        },
+        {
+            "name": "DragonBoatCollision_0380",
+            "vertices": 40,
+            "triangles": 76
+        },
+        {
+            "name": "DragonBoatCollision_0381",
+            "vertices": 27,
+            "triangles": 50
+        },
+        {
+            "name": "DragonBoatCollision_0382",
+            "vertices": 16,
+            "triangles": 28
+        },
+        {
+            "name": "DragonBoatCollision_0383",
+            "vertices": 47,
+            "triangles": 90
+        },
+        {
+            "name": "DragonBoatCollision_0384",
+            "vertices": 42,
+            "triangles": 80
+        },
+        {
+            "name": "DragonBoatCollision_0385",
+            "vertices": 31,
+            "triangles": 58
+        },
+        {
+            "name": "DragonBoatCollision_0386",
+            "vertices": 13,
+            "triangles": 22
+        },
+        {
+            "name": "DragonBoatCollision_0387",
+            "vertices": 42,
+            "triangles": 80
+        },
+        {
+            "name": "DragonBoatCollision_0388",
+            "vertices": 43,
+            "triangles": 82
+        },
+        {
+            "name": "DragonBoatCollision_0389",
+            "vertices": 46,
+            "triangles": 88
+        },
+        {
+            "name": "DragonBoatCollision_0390",
+            "vertices": 26,
+            "triangles": 48
+        },
+        {
+            "name": "DragonBoatCollision_0391",
+            "vertices": 11,
+            "triangles": 18
+        },
+        {
+            "name": "DragonBoatCollision_0392",
+            "vertices": 25,
+            "triangles": 46
+        },
+        {
+            "name": "DragonBoatCollision_0393",
+            "vertices": 39,
+            "triangles": 74
+        },
+        {
+            "name": "DragonBoatCollision_0394",
+            "vertices": 66,
+            "triangles": 128
+        },
+        {
+            "name": "DragonBoatCollision_0395",
+            "vertices": 22,
+            "triangles": 40
+        },
+        {
+            "name": "DragonBoatCollision_0396",
+            "vertices": 31,
+            "triangles": 58
+        },
+        {
+            "name": "DragonBoatCollision_0397",
+            "vertices": 20,
+            "triangles": 36
+        },
+        {
+            "name": "DragonBoatCollision_0398",
+            "vertices": 34,
+            "triangles": 64
+        },
+        {
+            "name": "DragonBoatCollision_0399",
+            "vertices": 26,
+            "triangles": 48
+        },
+        {
+            "name": "DragonBoatCollision_0400",
+            "vertices": 38,
+            "triangles": 72
+        },
+        {
+            "name": "DragonBoatCollision_0401",
+            "vertices": 22,
+            "triangles": 40
+        },
+        {
+            "name": "DragonBoatCollision_0402",
+            "vertices": 57,
+            "triangles": 110
+        },
+        {
+            "name": "DragonBoatCollision_0403",
+            "vertices": 59,
+            "triangles": 114
+        },
+        {
+            "name": "DragonBoatCollision_0404",
+            "vertices": 48,
+            "triangles": 92
+        },
+        {
+            "name": "DragonBoatCollision_0405",
+            "vertices": 30,
+            "triangles": 56
+        },
+        {
+            "name": "DragonBoatCollision_0406",
+            "vertices": 46,
+            "triangles": 88
+        },
+        {
+            "name": "DragonBoatCollision_0407",
+            "vertices": 34,
+            "triangles": 64
+        },
+        {
+            "name": "DragonBoatCollision_0408",
+            "vertices": 41,
+            "triangles": 78
+        },
+        {
+            "name": "DragonBoatCollision_0409",
+            "vertices": 19,
+            "triangles": 34
+        },
+        {
+            "name": "DragonBoatCollision_0410",
+            "vertices": 32,
+            "triangles": 60
+        },
+        {
+            "name": "DragonBoatCollision_0411",
+            "vertices": 22,
+            "triangles": 40
+        },
+        {
+            "name": "DragonBoatCollision_0412",
+            "vertices": 12,
+            "triangles": 20
+        },
+        {
+            "name": "DragonBoatCollision_0413",
+            "vertices": 36,
+            "triangles": 68
+        },
+        {
+            "name": "DragonBoatCollision_0414",
+            "vertices": 26,
+            "triangles": 48
+        },
+        {
+            "name": "DragonBoatCollision_0415",
+            "vertices": 21,
+            "triangles": 38
+        },
+        {
+            "name": "DragonBoatCollision_0416",
+            "vertices": 22,
+            "triangles": 40
+        },
+        {
+            "name": "DragonBoatCollision_0417",
+            "vertices": 20,
+            "triangles": 36
+        },
+        {
+            "name": "DragonBoatCollision_0418",
+            "vertices": 24,
+            "triangles": 44
+        },
+        {
+            "name": "DragonBoatCollision_0419",
+            "vertices": 77,
+            "triangles": 150
+        },
+        {
+            "name": "DragonBoatCollision_0420",
+            "vertices": 92,
+            "triangles": 180
+        },
+        {
+            "name": "DragonBoatCollision_0421",
+            "vertices": 21,
+            "triangles": 38
+        },
+        {
+            "name": "DragonBoatCollision_0422",
+            "vertices": 19,
+            "triangles": 34
+        },
+        {
+            "name": "DragonBoatCollision_0423",
+            "vertices": 70,
+            "triangles": 136
+        },
+        {
+            "name": "DragonBoatCollision_0424",
+            "vertices": 31,
+            "triangles": 58
+        },
+        {
+            "name": "DragonBoatCollision_0425",
+            "vertices": 27,
+            "triangles": 50
+        },
+        {
+            "name": "DragonBoatCollision_0426",
+            "vertices": 8,
+            "triangles": 12
+        },
+        {
+            "name": "DragonBoatCollision_0427",
+            "vertices": 68,
+            "triangles": 132
+        },
+        {
+            "name": "DragonBoatCollision_0428",
+            "vertices": 8,
+            "triangles": 12
+        },
+        {
+            "name": "DragonBoatCollision_0429",
+            "vertices": 20,
+            "triangles": 36
+        },
+        {
+            "name": "DragonBoatCollision_0430",
+            "vertices": 14,
+            "triangles": 24
+        },
+        {
+            "name": "DragonBoatCollision_0431",
+            "vertices": 30,
+            "triangles": 56
+        },
+        {
+            "name": "DragonBoatCollision_0432",
+            "vertices": 21,
+            "triangles": 38
+        },
+        {
+            "name": "DragonBoatCollision_0433",
+            "vertices": 30,
+            "triangles": 56
+        },
+        {
+            "name": "DragonBoatCollision_0434",
+            "vertices": 13,
+            "triangles": 22
+        },
+        {
+            "name": "DragonBoatCollision_0435",
+            "vertices": 21,
+            "triangles": 38
+        },
+        {
+            "name": "DragonBoatCollision_0436",
+            "vertices": 72,
+            "triangles": 140
+        },
+        {
+            "name": "DragonBoatCollision_0437",
+            "vertices": 45,
+            "triangles": 86
+        },
+        {
+            "name": "DragonBoatCollision_0438",
+            "vertices": 31,
+            "triangles": 58
+        },
+        {
+            "name": "DragonBoatCollision_0439",
+            "vertices": 18,
+            "triangles": 32
+        },
+        {
+            "name": "DragonBoatCollision_0440",
+            "vertices": 37,
+            "triangles": 70
+        },
+        {
+            "name": "DragonBoatCollision_0441",
+            "vertices": 15,
+            "triangles": 26
+        },
+        {
+            "name": "DragonBoatCollision_0442",
+            "vertices": 39,
+            "triangles": 74
+        },
+        {
+            "name": "DragonBoatCollision_0443",
+            "vertices": 34,
+            "triangles": 64
+        },
+        {
+            "name": "DragonBoatCollision_0444",
+            "vertices": 12,
+            "triangles": 20
+        },
+        {
+            "name": "DragonBoatCollision_0445",
+            "vertices": 27,
+            "triangles": 50
+        },
+        {
+            "name": "DragonBoatCollision_0446",
+            "vertices": 17,
+            "triangles": 30
+        },
+        {
+            "name": "DragonBoatCollision_0447",
+            "vertices": 42,
+            "triangles": 80
+        },
+        {
+            "name": "DragonBoatCollision_0448",
+            "vertices": 18,
+            "triangles": 32
+        },
+        {
+            "name": "DragonBoatCollision_0449",
+            "vertices": 30,
+            "triangles": 56
+        },
+        {
+            "name": "DragonBoatCollision_0450",
+            "vertices": 15,
+            "triangles": 26
+        },
+        {
+            "name": "DragonBoatCollision_0451",
+            "vertices": 12,
+            "triangles": 20
+        },
+        {
+            "name": "DragonBoatCollision_0452",
+            "vertices": 10,
+            "triangles": 16
+        },
+        {
+            "name": "DragonBoatCollision_0453",
+            "vertices": 17,
+            "triangles": 30
+        },
+        {
+            "name": "DragonBoatCollision_0454",
+            "vertices": 27,
+            "triangles": 50
+        },
+        {
+            "name": "DragonBoatCollision_0455",
+            "vertices": 9,
+            "triangles": 14
+        },
+        {
+            "name": "DragonBoatCollision_0456",
+            "vertices": 23,
+            "triangles": 42
+        },
+        {
+            "name": "DragonBoatCollision_0457",
+            "vertices": 17,
+            "triangles": 30
+        },
+        {
+            "name": "DragonBoatCollision_0458",
+            "vertices": 30,
+            "triangles": 56
+        },
+        {
+            "name": "DragonBoatCollision_0459",
+            "vertices": 31,
+            "triangles": 58
+        },
+        {
+            "name": "DragonBoatCollision_0460",
+            "vertices": 35,
+            "triangles": 66
+        },
+        {
+            "name": "DragonBoatCollision_0461",
+            "vertices": 56,
+            "triangles": 108
+        },
+        {
+            "name": "DragonBoatCollision_0462",
+            "vertices": 12,
+            "triangles": 20
+        },
+        {
+            "name": "DragonBoatCollision_0463",
+            "vertices": 14,
+            "triangles": 24
+        },
+        {
+            "name": "DragonBoatCollision_0464",
+            "vertices": 16,
+            "triangles": 28
+        },
+        {
+            "name": "DragonBoatCollision_0465",
+            "vertices": 14,
+            "triangles": 24
+        },
+        {
+            "name": "DragonBoatCollision_0466",
+            "vertices": 73,
+            "triangles": 142
+        },
+        {
+            "name": "DragonBoatCollision_0467",
+            "vertices": 28,
+            "triangles": 52
+        },
+        {
+            "name": "DragonBoatCollision_0468",
+            "vertices": 17,
+            "triangles": 30
+        },
+        {
+            "name": "DragonBoatCollision_0469",
+            "vertices": 14,
+            "triangles": 24
+        },
+        {
+            "name": "DragonBoatCollision_0470",
+            "vertices": 14,
+            "triangles": 24
+        },
+        {
+            "name": "DragonBoatCollision_0471",
+            "vertices": 12,
+            "triangles": 20
+        },
+        {
+            "name": "DragonBoatCollision_0472",
+            "vertices": 23,
+            "triangles": 42
+        },
+        {
+            "name": "DragonBoatCollision_0473",
+            "vertices": 20,
+            "triangles": 36
+        },
+        {
+            "name": "DragonBoatCollision_0474",
+            "vertices": 38,
+            "triangles": 72
+        },
+        {
+            "name": "DragonBoatCollision_0475",
+            "vertices": 18,
+            "triangles": 32
+        },
+        {
+            "name": "DragonBoatCollision_0476",
+            "vertices": 59,
+            "triangles": 114
+        },
+        {
+            "name": "DragonBoatCollision_0477",
+            "vertices": 33,
+            "triangles": 62
+        },
+        {
+            "name": "DragonBoatCollision_0478",
+            "vertices": 14,
+            "triangles": 24
+        },
+        {
+            "name": "DragonBoatCollision_0479",
+            "vertices": 28,
+            "triangles": 52
+        },
+        {
+            "name": "DragonBoatCollision_0480",
+            "vertices": 70,
+            "triangles": 136
+        },
+        {
+            "name": "DragonBoatCollision_0481",
+            "vertices": 30,
+            "triangles": 56
+        },
+        {
+            "name": "DragonBoatCollision_0482",
+            "vertices": 15,
+            "triangles": 26
+        },
+        {
+            "name": "DragonBoatCollision_0483",
+            "vertices": 14,
+            "triangles": 24
+        },
+        {
+            "name": "DragonBoatCollision_0484",
+            "vertices": 35,
+            "triangles": 66
+        },
+        {
+            "name": "DragonBoatCollision_0485",
+            "vertices": 23,
+            "triangles": 42
+        },
+        {
+            "name": "DragonBoatCollision_0486",
+            "vertices": 17,
+            "triangles": 30
+        },
+        {
+            "name": "DragonBoatCollision_0487",
+            "vertices": 14,
+            "triangles": 24
+        },
+        {
+            "name": "DragonBoatCollision_0488",
+            "vertices": 21,
+            "triangles": 38
+        },
+        {
+            "name": "DragonBoatCollision_0489",
+            "vertices": 25,
+            "triangles": 46
+        },
+        {
+            "name": "DragonBoatCollision_0490",
+            "vertices": 24,
+            "triangles": 44
+        },
+        {
+            "name": "DragonBoatCollision_0491",
+            "vertices": 30,
+            "triangles": 56
+        },
+        {
+            "name": "DragonBoatCollision_0492",
+            "vertices": 12,
+            "triangles": 20
+        },
+        {
+            "name": "DragonBoatCollision_0493",
+            "vertices": 25,
+            "triangles": 46
+        },
+        {
+            "name": "DragonBoatCollision_0494",
+            "vertices": 26,
+            "triangles": 48
+        },
+        {
+            "name": "DragonBoatCollision_0495",
+            "vertices": 22,
+            "triangles": 40
+        },
+        {
+            "name": "DragonBoatCollision_0496",
+            "vertices": 40,
+            "triangles": 76
+        },
+        {
+            "name": "DragonBoatCollision_0497",
+            "vertices": 31,
+            "triangles": 58
+        },
+        {
+            "name": "DragonBoatCollision_0498",
+            "vertices": 54,
+            "triangles": 104
+        },
+        {
+            "name": "DragonBoatCollision_0499",
+            "vertices": 22,
+            "triangles": 40
+        },
+        {
+            "name": "DragonBoatCollision_0500",
+            "vertices": 15,
+            "triangles": 26
+        },
+        {
+            "name": "DragonBoatCollision_0501",
+            "vertices": 53,
+            "triangles": 102
+        },
+        {
+            "name": "DragonBoatCollision_0502",
+            "vertices": 13,
+            "triangles": 22
+        },
+        {
+            "name": "DragonBoatCollision_0503",
+            "vertices": 14,
+            "triangles": 24
+        },
+        {
+            "name": "DragonBoatCollision_0504",
+            "vertices": 27,
+            "triangles": 50
+        },
+        {
+            "name": "DragonBoatCollision_0505",
+            "vertices": 35,
+            "triangles": 66
+        },
+        {
+            "name": "DragonBoatCollision_0506",
+            "vertices": 13,
+            "triangles": 22
+        },
+        {
+            "name": "DragonBoatCollision_0507",
+            "vertices": 23,
+            "triangles": 42
+        },
+        {
+            "name": "DragonBoatCollision_0508",
+            "vertices": 43,
+            "triangles": 82
+        },
+        {
+            "name": "DragonBoatCollision_0509",
+            "vertices": 33,
+            "triangles": 62
+        },
+        {
+            "name": "DragonBoatCollision_0510",
+            "vertices": 32,
+            "triangles": 60
+        },
+        {
+            "name": "DragonBoatCollision_0511",
+            "vertices": 15,
+            "triangles": 26
+        },
+        {
+            "name": "DragonBoatCollision_0512",
+            "vertices": 18,
+            "triangles": 32
+        },
+        {
+            "name": "DragonBoatCollision_0513",
+            "vertices": 57,
+            "triangles": 110
+        },
+        {
+            "name": "DragonBoatCollision_0514",
+            "vertices": 32,
+            "triangles": 60
+        },
+        {
+            "name": "DragonBoatCollision_0515",
+            "vertices": 44,
+            "triangles": 84
+        },
+        {
+            "name": "DragonBoatCollision_0516",
+            "vertices": 14,
+            "triangles": 24
+        },
+        {
+            "name": "DragonBoatCollision_0517",
+            "vertices": 22,
+            "triangles": 40
+        },
+        {
+            "name": "DragonBoatCollision_0518",
+            "vertices": 8,
+            "triangles": 12
+        },
+        {
+            "name": "DragonBoatCollision_0519",
+            "vertices": 21,
+            "triangles": 38
+        },
+        {
+            "name": "DragonBoatCollision_0520",
+            "vertices": 8,
+            "triangles": 12
+        },
+        {
+            "name": "DragonBoatCollision_0521",
+            "vertices": 8,
+            "triangles": 12
+        },
+        {
+            "name": "DragonBoatCollision_0522",
+            "vertices": 13,
+            "triangles": 22
+        }
+    ]
+}

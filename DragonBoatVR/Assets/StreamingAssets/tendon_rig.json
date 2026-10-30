@@ -1,0 +1,92 @@
+{
+  "provenance": "User-confirmed 2026-10-21: three motor-connected cords: one on shaft 0.46 m above the blade lowest edge and two at opposite blade sides. The centre cord in the photo is excluded. Blade half-height 0.21 m and half-width 0.085 m below use the existing visual model, not physical measurements. Side attachment heights, normal offsets, anchors, motor IDs and independent-channel mapping remain assumed.",
+  "measured": false,
+  "geometryAssumed": true,
+  "charLengthM": 0.6000000238418579,
+  "tendons": [
+    {
+      "name": "Shaft_46cm",
+      "motorId": 1,
+      "anchorLocal": {
+        "x": 1.399999976158142,
+        "y": 0.5,
+        "z": 1.600000023841858
+      },
+      "attachLocal": {
+        "x": 0,
+        "y": 0.25,
+        "z": 0
+      },
+      "maxTensionN": 300.0,
+      "preTensionN": 5.0,
+      "enabled": true,
+      "attachmentRegion": "shaft",
+      "attachmentFromBladeTip": {
+        "x": 0,
+        "y": 0.46,
+        "z": 0
+      },
+      "heightFromTipConfirmed": true,
+      "lateralOffsetConfirmed": false
+    },
+    {
+      "name": "BladeSide_A",
+      "motorId": 2,
+      "anchorLocal": {
+        "x": 1.399999976158142,
+        "y": 0.5,
+        "z": -1.2000000476837158
+      },
+      "attachLocal": {
+        "x": -0.085,
+        "y": -0.21,
+        "z": 0
+      },
+      "maxTensionN": 300.0,
+      "preTensionN": 5.0,
+      "enabled": true,
+      "attachmentRegion": "flat blade lateral side",
+      "attachmentFromBladeTip": {
+        "x": -0.085,
+        "y": 0,
+        "z": 0
+      },
+      "heightFromTipConfirmed": false,
+      "lateralOffsetConfirmed": false
+    },
+    {
+      "name": "BladeSide_B",
+      "motorId": 3,
+      "anchorLocal": {
+        "x": 0.6000000238418579,
+        "y": -1.399999976158142,
+        "z": 0.20000000298023224
+      },
+      "attachLocal": {
+        "x": 0.085,
+        "y": -0.21,
+        "z": 0
+      },
+      "maxTensionN": 300.0,
+      "preTensionN": 5.0,
+      "enabled": true,
+      "attachmentRegion": "flat blade lateral side",
+      "attachmentFromBladeTip": {
+        "x": 0.085,
+        "y": 0,
+        "z": 0
+      },
+      "heightFromTipConfirmed": false,
+      "lateralOffsetConfirmed": false
+    }
+  ],
+  "attachmentCoordinatesFromBladeTip": true,
+  "bladeTipLocal": {
+    "x": 0.0,
+    "y": -0.21,
+    "z": 0.0
+  },
+  "bladeTipOffsetMeasured": false,
+  "motorMappingConfirmed": false,
+  "excludedConnections": "Photo centre cord: not connected to a motor; excluded per user instruction."
+}

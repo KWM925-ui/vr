@@ -1,0 +1,5 @@
+Crest Ocean System, Copyright (c) 2019 Wave Harmonic and contributors. MIT license in Crest-LICENSE.txt.
+Source: https://github.com/wave-harmonic/crest/tree/db0658ff0b2e93e4a9e28cc2867509658b0ecc00
+CrestFoam.png is the unchanged crest/Assets/Crest/Crest/Textures/foam.png.
+CrestFoamLighting.hlsl adapts WhiteFoamTexture, BubbleFoamTexture and the two-phase flow/black-point fade in Shaders/OceanFoam.hlsl for this URP surface.
+This is a texture and shading integration, not the complete Crest water package.

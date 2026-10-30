@@ -1,0 +1,17 @@
+Water Paddle Splashing rowing in a canoe, by egeexyz.
+Source: https://freesound.org/people/egeexyz/sounds/702386/
+Published: 2023-09-11. License: CC0 1.0 Universal (Egeexyz-CC0.txt).
+The author describes a Tascam DR-05X recording while paddling a kayak/canoe.
+
+Included media is the public high-quality MP3 preview, not a claimed copy of
+the login-only original: https://cdn.freesound.org/previews/702/702386_12034339-hq.mp3
+193032 bytes; SHA256 b78364529e88a882340fecdb67fecb05ca9fb845136e4a942f0b5aeebb647683.
+Retrieved 2026-10-28. Source page and download record are retained in
+tmp/quality_audio_20261028/research at the workspace root.
+
+Unity decodes and downmixes the recording. The runtime selects contiguous
+water excerpts with short edge fades for entry, draining and stroke motion.
+It does not synthesize droplets from repeated river-noise grains. Clip and
+event loudness remain illustrative; no calibrated sound-level claim is made.
+The extraction windows avoid the largest source transients. The source's
+recorded context is verified, but subjective listening has not been accepted.

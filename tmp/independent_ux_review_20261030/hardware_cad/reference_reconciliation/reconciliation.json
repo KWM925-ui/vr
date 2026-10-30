@@ -1,0 +1,2073 @@
+{
+  "scope": "DESIGN_REFERENCE_RECONCILIATION_NOT_PHYSICAL_HARDWARE_CALIBRATION",
+  "user_confirmations": {
+    "cad_layout": "应当就是工作位置，请继续核查差异",
+    "missing_files": "没有就没了，应该也没什么影响",
+    "action": "Continue with available geometry; do not invent missing geometry or request files again."
+  },
+  "reference_state": {
+    "value": 1,
+    "meaning": "swExternalReferenceLocked",
+    "means_broken": false
+  },
+  "assembly_is_exploded": false,
+  "missing_instances": [
+    {
+      "name": "1.59 船桨包角-2",
+      "source": "C:\\Users\\19334\\Desktop\\10月11日修改\\1.59 船桨包角.SLDPRT",
+      "configuration": "默认"
+    },
+    {
+      "name": "1.69 万向轮固定板()修改SLDPRT-1",
+      "source": "C:\\Users\\19334\\Desktop\\1.69 万向轮固定板()修改SLDPRT.SLDPRT",
+      "configuration": "默认"
+    },
+    {
+      "name": "装配体2-1",
+      "source": "D:\\zhuomian\\文件文\\文件\\第二\\第二\\装配体2.SLDASM",
+      "configuration": "默认"
+    },
+    {
+      "name": "装配体2-2",
+      "source": "D:\\zhuomian\\文件文\\文件\\第二\\第二\\装配体2.SLDASM",
+      "configuration": "默认"
+    },
+    {
+      "name": "装配体2-3",
+      "source": "D:\\zhuomian\\文件文\\文件\\第二\\第二\\装配体2.SLDASM",
+      "configuration": "默认"
+    },
+    {
+      "name": "1.33 船桨固定板-3",
+      "source": "C:\\Users\\19334\\Desktop\\10月11日修改\\1.33 船桨固定板.SLDPRT",
+      "configuration": "默认"
+    },
+    {
+      "name": "1.57 30合页-1",
+      "source": "C:\\Users\\19334\\Desktop\\10月11日修改\\1.57 30合页.SLDPRT",
+      "configuration": "默认"
+    },
+    {
+      "name": "1.57 30合页-3",
+      "source": "C:\\Users\\19334\\Desktop\\10月11日修改\\1.57 30合页.SLDPRT",
+      "configuration": "默认"
+    },
+    {
+      "name": "1.49 90mm欧标铝型材-AOB05-3090-L90-打孔-2",
+      "source": "C:\\Users\\19334\\Desktop\\10月11日修改\\1.49 90mm欧标铝型材-AOB05-3090-L90-打孔.SLDPRT",
+      "configuration": "Default"
+    },
+    {
+      "name": "1.57 30合页-2",
+      "source": "C:\\Users\\19334\\Desktop\\10月11日修改\\1.57 30合页.SLDPRT",
+      "configuration": "默认"
+    },
+    {
+      "name": "1.57 30合页-4",
+      "source": "C:\\Users\\19334\\Desktop\\10月11日修改\\1.57 30合页.SLDPRT",
+      "configuration": "默认"
+    },
+    {
+      "name": "1.47 510mm欧标铝型材-AOB05-3090-L510-2",
+      "source": "C:\\Users\\19334\\Desktop\\10月11日修改\\1.47 510mm欧标铝型材-AOB05-3090-L510.SLDPRT",
+      "configuration": "Default"
+    },
+    {
+      "name": "1.48 500mm欧标铝型材-AOB03-3030-L500-斜切-2",
+      "source": "C:\\Users\\19334\\Desktop\\10月11日修改\\1.48 500mm欧标铝型材-AOB03-3030-L500-斜切.SLDPRT",
+      "configuration": "Default"
+    },
+    {
+      "name": "1.47 510mm欧标铝型材-AOB05-3090-L510-1",
+      "source": "C:\\Users\\19334\\Desktop\\10月11日修改\\1.47 510mm欧标铝型材-AOB05-3090-L510.SLDPRT",
+      "configuration": "Default"
+    },
+    {
+      "name": "1.48 500mm欧标铝型材-AOB03-3030-L500-斜切-1",
+      "source": "C:\\Users\\19334\\Desktop\\10月11日修改\\1.48 500mm欧标铝型材-AOB03-3030-L500-斜切.SLDPRT",
+      "configuration": "Default"
+    },
+    {
+      "name": "1.49 90mm欧标铝型材-AOB05-3090-L90-打孔-1",
+      "source": "C:\\Users\\19334\\Desktop\\10月11日修改\\1.49 90mm欧标铝型材-AOB05-3090-L90-打孔.SLDPRT",
+      "configuration": "Default"
+    }
+  ],
+  "cords": [
+    {
+      "component": "细线1-2",
+      "source_file": "细线1.SLDPRT",
+      "references": [
+        {
+          "model_path": "C:\\Users\\xqz34\\Desktop\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "C:\\Users\\xqz34\\Desktop\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "feature": "3D草图1",
+          "data_type": "直线",
+          "status": 1,
+          "referenced_entity_description": "草图绘制实体 ← 2.1 铝型材框架",
+          "owner_component": "细线1<2>"
+        },
+        {
+          "model_path": "C:\\Users\\xqz34\\Desktop\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "",
+          "feature": "3D草图1",
+          "data_type": "圆弧",
+          "status": 1,
+          "referenced_entity_description": "草图绘制实体 ← 装配体1<2>/滚轮<1>",
+          "owner_component": "细线1<2>"
+        },
+        {
+          "model_path": "C:\\Users\\xqz34\\Desktop\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "C:\\Users\\xqz34\\Desktop\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "feature": "3D草图1",
+          "data_type": "圆弧",
+          "status": 1,
+          "referenced_entity_description": "草图绘制实体 ← 2.1 铝型材框架",
+          "owner_component": "细线1<2>"
+        },
+        {
+          "model_path": "C:\\Users\\xqz34\\Desktop\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "",
+          "feature": "草图9  ←  扫描1",
+          "data_type": "样条曲线",
+          "status": 1,
+          "referenced_entity_description": "边线 ← 1.59 船桨包角<2>",
+          "owner_component": "细线1<2>"
+        },
+        {
+          "model_path": "C:\\Users\\xqz34\\Desktop\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "",
+          "feature": "3D草图2  ←  扫描2",
+          "data_type": "直线",
+          "status": 1,
+          "referenced_entity_description": "草图绘制实体 ← 装配体2<1>/滑轮<1>",
+          "owner_component": "细线1<2>"
+        },
+        {
+          "model_path": "C:\\Users\\xqz34\\Desktop\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "",
+          "feature": "3D草图2  ←  扫描2",
+          "data_type": "圆弧",
+          "status": 1,
+          "referenced_entity_description": "草图绘制实体 ← 1.18 万向轮<2>",
+          "owner_component": "细线1<2>"
+        },
+        {
+          "model_path": "C:\\Users\\xqz34\\Desktop\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "",
+          "feature": "3D草图2  ←  扫描2",
+          "data_type": "圆弧",
+          "status": 1,
+          "referenced_entity_description": "草图绘制实体 ← 装配体2<1>/滑轮<1>",
+          "owner_component": "细线1<2>"
+        }
+      ],
+      "best_matching_sketch": "3D草图2",
+      "sketch_native_axis_checks": [
+        {
+          "feature": "3D草图1",
+          "lines": [
+            {
+              "segment_index": 3,
+              "length_m": 0.07324963008409884,
+              "max_endpoint_distance_to_native_axis_m": 0.004068009581824193,
+              "axis_parallel_abs_dot": 0.9980527182084019,
+              "matches_final_axis": false
+            },
+            {
+              "segment_index": 4,
+              "length_m": 0.5091692493236927,
+              "max_endpoint_distance_to_native_axis_m": 0.0125679645890979,
+              "axis_parallel_abs_dot": 0.9996884138419782,
+              "matches_final_axis": false
+            },
+            {
+              "segment_index": 5,
+              "length_m": 1.149941664281943,
+              "max_endpoint_distance_to_native_axis_m": 0.001339015726103627,
+              "axis_parallel_abs_dot": 0.9999993220621404,
+              "matches_final_axis": false
+            }
+          ],
+          "matched_length_m": 0
+        },
+        {
+          "feature": "3D草图2",
+          "lines": [
+            {
+              "segment_index": 2,
+              "length_m": 0.5044818817607708,
+              "max_endpoint_distance_to_native_axis_m": 6.060841803161227e-17,
+              "axis_parallel_abs_dot": 1.0,
+              "matches_final_axis": true
+            },
+            {
+              "segment_index": 3,
+              "length_m": 1.1490645259677752,
+              "max_endpoint_distance_to_native_axis_m": 2.599367615191246e-15,
+              "axis_parallel_abs_dot": 1.0,
+              "matches_final_axis": true
+            },
+            {
+              "segment_index": 4,
+              "length_m": 0.08820232913073048,
+              "max_endpoint_distance_to_native_axis_m": 4.612647915571109e-18,
+              "axis_parallel_abs_dot": 1.0000000000000002,
+              "matches_final_axis": true
+            }
+          ],
+          "matched_length_m": 1.7417487368592766
+        }
+      ],
+      "arcs": [
+        {
+          "segment_index": 0,
+          "radius_m": 0.017500000000000848,
+          "center_local_m": [
+            0.37609023130687086,
+            0.10714960646010202,
+            0.9712581429632922
+          ],
+          "center_assembly_m": [
+            0.36811003875809845,
+            0.10553344949873847,
+            0.9762630376439551
+          ],
+          "axis_assembly": [
+            5.085582395052461e-16,
+            -0.9659258262890691,
+            0.25881904510251774
+          ],
+          "start_assembly_m": [
+            0.37778387698799326,
+            0.1017590650535559,
+            0.962176843127271
+          ],
+          "end_assembly_m": [
+            0.38453779079107786,
+            0.10709451594475522,
+            0.9820890169345163
+          ]
+        },
+        {
+          "segment_index": 1,
+          "radius_m": 0.009749999999999986,
+          "center_local_m": [
+            0.024090231269352017,
+            0.10714960646009894,
+            0.6052581429993757
+          ],
+          "center_assembly_m": [
+            0.01611003875809698,
+            0.10553344949873539,
+            0.6102630376439563
+          ],
+          "axis_assembly": [
+            -6.748083756084504e-30,
+            -1.0,
+            -2.0194839173657902e-28
+          ],
+          "start_assembly_m": [
+            0.00949669172990058,
+            0.10553344949873539,
+            0.6174272641259043
+          ],
+          "end_assembly_m": [
+            0.006362176448522517,
+            0.10553344949873539,
+            0.6100588798775657
+          ]
+        }
+      ],
+      "nearest_visible_guide_at_last_span": {
+        "component": "1.12 防跳线导轮-M5-2",
+        "surface_distance_m": 0.32094611083282126,
+        "closest_mesh_point_m": [
+          0.0638974161837493,
+          0.10339960652329788,
+          0.9707510862192623
+        ],
+        "api_component_box_distance_lower_bound_m": 0.3166198640678529
+      },
+      "this_nearest_guide_is_not_automatically_the_referenced_guide": true,
+      "full_external_reference_statuses": [
+        1
+      ],
+      "motor_side_missing_pulley": {
+        "component": "装配体2-1",
+        "arc_center_assembly_m": [
+          0.01611003875809698,
+          0.10553344949873539,
+          0.6102630376439563
+        ],
+        "implied_center_in_missing_subassembly_frame_m": [
+          -0.0268844793246037,
+          0.0630647206929919,
+          0.00626303764395374
+        ],
+        "direct_reference_evidence": [
+          {
+            "model_path": "C:\\Users\\xqz34\\Desktop\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+            "component_path": "",
+            "feature": "3D草图2  ←  扫描2",
+            "data_type": "直线",
+            "status": 1,
+            "referenced_entity_description": "草图绘制实体 ← 装配体2<1>/滑轮<1>",
+            "owner_component": "细线1<2>"
+          },
+          {
+            "model_path": "C:\\Users\\xqz34\\Desktop\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+            "component_path": "",
+            "feature": "3D草图2  ←  扫描2",
+            "data_type": "圆弧",
+            "status": 1,
+            "referenced_entity_description": "草图绘制实体 ← 装配体2<1>/滑轮<1>",
+            "owner_component": "细线1<2>"
+          }
+        ],
+        "interpretation": "Radius and stored references identify the motor-side bend; absent part is not automatically the final guide."
+      },
+      "paddle_side_bend": {
+        "segment_index": 0,
+        "radius_m": 0.017500000000000848,
+        "center_local_m": [
+          0.37609023130687086,
+          0.10714960646010202,
+          0.9712581429632922
+        ],
+        "center_assembly_m": [
+          0.36811003875809845,
+          0.10553344949873847,
+          0.9762630376439551
+        ],
+        "axis_assembly": [
+          5.085582395052461e-16,
+          -0.9659258262890691,
+          0.25881904510251774
+        ],
+        "start_assembly_m": [
+          0.37778387698799326,
+          0.1017590650535559,
+          0.962176843127271
+        ],
+        "end_assembly_m": [
+          0.38453779079107786,
+          0.10709451594475522,
+          0.9820890169345163
+        ]
+      },
+      "explicit_existing_guide_review": {
+        "component": "1.18 万向轮-2",
+        "guide_wheel_center_assembly_m": [
+          -0.13009302077919185,
+          0.10694960634820375,
+          0.9700000000000034
+        ],
+        "guide_axis_assembly": [
+          -4.2857166644436825e-16,
+          -1.0,
+          4.746203430272652e-15
+        ],
+        "arc_center_to_guide_axis_m": 0.49824242510332895,
+        "arc_center_to_guide_center_m": 0.4982444376739881,
+        "guide_minus_arc_center_m": [
+          -0.49820305953729027,
+          0.0014161568494652776,
+          -0.006263037643951641
+        ],
+        "last_straight_span_endpoint_to_named_guide": {
+          "component": "1.18 万向轮-2",
+          "surface_distance_m": 0.49093213666151575,
+          "nearest_point_m": [
+            -0.1060930205705756,
+            0.11494960672818334,
+            0.9700000000000033
+          ],
+          "aabb_lower_bound_m": 0.490724919486482
+        },
+        "direct_reference_evidence": [
+          {
+            "model_path": "C:\\Users\\xqz34\\Desktop\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+            "component_path": "",
+            "feature": "3D草图2  ←  扫描2",
+            "data_type": "圆弧",
+            "status": 1,
+            "referenced_entity_description": "草图绘制实体 ← 1.18 万向轮<2>",
+            "owner_component": "细线1<2>"
+          }
+        ],
+        "assignment_basis": "Only existing-guide arc reference in final matching sketch; the other 9.75mm bend names the missing motor-side pulley.",
+        "correction_applied": false
+      },
+      "drawn_free_span_paddle_endpoint": {
+        "assembly_m": [
+          0.009020322040932489,
+          0.5133994009615914,
+          1.9895032239082489
+        ],
+        "paddle_part_local_m": [
+          -0.024215465256246235,
+          -1.1948866571798735,
+          -0.0034967760917574697
+        ],
+        "height_above_cad_tip_m": 0.005113342820126432,
+        "scope": "Approximate end of final long cylindrical span, NOT verified physical knot/hole/attachment location.",
+        "user_confirmed_shaft_height_m": null,
+        "user_confirmed_geometry_overridden": false
+      },
+      "entity_read_matching_feature": "3D草图2",
+      "entity_read_saved_features": [
+        {
+          "name": "3D草图1",
+          "type": "3DProfileFeature",
+          "depth": 0,
+          "suppressed": false,
+          "parents": [
+            "前视基准面"
+          ]
+        },
+        {
+          "name": "扫描1",
+          "type": "Sweep",
+          "depth": 0,
+          "suppressed": false,
+          "parents": [
+            "草图9",
+            "基准面2",
+            "3D草图1"
+          ]
+        },
+        {
+          "name": "3D草图2",
+          "type": "3DProfileFeature",
+          "depth": 0,
+          "suppressed": false,
+          "parents": [
+            "前视基准面",
+            "3D草图1"
+          ]
+        },
+        {
+          "name": "扫描2",
+          "type": "Sweep",
+          "depth": 0,
+          "suppressed": false,
+          "parents": [
+            "3D草图2",
+            "前视基准面",
+            "扫描1",
+            "3D草图1"
+          ]
+        },
+        {
+          "name": "圆角1",
+          "type": "Fillet",
+          "depth": 0,
+          "suppressed": false,
+          "parents": [
+            "扫描2"
+          ]
+        }
+      ],
+      "arc_entity_relations": [
+        {
+          "type": 1,
+          "id": [
+            1,
+            2
+          ],
+          "name": "圆弧2",
+          "length_m": 0.023396803712005632,
+          "construction": false,
+          "start": [
+            0.3857640695353218,
+            0.10337522201491946,
+            0.9571719484456165
+          ],
+          "end": [
+            0.3925179833404475,
+            0.10871067290611877,
+            0.9770841222521695
+          ],
+          "center": [
+            0.37609023130687086,
+            0.10714960646010202,
+            0.9712581429632922
+          ],
+          "circle": [
+            0.37609023130687086,
+            0.10714960646010202,
+            0.9712581429632922,
+            2.6531158222755316e-11,
+            -0.9659258262890691,
+            0.25881904510251774,
+            0.017500000000000848
+          ],
+          "relations": [
+            {
+              "type": 32,
+              "suppressed": false,
+              "entity_types": [
+                4,
+                4
+              ],
+              "entities": [
+                {
+                  "type": 1,
+                  "id": [
+                    0,
+                    1
+                  ],
+                  "name": "圆弧1",
+                  "length_m": 0.10995574287564268,
+                  "construction": false,
+                  "start": [
+                    0.3812067361378617,
+                    0.10281818349420836,
+                    0.9550930523849819
+                  ],
+                  "end": [
+                    0.3812067361378617,
+                    0.10281818349420836,
+                    0.9550930523849819
+                  ],
+                  "center": [
+                    0.37609023130687086,
+                    0.10714960646010202,
+                    0.9712581429632922
+                  ],
+                  "circle": [
+                    0.37609023130687086,
+                    0.10714960646010202,
+                    0.9712581429632922,
+                    2.6531158222756628e-11,
+                    -0.9659258262890692,
+                    0.25881904510251785,
+                    0.017499999999999988
+                  ],
+                  "owning_sketch_error": "'<win32com.gen_py.SldWorks 2024 Type Library.ISketch instance at 0x2150386830944>' object has no attribute 'GetFeature'",
+                  "entity_kind": "sketch_segment"
+                },
+                {
+                  "type": 1,
+                  "id": [
+                    1,
+                    2
+                  ],
+                  "name": "圆弧2",
+                  "length_m": 0.023396803712005632,
+                  "construction": false,
+                  "start": [
+                    0.3857640695353218,
+                    0.10337522201491946,
+                    0.9571719484456165
+                  ],
+                  "end": [
+                    0.3925179833404475,
+                    0.10871067290611877,
+                    0.9770841222521695
+                  ],
+                  "center": [
+                    0.37609023130687086,
+                    0.10714960646010202,
+                    0.9712581429632922
+                  ],
+                  "circle": [
+                    0.37609023130687086,
+                    0.10714960646010202,
+                    0.9712581429632922,
+                    2.6531158222755316e-11,
+                    -0.9659258262890691,
+                    0.25881904510251774,
+                    0.017500000000000848
+                  ],
+                  "owning_sketch_error": "'<win32com.gen_py.SldWorks 2024 Type Library.ISketch instance at 0x2150386839264>' object has no attribute 'GetFeature'",
+                  "entity_kind": "sketch_segment"
+                }
+              ],
+              "definition_entities": [
+                {
+                  "type": 1,
+                  "id": [
+                    0,
+                    1
+                  ],
+                  "name": "圆弧1",
+                  "length_m": 0.10995574287564268,
+                  "construction": false,
+                  "start": [
+                    0.3812067361378617,
+                    0.10281818349420836,
+                    0.9550930523849819
+                  ],
+                  "end": [
+                    0.3812067361378617,
+                    0.10281818349420836,
+                    0.9550930523849819
+                  ],
+                  "center": [
+                    0.37609023130687086,
+                    0.10714960646010202,
+                    0.9712581429632922
+                  ],
+                  "circle": [
+                    0.37609023130687086,
+                    0.10714960646010202,
+                    0.9712581429632922,
+                    2.6531158222756628e-11,
+                    -0.9659258262890692,
+                    0.25881904510251785,
+                    0.017499999999999988
+                  ],
+                  "owning_sketch_error": "'<win32com.gen_py.SldWorks 2024 Type Library.ISketch instance at 0x2150386830944>' object has no attribute 'GetFeature'",
+                  "entity_kind": "sketch_segment"
+                },
+                {
+                  "type": 1,
+                  "id": [
+                    1,
+                    2
+                  ],
+                  "name": "圆弧2",
+                  "length_m": 0.023396803712005632,
+                  "construction": false,
+                  "start": [
+                    0.3857640695353218,
+                    0.10337522201491946,
+                    0.9571719484456165
+                  ],
+                  "end": [
+                    0.3925179833404475,
+                    0.10871067290611877,
+                    0.9770841222521695
+                  ],
+                  "center": [
+                    0.37609023130687086,
+                    0.10714960646010202,
+                    0.9712581429632922
+                  ],
+                  "circle": [
+                    0.37609023130687086,
+                    0.10714960646010202,
+                    0.9712581429632922,
+                    2.6531158222755316e-11,
+                    -0.9659258262890691,
+                    0.25881904510251774,
+                    0.017500000000000848
+                  ],
+                  "owning_sketch_error": "'<win32com.gen_py.SldWorks 2024 Type Library.ISketch instance at 0x2150386839264>' object has no attribute 'GetFeature'",
+                  "entity_kind": "sketch_segment"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "id": [
+            5,
+            6
+          ],
+          "name": "圆弧6",
+          "length_m": 0.008251439078169942,
+          "construction": false,
+          "start": [
+            0.01747688424189,
+            0.10714960646009894,
+            0.6124223694820017
+          ],
+          "end": [
+            0.014342368959756626,
+            0.10714960646009894,
+            0.6050539852339843
+          ],
+          "center": [
+            0.024090231269352017,
+            0.10714960646009894,
+            0.6052581429993757
+          ],
+          "circle": [
+            0.024090231269352017,
+            0.10714960646009894,
+            0.6052581429993757,
+            0.0,
+            -1.0,
+            0.0,
+            0.009749999999999986
+          ],
+          "relations": [
+            {
+              "type": 32,
+              "suppressed": false,
+              "entity_types": [
+                4,
+                4
+              ],
+              "entities": [
+                {
+                  "type": 1,
+                  "id": [
+                    4,
+                    5
+                  ],
+                  "name": "圆弧5",
+                  "length_m": 0.06126105674500098,
+                  "construction": false,
+                  "start": [
+                    0.027974556493860464,
+                    0.10714960646009894,
+                    0.5963152957150794
+                  ],
+                  "end": [
+                    0.027974556493860464,
+                    0.10714960646009894,
+                    0.5963152957150794
+                  ],
+                  "center": [
+                    0.024090231269352017,
+                    0.10714960646009894,
+                    0.6052581429993757
+                  ],
+                  "circle": [
+                    0.024090231269352017,
+                    0.10714960646009894,
+                    0.6052581429993757,
+                    0.0,
+                    -1.0,
+                    0.0,
+                    0.009750000000000002
+                  ],
+                  "owning_sketch_error": "'<win32com.gen_py.SldWorks 2024 Type Library.ISketch instance at 0x2150386827744>' object has no attribute 'GetFeature'",
+                  "entity_kind": "sketch_segment"
+                },
+                {
+                  "type": 1,
+                  "id": [
+                    5,
+                    6
+                  ],
+                  "name": "圆弧6",
+                  "length_m": 0.008251439078169942,
+                  "construction": false,
+                  "start": [
+                    0.01747688424189,
+                    0.10714960646009894,
+                    0.6124223694820017
+                  ],
+                  "end": [
+                    0.014342368959756626,
+                    0.10714960646009894,
+                    0.6050539852339843
+                  ],
+                  "center": [
+                    0.024090231269352017,
+                    0.10714960646009894,
+                    0.6052581429993757
+                  ],
+                  "circle": [
+                    0.024090231269352017,
+                    0.10714960646009894,
+                    0.6052581429993757,
+                    0.0,
+                    -1.0,
+                    0.0,
+                    0.009749999999999986
+                  ],
+                  "owning_sketch_error": "'<win32com.gen_py.SldWorks 2024 Type Library.ISketch instance at 0x2150386841904>' object has no attribute 'GetFeature'",
+                  "entity_kind": "sketch_segment"
+                }
+              ],
+              "definition_entities": [
+                {
+                  "type": 1,
+                  "id": [
+                    4,
+                    5
+                  ],
+                  "name": "圆弧5",
+                  "length_m": 0.06126105674500098,
+                  "construction": false,
+                  "start": [
+                    0.027974556493860464,
+                    0.10714960646009894,
+                    0.5963152957150794
+                  ],
+                  "end": [
+                    0.027974556493860464,
+                    0.10714960646009894,
+                    0.5963152957150794
+                  ],
+                  "center": [
+                    0.024090231269352017,
+                    0.10714960646009894,
+                    0.6052581429993757
+                  ],
+                  "circle": [
+                    0.024090231269352017,
+                    0.10714960646009894,
+                    0.6052581429993757,
+                    0.0,
+                    -1.0,
+                    0.0,
+                    0.009750000000000002
+                  ],
+                  "owning_sketch_error": "'<win32com.gen_py.SldWorks 2024 Type Library.ISketch instance at 0x2150386827744>' object has no attribute 'GetFeature'",
+                  "entity_kind": "sketch_segment"
+                },
+                {
+                  "type": 1,
+                  "id": [
+                    5,
+                    6
+                  ],
+                  "name": "圆弧6",
+                  "length_m": 0.008251439078169942,
+                  "construction": false,
+                  "start": [
+                    0.01747688424189,
+                    0.10714960646009894,
+                    0.6124223694820017
+                  ],
+                  "end": [
+                    0.014342368959756626,
+                    0.10714960646009894,
+                    0.6050539852339843
+                  ],
+                  "center": [
+                    0.024090231269352017,
+                    0.10714960646009894,
+                    0.6052581429993757
+                  ],
+                  "circle": [
+                    0.024090231269352017,
+                    0.10714960646009894,
+                    0.6052581429993757,
+                    0.0,
+                    -1.0,
+                    0.0,
+                    0.009749999999999986
+                  ],
+                  "owning_sketch_error": "'<win32com.gen_py.SldWorks 2024 Type Library.ISketch instance at 0x2150386841904>' object has no attribute 'GetFeature'",
+                  "entity_kind": "sketch_segment"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "细线2-3",
+      "source_file": "细线2.SLDPRT",
+      "references": [
+        {
+          "model_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "",
+          "feature": "3D草图1  ←  扫描1",
+          "data_type": "直线",
+          "status": 1,
+          "referenced_entity_description": "草图绘制实体 ← 装配体2<2>/滑轮<1>",
+          "owner_component": "细线2<3>"
+        },
+        {
+          "model_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "",
+          "feature": "3D草图1  ←  扫描1",
+          "data_type": "圆弧",
+          "status": 1,
+          "referenced_entity_description": "草图绘制实体 ← 装配体2<2>/滑轮<1>",
+          "owner_component": "细线2<3>"
+        },
+        {
+          "model_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "",
+          "feature": "草图22  ←  扫描3",
+          "data_type": "直线",
+          "status": 1,
+          "referenced_entity_description": "边线 ← 1.34 船桨<2>",
+          "owner_component": "细线2<3>"
+        },
+        {
+          "model_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "",
+          "feature": "草图22  ←  扫描3",
+          "data_type": "直线",
+          "status": 1,
+          "referenced_entity_description": "边线 ← 1.34 船桨<2>",
+          "owner_component": "细线2<3>"
+        }
+      ],
+      "best_matching_sketch": "3D草图1",
+      "sketch_native_axis_checks": [
+        {
+          "feature": "3D草图1",
+          "lines": [
+            {
+              "segment_index": 2,
+              "length_m": 0.5882252287344328,
+              "max_endpoint_distance_to_native_axis_m": 1.913707616002064e-16,
+              "axis_parallel_abs_dot": 1.0,
+              "matches_final_axis": true
+            },
+            {
+              "segment_index": 3,
+              "length_m": 1.0411643101533685,
+              "max_endpoint_distance_to_native_axis_m": 2.6468268903379473e-16,
+              "axis_parallel_abs_dot": 0.9999999999999999,
+              "matches_final_axis": true
+            },
+            {
+              "segment_index": 4,
+              "length_m": 0.0882023291307304,
+              "max_endpoint_distance_to_native_axis_m": 2.1372181191510418e-16,
+              "axis_parallel_abs_dot": 1.0,
+              "matches_final_axis": true
+            }
+          ],
+          "matched_length_m": 1.7175918680185318
+        }
+      ],
+      "arcs": [
+        {
+          "segment_index": 0,
+          "radius_m": 0.009750000000000043,
+          "center_local_m": [
+            0.02205136772992186,
+            0.3942996063481938,
+            0.7719518350062937
+          ],
+          "center_assembly_m": [
+            0.024906979220808614,
+            0.39444960634819837,
+            0.7780000000000012
+          ],
+          "axis_assembly": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "start_assembly_m": [
+            0.02314742715435489,
+            0.39444960634819837,
+            0.7875899153554901
+          ],
+          "end_assembly_m": [
+            0.01515911691123415,
+            0.39444960634819837,
+            0.7777958422336105
+          ]
+        },
+        {
+          "segment_index": 1,
+          "radius_m": 0.017499999999996206,
+          "center_local_m": [
+            0.574051367729939,
+            0.39429960634820066,
+            0.9639518350062937
+          ],
+          "center_assembly_m": [
+            0.5769069792208258,
+            0.39444960634820525,
+            0.9700000000000012
+          ],
+          "axis_assembly": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "start_assembly_m": [
+            0.5940521354869444,
+            0.39444960634820525,
+            0.9735062254077924
+          ],
+          "end_assembly_m": [
+            0.58686562685579,
+            0.39444960634820525,
+            0.9556098875166851
+          ]
+        }
+      ],
+      "nearest_visible_guide_at_last_span": {
+        "component": "1.18 万向轮-5",
+        "surface_distance_m": 0.15207413912968776,
+        "closest_mesh_point_m": [
+          0.7459069790121987,
+          0.3864496059682259,
+          0.9699999999999989
+        ],
+        "api_component_box_distance_lower_bound_m": 0.15182753084607803
+      },
+      "this_nearest_guide_is_not_automatically_the_referenced_guide": true,
+      "full_external_reference_statuses": [
+        1
+      ],
+      "motor_side_missing_pulley": {
+        "component": "装配体2-2",
+        "arc_center_assembly_m": [
+          0.024906979220808614,
+          0.39444960634819837,
+          0.7780000000000012
+        ],
+        "implied_center_in_missing_subassembly_frame_m": [
+          -0.02850063617406707,
+          0.07186166115570058,
+          -1.1142453329978391e-17
+        ],
+        "direct_reference_evidence": [
+          {
+            "model_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+            "component_path": "",
+            "feature": "3D草图1  ←  扫描1",
+            "data_type": "直线",
+            "status": 1,
+            "referenced_entity_description": "草图绘制实体 ← 装配体2<2>/滑轮<1>",
+            "owner_component": "细线2<3>"
+          },
+          {
+            "model_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+            "component_path": "",
+            "feature": "3D草图1  ←  扫描1",
+            "data_type": "圆弧",
+            "status": 1,
+            "referenced_entity_description": "草图绘制实体 ← 装配体2<2>/滑轮<1>",
+            "owner_component": "细线2<3>"
+          }
+        ],
+        "interpretation": "Radius and stored references identify the motor-side bend; absent part is not automatically the final guide."
+      },
+      "paddle_side_bend": {
+        "segment_index": 1,
+        "radius_m": 0.017499999999996206,
+        "center_local_m": [
+          0.574051367729939,
+          0.39429960634820066,
+          0.9639518350062937
+        ],
+        "center_assembly_m": [
+          0.5769069792208258,
+          0.39444960634820525,
+          0.9700000000000012
+        ],
+        "axis_assembly": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "start_assembly_m": [
+          0.5940521354869444,
+          0.39444960634820525,
+          0.9735062254077924
+        ],
+        "end_assembly_m": [
+          0.58686562685579,
+          0.39444960634820525,
+          0.9556098875166851
+        ]
+      },
+      "drawn_free_span_paddle_endpoint": {
+        "assembly_m": [
+          0.39254387050182704,
+          0.5854178292170813,
+          1.9771180565526882
+        ],
+        "paddle_part_local_m": [
+          -0.09623389351173618,
+          -0.8113631087189789,
+          -0.01588194344731808
+        ],
+        "height_above_cad_tip_m": 0.3886368912810211,
+        "scope": "Approximate end of final long cylindrical span, NOT verified physical knot/hole/attachment location.",
+        "user_confirmed_shaft_height_m": 0.46,
+        "user_confirmed_geometry_overridden": false
+      },
+      "entity_read_matching_feature": "3D草图1",
+      "entity_read_saved_features": [
+        {
+          "name": "3D草图1",
+          "type": "3DProfileFeature",
+          "depth": 0,
+          "suppressed": false,
+          "parents": [
+            "前视基准面"
+          ]
+        },
+        {
+          "name": "扫描1",
+          "type": "Sweep",
+          "depth": 0,
+          "suppressed": false,
+          "parents": [
+            "3D草图1",
+            "前视基准面"
+          ]
+        },
+        {
+          "name": "扫描3",
+          "type": "Sweep",
+          "depth": 0,
+          "suppressed": false,
+          "parents": [
+            "草图22",
+            "基准面2",
+            "扫描1",
+            "3D草图1"
+          ]
+        },
+        {
+          "name": "圆角1",
+          "type": "Fillet",
+          "depth": 0,
+          "suppressed": false,
+          "parents": [
+            "扫描1"
+          ]
+        }
+      ],
+      "arc_entity_relations": [
+        {
+          "type": 1,
+          "id": [
+            2,
+            6
+          ],
+          "name": "圆弧6",
+          "length_m": 0.013750191122001635,
+          "construction": false,
+          "start": [
+            0.02029181566346814,
+            0.3942996063481938,
+            0.7815417503617825
+          ],
+          "end": [
+            0.012303505420347397,
+            0.3942996063481938,
+            0.771747677239903
+          ],
+          "center": [
+            0.02205136772992186,
+            0.3942996063481938,
+            0.7719518350062937
+          ],
+          "circle": [
+            0.02205136772992186,
+            0.3942996063481938,
+            0.7719518350062937,
+            0.0,
+            -1.0,
+            0.0,
+            0.009750000000000043
+          ],
+          "relations": [
+            {
+              "type": 32,
+              "suppressed": false,
+              "entity_types": [
+                4,
+                4
+              ],
+              "entities": [
+                {
+                  "type": 1,
+                  "id": [
+                    0,
+                    5
+                  ],
+                  "name": "圆弧5",
+                  "length_m": 0.06126105674500121,
+                  "construction": false,
+                  "start": [
+                    0.025935692955347006,
+                    0.3942996063481938,
+                    0.7630089877223954
+                  ],
+                  "end": [
+                    0.025935692955347006,
+                    0.3942996063481938,
+                    0.7630089877223954
+                  ],
+                  "center": [
+                    0.02205136772992186,
+                    0.3942996063481938,
+                    0.7719518350062937
+                  ],
+                  "circle": [
+                    0.02205136772992186,
+                    0.3942996063481938,
+                    0.7719518350062937,
+                    0.0,
+                    -1.0,
+                    0.0,
+                    0.009750000000000038
+                  ],
+                  "owning_sketch_error": "'<win32com.gen_py.SldWorks 2024 Type Library.ISketch instance at 0x2150386834784>' object has no attribute 'GetFeature'",
+                  "entity_kind": "sketch_segment"
+                },
+                {
+                  "type": 1,
+                  "id": [
+                    2,
+                    6
+                  ],
+                  "name": "圆弧6",
+                  "length_m": 0.013750191122001635,
+                  "construction": false,
+                  "start": [
+                    0.02029181566346814,
+                    0.3942996063481938,
+                    0.7815417503617825
+                  ],
+                  "end": [
+                    0.012303505420347397,
+                    0.3942996063481938,
+                    0.771747677239903
+                  ],
+                  "center": [
+                    0.02205136772992186,
+                    0.3942996063481938,
+                    0.7719518350062937
+                  ],
+                  "circle": [
+                    0.02205136772992186,
+                    0.3942996063481938,
+                    0.7719518350062937,
+                    0.0,
+                    -1.0,
+                    0.0,
+                    0.009750000000000043
+                  ],
+                  "owning_sketch_error": "'<win32com.gen_py.SldWorks 2024 Type Library.ISketch instance at 0x2150386832624>' object has no attribute 'GetFeature'",
+                  "entity_kind": "sketch_segment"
+                }
+              ],
+              "definition_entities": [
+                {
+                  "type": 1,
+                  "id": [
+                    0,
+                    5
+                  ],
+                  "name": "圆弧5",
+                  "length_m": 0.06126105674500121,
+                  "construction": false,
+                  "start": [
+                    0.025935692955347006,
+                    0.3942996063481938,
+                    0.7630089877223954
+                  ],
+                  "end": [
+                    0.025935692955347006,
+                    0.3942996063481938,
+                    0.7630089877223954
+                  ],
+                  "center": [
+                    0.02205136772992186,
+                    0.3942996063481938,
+                    0.7719518350062937
+                  ],
+                  "circle": [
+                    0.02205136772992186,
+                    0.3942996063481938,
+                    0.7719518350062937,
+                    0.0,
+                    -1.0,
+                    0.0,
+                    0.009750000000000038
+                  ],
+                  "owning_sketch_error": "'<win32com.gen_py.SldWorks 2024 Type Library.ISketch instance at 0x2150386834784>' object has no attribute 'GetFeature'",
+                  "entity_kind": "sketch_segment"
+                },
+                {
+                  "type": 1,
+                  "id": [
+                    2,
+                    6
+                  ],
+                  "name": "圆弧6",
+                  "length_m": 0.013750191122001635,
+                  "construction": false,
+                  "start": [
+                    0.02029181566346814,
+                    0.3942996063481938,
+                    0.7815417503617825
+                  ],
+                  "end": [
+                    0.012303505420347397,
+                    0.3942996063481938,
+                    0.771747677239903
+                  ],
+                  "center": [
+                    0.02205136772992186,
+                    0.3942996063481938,
+                    0.7719518350062937
+                  ],
+                  "circle": [
+                    0.02205136772992186,
+                    0.3942996063481938,
+                    0.7719518350062937,
+                    0.0,
+                    -1.0,
+                    0.0,
+                    0.009750000000000043
+                  ],
+                  "owning_sketch_error": "'<win32com.gen_py.SldWorks 2024 Type Library.ISketch instance at 0x2150386832624>' object has no attribute 'GetFeature'",
+                  "entity_kind": "sketch_segment"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "id": [
+            3,
+            4
+          ],
+          "name": "圆弧4",
+          "length_m": 0.02042509503268466,
+          "construction": false,
+          "start": [
+            0.5911965239960576,
+            0.39429960634820066,
+            0.9674580604140849
+          ],
+          "end": [
+            0.5840100153649033,
+            0.39429960634820066,
+            0.9495617225229775
+          ],
+          "center": [
+            0.574051367729939,
+            0.39429960634820066,
+            0.9639518350062937
+          ],
+          "circle": [
+            0.574051367729939,
+            0.39429960634820066,
+            0.9639518350062937,
+            0.0,
+            1.0,
+            0.0,
+            0.017499999999996206
+          ],
+          "relations": []
+        }
+      ]
+    },
+    {
+      "component": "细线4-2",
+      "source_file": "细线4.SLDPRT",
+      "references": [
+        {
+          "model_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "",
+          "feature": "3D草图1  ←  扫描1",
+          "data_type": "直线",
+          "status": 1,
+          "referenced_entity_description": "草图绘制实体 ← 装配体2<3>/滑轮<1>",
+          "owner_component": "细线4<2>"
+        },
+        {
+          "model_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "feature": "3D草图1  ←  扫描1",
+          "data_type": "直线",
+          "status": 1,
+          "referenced_entity_description": "草图绘制实体 ← 2.1 铝型材框架",
+          "owner_component": "细线4<2>"
+        },
+        {
+          "model_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "feature": "3D草图1  ←  扫描1",
+          "data_type": "直线",
+          "status": 1,
+          "referenced_entity_description": "草图绘制实体 ← 2.1 铝型材框架",
+          "owner_component": "细线4<2>"
+        },
+        {
+          "model_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "",
+          "feature": "3D草图1  ←  扫描1",
+          "data_type": "圆弧",
+          "status": 1,
+          "referenced_entity_description": "草图绘制实体 ← 装配体2<3>/滑轮<1>",
+          "owner_component": "细线4<2>"
+        },
+        {
+          "model_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "feature": "3D草图1  ←  扫描1",
+          "data_type": "圆弧",
+          "status": 1,
+          "referenced_entity_description": "草图绘制实体 ← 2.1 铝型材框架",
+          "owner_component": "细线4<2>"
+        },
+        {
+          "model_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "",
+          "feature": "3D草图1  ←  扫描1",
+          "data_type": "基准面",
+          "status": 1,
+          "referenced_entity_description": "面 ← 1.59 船桨包角<2>",
+          "owner_component": "细线4<2>"
+        },
+        {
+          "model_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "",
+          "feature": "草图17  ←  扫描2",
+          "data_type": "直线",
+          "status": 1,
+          "referenced_entity_description": "边线 ← 1.43 活动铰链-ADU48-G408-S<1>/ADU48-G408-S-002<1>",
+          "owner_component": "细线4<2>"
+        }
+      ],
+      "best_matching_sketch": "3D草图1",
+      "sketch_native_axis_checks": [
+        {
+          "feature": "3D草图1",
+          "lines": [
+            {
+              "segment_index": 2,
+              "length_m": 0.08820232913073046,
+              "max_endpoint_distance_to_native_axis_m": 1.5367302752719885e-16,
+              "axis_parallel_abs_dot": 1.0,
+              "matches_final_axis": true
+            },
+            {
+              "segment_index": 3,
+              "length_m": 0.5072803867220832,
+              "max_endpoint_distance_to_native_axis_m": 2.8843062275458634e-16,
+              "axis_parallel_abs_dot": 1.0000000000000002,
+              "matches_final_axis": true
+            },
+            {
+              "segment_index": 4,
+              "length_m": 1.0771717018006914,
+              "max_endpoint_distance_to_native_axis_m": 3.5415984652944046e-16,
+              "axis_parallel_abs_dot": 1.0000000000000002,
+              "matches_final_axis": true
+            }
+          ],
+          "matched_length_m": 1.6726544176535052
+        }
+      ],
+      "arcs": [
+        {
+          "segment_index": 0,
+          "radius_m": 0.009750000000000036,
+          "center_local_m": [
+            0.02490694542761594,
+            0.681749606346383,
+            0.6039999998285969
+          ],
+          "center_assembly_m": [
+            0.024906979220783367,
+            0.5855410783450263,
+            0.6060005000000036
+          ],
+          "axis_assembly": [
+            1.405937048237733e-15,
+            -1.0,
+            -5.431354563003931e-15
+          ],
+          "start_assembly_m": [
+            0.01861135030269043,
+            0.5855410783450262,
+            0.6134454685375915
+          ],
+          "end_assembly_m": [
+            0.015159116911208905,
+            0.5855410783450262,
+            0.605796342233613
+          ]
+        },
+        {
+          "segment_index": 1,
+          "radius_m": 0.01750000000000003,
+          "center_local_m": [
+            0.3769069543966496,
+            0.6817495947436013,
+            0.9699999912026415
+          ],
+          "center_assembly_m": [
+            0.37690697922078564,
+            0.5855410667422888,
+            0.9720005000000022
+          ],
+          "axis_assembly": [
+            -3.325990865335533e-16,
+            -1.0,
+            -2.177953800845294e-15
+          ],
+          "start_assembly_m": [
+            0.38934819027876794,
+            0.5855410667422888,
+            0.9596933367439654
+          ],
+          "end_assembly_m": [
+            0.393951681371089,
+            0.5855410667422888,
+            0.975966370472855
+          ]
+        }
+      ],
+      "nearest_visible_guide_at_last_span": {
+        "component": "1.12 防跳线导轮-M5-1",
+        "surface_distance_m": 0.34096572230610783,
+        "closest_mesh_point_m": [
+          0.06390664454881337,
+          0.6706936665455094,
+          0.9698592684233638
+        ],
+        "api_component_box_distance_lower_bound_m": 0.33002500052018613
+      },
+      "this_nearest_guide_is_not_automatically_the_referenced_guide": true,
+      "full_external_reference_statuses": [
+        1
+      ],
+      "motor_side_missing_pulley": {
+        "component": "装配体2-3",
+        "arc_center_assembly_m": [
+          0.024906979220783367,
+          0.5855410783450263,
+          0.6060005000000036
+        ],
+        "implied_center_in_missing_subassembly_frame_m": [
+          0.06770789182910551,
+          0.07186166115567823,
+          0.0020005000000010704
+        ],
+        "direct_reference_evidence": [
+          {
+            "model_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+            "component_path": "",
+            "feature": "3D草图1  ←  扫描1",
+            "data_type": "直线",
+            "status": 1,
+            "referenced_entity_description": "草图绘制实体 ← 装配体2<3>/滑轮<1>",
+            "owner_component": "细线4<2>"
+          },
+          {
+            "model_path": "D:\\zhuomian\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+            "component_path": "",
+            "feature": "3D草图1  ←  扫描1",
+            "data_type": "圆弧",
+            "status": 1,
+            "referenced_entity_description": "草图绘制实体 ← 装配体2<3>/滑轮<1>",
+            "owner_component": "细线4<2>"
+          }
+        ],
+        "interpretation": "Radius and stored references identify the motor-side bend; absent part is not automatically the final guide."
+      },
+      "paddle_side_bend": {
+        "segment_index": 1,
+        "radius_m": 0.01750000000000003,
+        "center_local_m": [
+          0.3769069543966496,
+          0.6817495947436013,
+          0.9699999912026415
+        ],
+        "center_assembly_m": [
+          0.37690697922078564,
+          0.5855410667422888,
+          0.9720005000000022
+        ],
+        "axis_assembly": [
+          -3.325990865335533e-16,
+          -1.0,
+          -2.177953800845294e-15
+        ],
+        "start_assembly_m": [
+          0.38934819027876794,
+          0.5855410667422888,
+          0.9596933367439654
+        ],
+        "end_assembly_m": [
+          0.393951681371089,
+          0.5855410667422888,
+          0.975966370472855
+        ]
+      },
+      "drawn_free_span_paddle_endpoint": {
+        "assembly_m": [
+          0.01784175749039441,
+          0.5583262090428034,
+          1.9851750082342843
+        ],
+        "paddle_part_local_m": [
+          -0.0691422733374582,
+          -1.1860652217304115,
+          -0.007824991765722045
+        ],
+        "height_above_cad_tip_m": 0.013934778269588444,
+        "scope": "Approximate end of final long cylindrical span, NOT verified physical knot/hole/attachment location.",
+        "user_confirmed_shaft_height_m": null,
+        "user_confirmed_geometry_overridden": false
+      },
+      "entity_read_matching_feature": "3D草图1",
+      "entity_read_saved_features": [
+        {
+          "name": "3D草图1",
+          "type": "3DProfileFeature",
+          "depth": 0,
+          "suppressed": false,
+          "parents": [
+            "前视基准面"
+          ]
+        },
+        {
+          "name": "扫描1",
+          "type": "Sweep",
+          "depth": 0,
+          "suppressed": false,
+          "parents": [
+            "3D草图1",
+            "前视基准面"
+          ]
+        },
+        {
+          "name": "扫描2",
+          "type": "Sweep",
+          "depth": 0,
+          "suppressed": false,
+          "parents": [
+            "草图17",
+            "基准面1",
+            "扫描1",
+            "3D草图1"
+          ]
+        },
+        {
+          "name": "圆角1",
+          "type": "Fillet",
+          "depth": 0,
+          "suppressed": false,
+          "parents": [
+            "扫描1"
+          ]
+        }
+      ],
+      "arc_entity_relations": [
+        {
+          "type": 1,
+          "id": [
+            4,
+            12
+          ],
+          "name": "圆弧12",
+          "length_m": 0.00867545468330504,
+          "construction": false,
+          "start": [
+            0.018611316691966057,
+            0.6817496063463812,
+            0.6114449685204626
+          ],
+          "end": [
+            0.01515908311303848,
+            0.6817496063463824,
+            0.603795842301083
+          ],
+          "center": [
+            0.02490694542761594,
+            0.681749606346383,
+            0.6039999998285969
+          ],
+          "circle": [
+            0.02490694542761594,
+            0.681749606346383,
+            0.6039999998285969,
+            7.152398331719733e-14,
+            -1.0,
+            -1.935773478833599e-13,
+            0.009750000000000036
+          ],
+          "relations": []
+        },
+        {
+          "type": 1,
+          "id": [
+            10,
+            15
+          ],
+          "name": "圆弧15",
+          "length_m": 0.017650307099095416,
+          "construction": false,
+          "start": [
+            0.3893481651530381,
+            0.6817495947436045,
+            0.957692827641726
+          ],
+          "end": [
+            0.3939516566441388,
+            0.6817495947436018,
+            0.9739658612578045
+          ],
+          "center": [
+            0.3769069543966496,
+            0.6817495947436013,
+            0.9699999912026415
+          ],
+          "circle": [
+            0.3769069543966496,
+            0.6817495947436013,
+            0.9699999912026415,
+            6.978544726215242e-14,
+            -1.0,
+            -1.903239470785975e-13,
+            0.01750000000000003
+          ],
+          "relations": [
+            {
+              "type": 32,
+              "suppressed": false,
+              "entity_types": [
+                4,
+                4
+              ],
+              "entities": [
+                {
+                  "type": 1,
+                  "id": [
+                    9,
+                    14
+                  ],
+                  "name": "圆弧14",
+                  "length_m": 0.017650307099095416,
+                  "construction": false,
+                  "start": [
+                    0.3893481651530381,
+                    0.6817495947436045,
+                    0.957692827641726
+                  ],
+                  "end": [
+                    0.3939516566441388,
+                    0.6817495947436018,
+                    0.9739658612578045
+                  ],
+                  "center": [
+                    0.3769069543966496,
+                    0.6817495947436013,
+                    0.9699999912026415
+                  ],
+                  "circle": [
+                    0.3769069543966496,
+                    0.6817495947436013,
+                    0.9699999912026415,
+                    6.978544726215242e-14,
+                    -1.0,
+                    -1.903239470785975e-13,
+                    0.01750000000000003
+                  ],
+                  "owning_sketch_error": "'<win32com.gen_py.SldWorks 2024 Type Library.ISketch instance at 0x2150386832864>' object has no attribute 'GetFeature'",
+                  "entity_kind": "sketch_segment"
+                },
+                {
+                  "type": 1,
+                  "id": [
+                    10,
+                    15
+                  ],
+                  "name": "圆弧15",
+                  "length_m": 0.017650307099095416,
+                  "construction": false,
+                  "start": [
+                    0.3893481651530381,
+                    0.6817495947436045,
+                    0.957692827641726
+                  ],
+                  "end": [
+                    0.3939516566441388,
+                    0.6817495947436018,
+                    0.9739658612578045
+                  ],
+                  "center": [
+                    0.3769069543966496,
+                    0.6817495947436013,
+                    0.9699999912026415
+                  ],
+                  "circle": [
+                    0.3769069543966496,
+                    0.6817495947436013,
+                    0.9699999912026415,
+                    6.978544726215242e-14,
+                    -1.0,
+                    -1.903239470785975e-13,
+                    0.01750000000000003
+                  ],
+                  "owning_sketch_error": "'<win32com.gen_py.SldWorks 2024 Type Library.ISketch instance at 0x2150386829024>' object has no attribute 'GetFeature'",
+                  "entity_kind": "sketch_segment"
+                }
+              ],
+              "definition_entities": [
+                {
+                  "type": 1,
+                  "id": [
+                    9,
+                    14
+                  ],
+                  "name": "圆弧14",
+                  "length_m": 0.017650307099095416,
+                  "construction": false,
+                  "start": [
+                    0.3893481651530381,
+                    0.6817495947436045,
+                    0.957692827641726
+                  ],
+                  "end": [
+                    0.3939516566441388,
+                    0.6817495947436018,
+                    0.9739658612578045
+                  ],
+                  "center": [
+                    0.3769069543966496,
+                    0.6817495947436013,
+                    0.9699999912026415
+                  ],
+                  "circle": [
+                    0.3769069543966496,
+                    0.6817495947436013,
+                    0.9699999912026415,
+                    6.978544726215242e-14,
+                    -1.0,
+                    -1.903239470785975e-13,
+                    0.01750000000000003
+                  ],
+                  "owning_sketch_error": "'<win32com.gen_py.SldWorks 2024 Type Library.ISketch instance at 0x2150386832864>' object has no attribute 'GetFeature'",
+                  "entity_kind": "sketch_segment"
+                },
+                {
+                  "type": 1,
+                  "id": [
+                    10,
+                    15
+                  ],
+                  "name": "圆弧15",
+                  "length_m": 0.017650307099095416,
+                  "construction": false,
+                  "start": [
+                    0.3893481651530381,
+                    0.6817495947436045,
+                    0.957692827641726
+                  ],
+                  "end": [
+                    0.3939516566441388,
+                    0.6817495947436018,
+                    0.9739658612578045
+                  ],
+                  "center": [
+                    0.3769069543966496,
+                    0.6817495947436013,
+                    0.9699999912026415
+                  ],
+                  "circle": [
+                    0.3769069543966496,
+                    0.6817495947436013,
+                    0.9699999912026415,
+                    6.978544726215242e-14,
+                    -1.0,
+                    -1.903239470785975e-13,
+                    0.01750000000000003
+                  ],
+                  "owning_sketch_error": "'<win32com.gen_py.SldWorks 2024 Type Library.ISketch instance at 0x2150386829024>' object has no attribute 'GetFeature'",
+                  "entity_kind": "sketch_segment"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "细线3-4",
+      "source_file": "细线3.SLDPRT",
+      "references": [
+        {
+          "model_path": "C:\\Users\\xqz34\\Desktop\\新建文件夹 (5)\\2.1 铝型材框架.SLDASM",
+          "component_path": "",
+          "feature": "草图18  ←  扫描3",
+          "data_type": "直线",
+          "status": 1,
+          "referenced_entity_description": "边线 ← 1.38 600mm欧标铝型材-AOB05-4040-L600<2>",
+          "owner_component": "细线3<4>"
+        }
+      ],
+      "best_matching_sketch": "3D草图2",
+      "sketch_native_axis_checks": [
+        {
+          "feature": "3D草图2",
+          "lines": [
+            {
+              "segment_index": 1,
+              "length_m": 0.12026563551716016,
+              "max_endpoint_distance_to_native_axis_m": 3.576728904402992e-16,
+              "axis_parallel_abs_dot": 1.0000000000000002,
+              "matches_final_axis": true
+            },
+            {
+              "segment_index": 3,
+              "length_m": 0.4471245093343196,
+              "max_endpoint_distance_to_native_axis_m": 1.2321837713625545e-16,
+              "axis_parallel_abs_dot": 1.0,
+              "matches_final_axis": true
+            }
+          ],
+          "matched_length_m": 0.5673901448514798
+        }
+      ],
+      "arcs": [
+        {
+          "segment_index": 0,
+          "radius_m": 0.017500000000000043,
+          "center_local_m": [
+            -0.22809302077919447,
+            0.5842639752134816,
+            1.6033000000000006
+          ],
+          "center_assembly_m": [
+            -0.22809302077919447,
+            0.5842639752134816,
+            1.6033000000000006
+          ],
+          "axis_assembly": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "start_assembly_m": [
+            -0.24216519841361064,
+            0.5842639752134816,
+            1.6137030676545647
+          ],
+          "end_assembly_m": [
+            -0.24558309527789784,
+            0.5842639752134816,
+            1.6038893165785966
+          ]
+        }
+      ],
+      "nearest_visible_guide_at_last_span": {
+        "component": "1.18 万向轮-4",
+        "surface_distance_m": 0.11848369017753972,
+        "closest_mesh_point_m": [
+          -0.2308792506094295,
+          0.5003546062886135,
+          1.6961622790247217
+        ],
+        "api_component_box_distance_lower_bound_m": 0.11499034037144586
+      },
+      "this_nearest_guide_is_not_automatically_the_referenced_guide": true,
+      "full_external_reference_statuses": [
+        1
+      ],
+      "drawn_free_span_paddle_endpoint": {
+        "assembly_m": [
+          0.010099384306348247,
+          0.5845628116350492,
+          1.983281381611542
+        ],
+        "paddle_part_local_m": [
+          -0.09537887592970401,
+          -1.1938075949144578,
+          -0.009718618388464328
+        ],
+        "height_above_cad_tip_m": 0.006192405085542196,
+        "scope": "Approximate end of final long cylindrical span, NOT verified physical knot/hole/attachment location.",
+        "user_confirmed_shaft_height_m": null,
+        "user_confirmed_geometry_overridden": false
+      },
+      "entity_read_matching_feature": "3D草图2",
+      "entity_read_saved_features": [
+        {
+          "name": "3D草图2",
+          "type": "3DProfileFeature",
+          "depth": 0,
+          "suppressed": false,
+          "parents": [
+            "前视基准面"
+          ]
+        },
+        {
+          "name": "扫描2",
+          "type": "Sweep",
+          "depth": 0,
+          "suppressed": false,
+          "parents": [
+            "3D草图2",
+            "前视基准面"
+          ]
+        },
+        {
+          "name": "扫描3",
+          "type": "Sweep",
+          "depth": 0,
+          "suppressed": false,
+          "parents": [
+            "草图18",
+            "基准面4",
+            "扫描2",
+            "3D草图2"
+          ]
+        }
+      ],
+      "arc_entity_relations": [
+        {
+          "type": 1,
+          "id": [
+            1,
+            2
+          ],
+          "name": "圆弧2",
+          "length_m": 0.01055098796786947,
+          "construction": false,
+          "start": [
+            -0.24216519841361064,
+            0.5842639752134816,
+            1.6137030676545647
+          ],
+          "end": [
+            -0.24558309527789784,
+            0.5842639752134816,
+            1.6038893165785966
+          ],
+          "center": [
+            -0.22809302077919447,
+            0.5842639752134816,
+            1.6033000000000006
+          ],
+          "circle": [
+            -0.22809302077919447,
+            0.5842639752134816,
+            1.6033000000000006,
+            0.0,
+            -1.0,
+            0.0,
+            0.017500000000000043
+          ],
+          "relations": []
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "line2_native_circular_mate_center_error_m": 0.0,
+    "all_cord_external_references_locked": true,
+    "all_three_motor_cord_final_main_path_lines_match_native_axes": true,
+    "original_native_manifest_file_count": 113,
+    "native_files_differing_from_original_manifest": [],
+    "prior_fully_resolved_rebuild_preserved_native_files": true,
+    "entity_probe_complete": true,
+    "entity_probe_native_files_unchanged": true
+  },
+  "entity_provenance_file": "F:\\vr视觉\\tmp\\independent_ux_review_20261030\\hardware_cad\\route_entity_probe\\entities.json",
+  "entity_probe_limitations": "Entity shapes, IDs, constraints and document-level references were read. ISketch.GetFeature is unavailable in this installed API; owning-sketch lookup errors are retained, not counted as resolved component identities.",
+  "identity": {
+    "assembly_extract/assembly.json": "5260ae4b84c9aaa9b9a7a6d03d24c45cd38e87696bbfddb272cbc74c3033472b",
+    "native_state_probe/after_rebuild.json": "b3db9bb1eb0cbce47ca897ffd7b85bde9b078b8bbf8f8bea860838fffdba9008",
+    "native_reference_probe/references.json": "48d7f83a8b05dbbfad108deceb7de41abd89ff756772748dfd737f0be35862f1",
+    "key_parts/read_summary.json": "a574ad88345024e5f373881b50c894c79dd6752f60d73beff54657097dc0a78c",
+    "review/route_consistency_after_rebuild.json": "6170378aeb5d455d7d6546cdf9317ca0012f32bf642c99ff7cee13415b32ee6a",
+    "reconcile_route_references.py": "4c40241843f0090422adff9208348e7a0e3bd21f0d7bc63809a2c759e89102d8",
+    "route_entity_probe/entities.json": "53ad60ab127e42494f653192c3d8e4e30ae79d00aff5d382009d924472a118f8"
+  },
+  "conclusion": "A named, available guide and its locked cord path disagree. Missing motor-side pulleys alone cannot explain the entire discrepancy. Exact hardware anchors remain uncalibrated."
+}

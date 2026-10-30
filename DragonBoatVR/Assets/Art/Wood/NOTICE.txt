@@ -1,0 +1,15 @@
+wood_table_001 - Poly Haven
+
+Source: https://polyhaven.com/a/wood_table_001
+Authors: Dimitrios Savva / Rico Cilliers
+License: CC0 1.0 Universal
+License information: https://polyhaven.com/license
+Legal text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+Retrieved: 2026-10-28 (Asia/Shanghai)
+
+Diffuse and OpenGL normal images are the original 1K JPEG downloads.
+The URP mask was derived from the original ARM image:
+  R = 0 (nonmetal wood), G = source ambient occlusion, B = 0,
+  A = 1 - source roughness. Scalar channels are imported as linear.
+The base color uses sRGB. The normal uses Unity's normal-map importer.
+No geometry, physics or sensor parameters are derived from this asset.

@@ -1,0 +1,92 @@
+{
+  "provenance": "CAD_DESIGN_POINT_GUIDES_NOT_HARDWARE_CALIBRATION: user native 2.1 assembly and 1.34 paddle B-rep; shaft hole 0.46 m above tip, side holes +/-0.08 m and 0.01 m above tip. Guide wheel centres approximate final point guides. Level boat registration and guide 5/2/1 to shaft/positive/negative hole assignment are design assumptions; only guide 2 has a matched named final-cord reference. Same three channels, 5 N pretension, 300 N bounds and 0.6 m wrench scale; centre measurement cord excluded. See tendon_cad_provenance.json.",
+  "measured": false,
+  "geometryAssumed": true,
+  "charLengthM": 0.6000000238418579,
+  "tendons": [
+    {
+      "name": "Shaft_46cm",
+      "motorId": 1,
+      "anchorLocal": {
+        "x": 0.35282517634392546,
+        "y": 0.7219258604049773,
+        "z": 1.0230000000000077
+      },
+      "attachLocal": {
+        "x": 0.0,
+        "y": 0.24999999999999997,
+        "z": 0.0
+      },
+      "maxTensionN": 300.0,
+      "preTensionN": 5.0,
+      "enabled": true,
+      "attachmentRegion": "shaft CAD bore",
+      "attachmentFromBladeTip": {
+        "x": 0.0,
+        "y": 0.45999999999999996,
+        "z": 0.0
+      },
+      "heightFromTipConfirmed": true,
+      "lateralOffsetConfirmed": false
+    },
+    {
+      "name": "BladeSide_A",
+      "motorId": 2,
+      "anchorLocal": {
+        "x": 0.06532517634392368,
+        "y": -0.17807413959502952,
+        "z": 1.0230000000000028
+      },
+      "attachLocal": {
+        "x": 0.08,
+        "y": -0.19999999999999998,
+        "z": 0.0
+      },
+      "maxTensionN": 300.0,
+      "preTensionN": 5.0,
+      "enabled": true,
+      "attachmentRegion": "blade side CAD bore",
+      "attachmentFromBladeTip": {
+        "x": 0.08,
+        "y": 0.010000000000000009,
+        "z": 0.0
+      },
+      "heightFromTipConfirmed": false,
+      "lateralOffsetConfirmed": false
+    },
+    {
+      "name": "BladeSide_B",
+      "motorId": 3,
+      "anchorLocal": {
+        "x": 0.6403251763439218,
+        "y": -0.17807413959503177,
+        "z": 1.0230000000000035
+      },
+      "attachLocal": {
+        "x": -0.08,
+        "y": -0.19999999999999998,
+        "z": 0.0
+      },
+      "maxTensionN": 300.0,
+      "preTensionN": 5.0,
+      "enabled": true,
+      "attachmentRegion": "blade side CAD bore",
+      "attachmentFromBladeTip": {
+        "x": -0.08,
+        "y": 0.010000000000000009,
+        "z": 0.0
+      },
+      "heightFromTipConfirmed": false,
+      "lateralOffsetConfirmed": false
+    }
+  ],
+  "attachmentCoordinatesFromBladeTip": true,
+  "bladeTipLocal": {
+    "x": 0.0,
+    "y": -0.21,
+    "z": 0.0
+  },
+  "bladeTipOffsetMeasured": false,
+  "motorMappingConfirmed": false,
+  "excludedConnections": "Photo centre cord: not connected to a motor; excluded per user instruction."
+}

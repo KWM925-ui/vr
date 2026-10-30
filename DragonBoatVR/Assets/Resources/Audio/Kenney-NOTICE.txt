@@ -1,0 +1,5 @@
+Kenney Impact Sounds 1.0, CC0.
+Source: https://kenney.nl/assets/impact-sounds
+Archive: https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip
+Archive SHA256: 029d734af1582474edf3a694d1b0cebc97c1c152f2f39fa34d4c2bafc5de77f8
+Nine original light/medium/heavy wood impact clips retained unchanged. Additional short creaks are synthesized from overlapping grains of the wood recordings; they are not measured boat structural audio.

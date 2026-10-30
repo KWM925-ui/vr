@@ -1,0 +1,91 @@
+# Unity regenerates these directories. Keep Assets (including .meta), Packages,
+# ProjectSettings, native plugins and OBJ models under version control.
+/DragonBoatVR/[Ll]ibrary/
+/DragonBoatVR/[Tt]emp/
+/DragonBoatVR/[Oo]bj/
+/DragonBoatVR/[Ll]ogs/
+/DragonBoatVR/[Uu]ser[Ss]ettings/
+/DragonBoatVR/MemoryCaptures/
+/DragonBoatVR/Recordings/
+/DragonBoatVR/Build/
+/DragonBoatVR/Builds/
+.unity-execution.lock
+
+# Built Players, previous deliveries and large runtime evidence stay local.
+/Builds/
+/_archive_*/
+/tools/adc_runtime_checks/
+/tools/build_results/
+/tools/check_recordings/
+/tools/check_results/
+/tools/closed_loop_checks/
+/tools/desktop_input_checks/
+/tools/paddle_demo/
+/tools/runtime_checks/
+/tools/targeted_checks/
+/tools/visual_upgrade*/
+/tools/water_previews/
+/tools/wood_contact_checks/
+/tools/tendon_report.txt
+
+# Keep only the four immutable inputs consumed by build_cad_tendon_profile.py.
+# The rest of tmp contains local investigations, recordings and session state.
+/tmp/*
+!/tmp/.gitkeep
+!/tmp/independent_ux_review_20261030/
+/tmp/independent_ux_review_20261030/*
+!/tmp/independent_ux_review_20261030/hardware_cad/
+/tmp/independent_ux_review_20261030/hardware_cad/*
+!/tmp/independent_ux_review_20261030/hardware_cad/cad_observations.json
+!/tmp/independent_ux_review_20261030/hardware_cad/native_state_probe/
+/tmp/independent_ux_review_20261030/hardware_cad/native_state_probe/*
+!/tmp/independent_ux_review_20261030/hardware_cad/native_state_probe/after_rebuild.json
+!/tmp/independent_ux_review_20261030/hardware_cad/key_parts/
+/tmp/independent_ux_review_20261030/hardware_cad/key_parts/*
+!/tmp/independent_ux_review_20261030/hardware_cad/key_parts/018f5bb8e110e62c.json
+!/tmp/independent_ux_review_20261030/hardware_cad/reference_reconciliation/
+/tmp/independent_ux_review_20261030/hardware_cad/reference_reconciliation/*
+!/tmp/independent_ux_review_20261030/hardware_cad/reference_reconciliation/reconciliation.json
+
+# Local assistant state and conversation exports are not project source.
+/.workbuddy/
+/.codex/
+/.claude/
+/.vscode/
+/.idea/
+.vs/
+/资料汇总/对话完整导出/
+/资料汇总/对话上传的文件/
+
+# Generated files and editor/CAD lock files.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.log
+*.tmp
+*.bak
+~$*
+.DS_Store
+Thumbs.db
+*.csproj
+*.sln
+*.suo
+*.user
+
+# Local credentials and Unity activation files.
+.env
+.env.*
+!.env.example
+!.env.sample
+*.ulf
+*.alf
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+id_rsa
+id_ed25519
+credentials.json
