@@ -67,6 +67,9 @@ Shader "DragonBoatVR/WaveFieldWater"
             #pragma target 3.5
             #pragma multi_compile_fog
             #pragma multi_compile_instancing
+            // Keep the PC single-pass variant available for offline compilation
+            // even before an XR loader has been installed in this project.
+            #pragma multi_compile _ STEREO_INSTANCING_ON
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DeclareDepthTexture.hlsl"

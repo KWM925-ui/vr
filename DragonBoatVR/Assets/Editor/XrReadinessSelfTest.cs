@@ -19,6 +19,7 @@ namespace DragonBoatVR.EditorTools
         {
             public string result, scope = "SOFTWARE_AND_EXPLICIT_EYE_GPU_FIXTURES_ONLY", graphicsDevice;
             public int passed, failed, stereoShaderVariants;
+            public int instancedMatchingEyePixels;
             public float leftRedProjectionError, rightRedProjectionError, eyeCentroidDifference;
             public Color leftWaterPixel, rightWaterPixel;
             public List<string> checks = new List<string>();
@@ -30,6 +31,7 @@ namespace DragonBoatVR.EditorTools
         [MenuItem("DragonBoatVR/XR软件与逐眼GPU准备自检")]
         public static void Run()
         {
+            Require(Application.isBatchMode && !Application.isPlaying, "Use a dedicated batch Editor in Edit mode");
             var args = Environment.GetCommandLineArgs();
             int at = Array.IndexOf(args, "-xrReadinessArtifacts");
             if (at < 0 || at + 1 >= args.Length) throw new ArgumentException("-xrReadinessArtifacts is required");
@@ -37,21 +39,20 @@ namespace DragonBoatVR.EditorTools
             Directory.CreateDirectory(_output);
             if (File.Exists(Path.Combine(_output, "xr_readiness.json"))) throw new IOException("Use a new evidence directory");
             _result = new Result { graphicsDevice = SystemInfo.graphicsDeviceName };
-            var previousScene = SceneManager.GetActiveScene();
-            var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Additive);
-            SceneManager.SetActiveScene(scene);
+            string previousScenePath = SceneManager.GetActiveScene().path;
+            EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
             try
             {
                 Check("explicit per-eye GPU reflection uses each supplied view and asymmetric projection", StereoReflection);
                 Check("water fragment selects the correct eye's reflection texture", WaterEyeSampling);
-                Check("water/foam/droplet instanced stereo variants compile", ShaderVariants);
+                Check("single-pass instanced GPU draw routes eye instances into separate texture layers", InstancedEyeLayers);
+                Check("water/foam/droplet/interior-mask instanced stereo variants compile", ShaderVariants);
                 Check("provider rejects stale identities and camera has one pose owner", ProviderAndPoseOwner);
                 Check("external monitor camera cannot render into the HMD", MonitorOwnership);
             }
             finally
             {
-                EditorSceneManager.CloseScene(scene, true);
-                if (previousScene.IsValid()) SceneManager.SetActiveScene(previousScene);
+                if (!string.IsNullOrEmpty(previousScenePath)) EditorSceneManager.OpenScene(previousScenePath, OpenSceneMode.Single);
                 _result.result = _result.failed == 0 ? "PASS" : "FAIL";
                 File.WriteAllText(Path.Combine(_output, "xr_readiness.json"), JsonUtility.ToJson(_result, true));
                 Debug.Log($"[XR_READINESS] passed={_result.passed} failed={_result.failed}");
@@ -210,20 +211,118 @@ namespace DragonBoatVR.EditorTools
                 finally { UnityEngine.Object.DestroyImmediate(red); UnityEngine.Object.DestroyImmediate(green); }
             }
         }
+        static void InstancedEyeLayers()
+        {
+            using (var f = new Fixture())
+            {
+                var descriptor = new RenderTextureDescriptor(256, 256, RenderTextureFormat.ARGB32, 0)
+                    { dimension = TextureDimension.Tex2DArray, volumeDepth = 2, msaaSamples = 1, sRGB = false };
+                var target = new RenderTexture(descriptor); target.Create();
+                descriptor.dimension = TextureDimension.Tex2D; descriptor.volumeDepth = 1;
+                var slice = new RenderTexture(descriptor); slice.Create();
+                var depth = new Texture2DArray(1, 1, 2, TextureFormat.RFloat, false, true);
+                var opaque = new Texture2DArray(1, 1, 2, TextureFormat.RGBA32, false, true);
+                var red = new Texture2D(1, 1); red.SetPixel(0, 0, Color.red); red.Apply();
+                var green = new Texture2D(1, 1); green.SetPixel(0, 0, Color.green); green.Apply();
+                var command = new CommandBuffer { name = "Explicit stereo instancing GPU fixture (no HMD)" };
+                Texture2D left = null, right = null;
+                bool previousStereoKeyword = Shader.IsKeywordEnabled("STEREO_INSTANCING_ON");
+                try
+                {
+                    Require(SystemInfo.supports2DArrayTextures && SystemInfo.supportsInstancing,
+                        "actual texture-array/instancing support is required");
+                    for (int eye = 0; eye < 2; eye++)
+                    {
+                        // The actual array samplers are bound, rather than supplying
+                        // ordinary 2D textures to an instanced stereo shader variant.
+                        depth.SetPixels(new[] { Color.clear }, eye);
+                        opaque.SetPixels(new[] { Color.black }, eye);
+                    }
+                    depth.Apply(); opaque.Apply();
+                    var views = new[] { f.View(-0.032f), f.View(0.032f) };
+                    var projections = new[] { GL.GetGPUProjectionMatrix(f.Projection(-0.06f), true),
+                        GL.GetGPUProjectionMatrix(f.Projection(0.06f), true) };
+                    var inverseViews = new[] { views[0].inverse, views[1].inverse };
+                    var vp = new[] { projections[0] * views[0], projections[1] * views[1] };
+                    command.SetRenderTarget(target, 0, CubemapFace.Unknown, -1);
+                    command.ClearRenderTarget(false, true, Color.black);
+                    command.SetViewport(new Rect(0, 0, 256, 256));
+                    command.SetGlobalMatrixArray("unity_StereoMatrixV", views);
+                    command.SetGlobalMatrixArray("unity_StereoMatrixP", projections);
+                    command.SetGlobalMatrixArray("unity_StereoMatrixInvV", inverseViews);
+                    command.SetGlobalMatrixArray("unity_StereoMatrixInvP", new[] { projections[0].inverse, projections[1].inverse });
+                    command.SetGlobalMatrixArray("unity_StereoMatrixVP", vp);
+                    command.SetGlobalMatrixArray("unity_StereoMatrixInvVP", new[] { vp[0].inverse, vp[1].inverse });
+                    command.SetGlobalVectorArray("unity_StereoWorldSpaceCameraPos", new[] {
+                        inverseViews[0].GetColumn(3), inverseViews[1].GetColumn(3) });
+                    command.SetGlobalVector("_ScaledScreenParams", new Vector4(256, 256, 1f + 1f / 256, 1f + 1f / 256));
+                    float ratio = 50f / 0.05f;
+                    command.SetGlobalVector("_ZBufferParams", SystemInfo.usesReversedZBuffer
+                        ? new Vector4(ratio - 1f, 1f, (ratio - 1f) / 50f, 1f / 50f)
+                        : new Vector4(1f - ratio, ratio, (1f - ratio) / 50f, ratio / 50f));
+                    command.SetGlobalTexture("_CameraDepthTexture", depth);
+                    command.SetGlobalTexture("_CameraOpaqueTexture", opaque);
+                    command.SetGlobalTexture("_WaterPlanarReflection", red);
+                    command.SetGlobalTexture("_WaterPlanarReflectionRight", green);
+                    command.SetGlobalFloat("_WaterPlanarOn", 1);
+                    command.SetGlobalFloat("_WaterPlanarStereo", 1);
+                    // Deliberately keep the multi-pass override on the LEFT eye.
+                    // The right layer must come from its real instance eye index.
+                    command.SetGlobalFloat("_WaterPlanarActiveEye", 0);
+                    command.SetGlobalMatrix("_WaterPlanarWorldToUV", Matrix4x4.identity);
+                    command.SetGlobalMatrix("_WaterPlanarWorldToUVRight", Matrix4x4.identity);
+                    command.SetGlobalVector("_MainLightPosition", new Vector4(0, 1, 0, 0));
+                    command.SetGlobalVector("_MainLightColor", Vector4.zero);
+                    command.SetGlobalVector("_FoamTrailAnchor", new Vector4(0, 48, 0, 0));
+                    command.SetGlobalInt("_InteractionRippleCount", 0);
+                    command.EnableShaderKeyword("STEREO_INSTANCING_ON");
+                    f.waterMaterial.enableInstancing = true;
+                    // This is the same instance multiplier used by URP XRPass.
+                    command.SetInstanceMultiplier(2);
+                    command.DrawMeshInstanced(f.water.GetComponent<MeshFilter>().sharedMesh, 0, f.waterMaterial, 0,
+                        new[] { f.water.transform.localToWorldMatrix }, 1);
+                    command.SetInstanceMultiplier(1);
+                    if (!previousStereoKeyword) command.DisableShaderKeyword("STEREO_INSTANCING_ON");
+                    Graphics.ExecuteCommandBuffer(command);
+                    Graphics.CopyTexture(target, 0, 0, slice, 0, 0); left = Read(slice, "instanced_left");
+                    Graphics.CopyTexture(target, 1, 0, slice, 0, 0); right = Read(slice, "instanced_right");
+                    var l = left.GetPixels32(); var r = right.GetPixels32(); int matching = 0;
+                    for (int i = 0; i < l.Length; i++)
+                        if (l[i].r > 70 && l[i].r > l[i].g + 50 && r[i].g > 70 && r[i].g > r[i].r + 50) matching++;
+                    _result.instancedMatchingEyePixels = matching;
+                    Require(matching > 500, "GPU eye instances did not produce red LEFT and green RIGHT layers");
+                }
+                finally
+                {
+                    if (!previousStereoKeyword) Shader.DisableKeyword("STEREO_INSTANCING_ON");
+                    command.Release();
+                    if (left != null) UnityEngine.Object.DestroyImmediate(left);
+                    if (right != null) UnityEngine.Object.DestroyImmediate(right);
+                    target.Release(); slice.Release();
+                    foreach (var value in new UnityEngine.Object[] { target, slice, depth, opaque, red, green })
+                        UnityEngine.Object.DestroyImmediate(value);
+                }
+            }
+        }
+
         static void ShaderVariants()
         {
             var variants = new ShaderVariantCollection();
-            foreach (var name in new[] { "DragonBoatVR/WaveFieldWater", "DragonBoatVR/BoatFoam", "DragonBoatVR/WaterDroplet" })
+            foreach (var name in new[] { "DragonBoatVR/WaveFieldWater", "DragonBoatVR/BoatFoam", "DragonBoatVR/WaterDroplet", "DragonBoatVR/InteriorWaterExclusion" })
             {
                 var shader = Shader.Find(name); Require(shader != null && shader.isSupported, "unsupported shader: " + name);
-                variants.Add(new ShaderVariantCollection.ShaderVariant(shader, PassType.ScriptableRenderPipeline,
+                // The invisible cap explicitly selects SRPDefaultUnlit. The
+                // other custom passes have no LightMode and are Normal passes.
+                var pass = name == "DragonBoatVR/InteriorWaterExclusion"
+                    ? PassType.ScriptableRenderPipelineDefaultUnlit : PassType.Normal;
+                variants.Add(new ShaderVariantCollection.ShaderVariant(shader, pass,
                     new[] { "INSTANCING_ON", "STEREO_INSTANCING_ON" }));
             }
             variants.WarmUp(); _result.stereoShaderVariants = variants.variantCount;
-            foreach (var name in new[] { "DragonBoatVR/WaveFieldWater", "DragonBoatVR/BoatFoam", "DragonBoatVR/WaterDroplet" })
+            foreach (var name in new[] { "DragonBoatVR/WaveFieldWater", "DragonBoatVR/BoatFoam", "DragonBoatVR/WaterDroplet", "DragonBoatVR/InteriorWaterExclusion" })
                 Require(!ShaderUtil.ShaderHasError(Shader.Find(name)), "stereo shader compiler error: " + name);
             UnityEngine.Object.DestroyImmediate(variants);
-            Require(_result.stereoShaderVariants == 3, "stereo variants were not requested for all three shaders");
+            Require(_result.stereoShaderVariants == 4, "stereo variants were not requested for all four shaders");
         }
         static void ProviderAndPoseOwner()
         {

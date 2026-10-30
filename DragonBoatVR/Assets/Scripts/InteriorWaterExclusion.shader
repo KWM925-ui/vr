@@ -17,6 +17,8 @@ Shader "DragonBoatVR/InteriorWaterExclusion"
             #pragma vertex vert
             #pragma fragment frag
             #pragma multi_compile_instancing
+            #pragma target 3.5
+            #pragma multi_compile _ STEREO_INSTANCING_ON
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
             struct Attributes { float4 positionOS : POSITION; UNITY_VERTEX_INPUT_INSTANCE_ID };
             struct Varyings { float4 positionCS : SV_POSITION; UNITY_VERTEX_OUTPUT_STEREO };
