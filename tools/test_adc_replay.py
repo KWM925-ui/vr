@@ -14,6 +14,91 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import adc_replay as adc
 import run_adc_runtime_check as runtime
 import unity_execution
+from ad7190 import input_ratio, inspect_registers
+
+
+class Ad7190RegisterTests(unittest.TestCase):
+    def test_offset_binary_and_gain_are_electrical_ratios_not_force(self):
+        self.assertEqual(input_ratio(0x800000, 7), 0.)
+        self.assertEqual(input_ratio(0, 0), -1.)
+        self.assertEqual(input_ratio(0xC00000, 7), .5 / 128)
+        self.assertEqual(input_ratio(0x800000, 3, True), .5 / 8)
+        self.assertEqual(input_ratio(0xFFFFFF, 7), (1 - 2 ** -23) / 128)
+        for raw, gain in ((-1, 7), (0x1000000, 7), (True, 7), (1, 1), (1, 2)):
+            with self.subTest(raw=raw, gain=gain), self.assertRaises(ValueError):
+                input_ratio(raw, gain)
+
+    def test_datasheet_two_channel_scan_includes_settling_per_channel(self):
+        r = inspect_registers(0x100060, 0x317, "U7", clock_hz=4915200.)
+        self.assertEqual(r["gain"], 128)
+        self.assertAlmostEqual(r["timing"]["singleChannelContinuousHz"], 50.)
+        self.assertAlmostEqual(r["timing"]["filterSettlingSeconds"], .08)
+        self.assertAlmostEqual(r["timing"]["continuousScanPerEnabledChannelHz"], 6.25)
+        self.assertAlmostEqual(r["timing"]["scanSeconds"], .16)
+        self.assertFalse(r["crossAdcSimultaneityVerified"])
+        chop = inspect_registers(0x100060, 0x800317, "U7", clock_hz=4915200.)
+        self.assertAlmostEqual(chop["timing"]["continuousScanPerEnabledChannelHz"], 3.125)
+        sinc3 = inspect_registers(0x108060, 0x317, "U7", clock_hz=4915200.)
+        self.assertAlmostEqual(sinc3["timing"]["filterSettlingSeconds"], .06)
+
+    def test_zero_latency_and_single_conversion_do_not_claim_continuous_50_hz(self):
+        r = inspect_registers(0x080860, 0x117, "U7", clock_hz=4915200.)
+        self.assertAlmostEqual(r["timing"]["continuousScanPerEnabledChannelHz"], 12.5)
+        single = inspect_registers(0x280060, 0x117, "U7")
+        self.assertIsNone(single["timing"]["continuousScanPerEnabledChannelHz"])
+        self.assertEqual(single["timing"]["singleConversionClockStartupMaxSeconds"], .001)
+
+    def test_external_frequency_and_physical_source_are_not_invented(self):
+        r = inspect_registers(0x100060, 0x317, "U8", data=0xC00000, status=1)
+        self.assertIsNone(r["timing"])
+        self.assertEqual(r["sample"]["boardConnector"], "CH4")
+        self.assertEqual(r["sample"]["inputOverExcitation"], .5 / 128)
+        self.assertIsNone(r["sample"]["inputVoltageV"])
+        self.assertIsNone(r["sample"]["forceN"])
+        self.assertFalse(r["sample"]["freshnessVerified"])
+        self.assertAlmostEqual(r["boardInputRcEstimate"]["differentialTimeConstantSeconds"], 42e-6)
+
+    def test_multichannel_requires_identity_and_checks_reserved_family_bits(self):
+        for kwargs in ({"data": 0x800000}, {"data": 0x800000, "status": 2},
+                       {"device_id": 0xA0}, {"status": 8}):
+            with self.subTest(kwargs=kwargs), self.assertRaises(ValueError):
+                inspect_registers(0x100060, 0x317, "U7", **kwargs)
+        for mode, config in ((0x110060, 0x317), (0x101060, 0x317), (0x100060, 0x40317),
+                             (0x100000, 0x317), (0x100060, 0x17)):
+            with self.subTest(mode=mode, config=config), self.assertRaises(ValueError):
+                inspect_registers(mode, config, "U7")
+
+    def test_data_faults_do_not_produce_electrical_values(self):
+        bad = inspect_registers(0x100060, 0x357, "U7", data=0xFFFFFF, status=0x60, reference_v=5.)
+        self.assertIn("ADC_ERR", bad["sample"]["faults"])
+        self.assertIn("NO_REFERENCE", bad["sample"]["faults"])
+        self.assertIsNone(bad["sample"]["inputVoltageV"])
+        # DATA has one set bit; ENPAR expects the supplied status parity bit to be 1.
+        parity = inspect_registers(0x102060, 0x117, "U7", data=0x800000, status=0)
+        self.assertIn("DATA_PARITY_MISMATCH", parity["sample"]["faults"])
+        good = inspect_registers(0x102060, 0x117, "U7", data=0x800000, status=0x10)
+        self.assertTrue(good["sample"]["parityMatches"])
+        self.assertEqual(good["sample"]["inputOverReference"], 0.)
+
+    def test_diagnostic_temperature_and_unused_reference_are_not_load_channels(self):
+        temp = inspect_registers(0x100060, 0x410, "U7", data=round(0x800000 + 298.15 * 2815), status=2)
+        self.assertAlmostEqual(temp["sample"]["uncalibratedDieTemperatureC"], 25., places=3)
+        self.assertIsNone(temp["sample"]["boardConnector"])
+        self.assertIsNone(temp["sample"]["inputOverReference"])
+        ref = inspect_registers(0x100060, 0x100117, "U7", data=0xC00000)
+        self.assertIsNone(ref["sample"]["inputOverExcitation"])
+        self.assertTrue(any("unconnected" in d for d in ref["diagnostics"]))
+
+    def test_register_cli_is_offline_and_keeps_existing_replay_contract(self):
+        output = io.StringIO()
+        with mock.patch.object(adc.socket, "socket") as network, contextlib.redirect_stdout(output):
+            code = adc.main(["ad7190", "--adc", "U8", "--mode", "0x100060", "--config", "0x317",
+                             "--clock-hz", "4915200", "--data", "0xC00000", "--status", "1"])
+        self.assertEqual(code, 0)
+        network.assert_not_called()
+        result = json.loads(output.getvalue())
+        self.assertEqual(result["scope"], "OFFLINE_REGISTER_CALCULATION_NOT_ACQUISITION")
+        self.assertEqual(result["sample"]["boardConnector"], "CH4")
 
 
 class AdcRuntimeRunnerTests(unittest.TestCase):

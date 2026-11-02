@@ -1,37 +1,53 @@
 # DragonBoatVR
 
-单人龙舟桌面仿真与后续 VR／力反馈设备接入工程。Unity 负责水动力、船体、三绳分配、六缸平台目标及声画；独立 Python 控制器模拟执行响应，并通过 UDP 返回实际编码器观测，形成可记录的软件闭环。
+单人龙舟桌面仿真与 VR／力反馈设备接入工程。当前开始接三绳船桨装置，**嵌入式人员先看 [船桨力反馈交接手册](hardware/paddle/README.md)**：从板卡接线、只读采集、标定、单电机台架到三绳联调，包含分工、操作步骤和交付要求。
 
-**当前状态**
+## 当前能做什么
 
-本地最近已发布的桌面基线为 `20261031T053308`（2026-10-31）。该版本的默认机构与 CAD 理想限位入口既有软件运行检查均为 14/14，双船补验已完成。三绳反馈保真仍为 **FIDELITY FAIL**；真实传感器、电机、机械限位、平台、PICO 4 Ultra 及人体体验尚未验收。CAD 配置是设计输入，不能解释成实测标定。
+Unity 已有船体、水动力、三绳目标分配、平台目标和声画；独立 Python 控制器提供模拟执行响应，形成桌面软件闭环。展示界面包含中文首页、双船选择、双视窗、导览、设置和运行数据。
 
-首次 Git 导入保存当前工作区，其中包含正式基线之后的头姿、相机及渲染改动。它是开发快照，后续改动的完整验收状态应以对应版本的实际检查为准；本次 Git 导入没有重新执行 Unity 编译或整包运行验收。
+本地最近一次正式桌面发布为 `20261101T195259`。历史验收范围见 [软件闭环验收说明](软件全链路闭环验收.md)；Git 仓库提供源码和资源，**不包含 `Builds/DragonBoatVR` 运行包**。
 
-**目录**
+真实传感器、电机、平台、PICO 4 Ultra 和人体体验尚未验收，三绳反馈保真仍为 **FIDELITY FAIL**。最终体验要求自由持桨、仅边界限位；CAD 是设计依据，不能代替实际绳路、传感器标定或驱动限值。新的 DBPF 协议已有说明、样包和离线检查器，真实固件与 Unity 硬件适配器按交接手册实现。
 
-| 路径 | 内容 |
+## 项目入口
+
+| 入口 | 用途 |
 |---|---|
-| [DragonBoatVR](DragonBoatVR) | Unity 工程：Assets、Packages、ProjectSettings 及原工程说明 |
-| [tools](tools) | 构建、协议核验、软件检查与诊断工具；fixtures 保留在库中 |
-| [10月11日修改](10月11日修改) | 原生 SolidWorks 机构零件和装配 |
-| [龙舟摆件.SLDPRT](龙舟摆件.SLDPRT) | 雕饰龙舟原生模型 |
-| [数据流全链路规格](资料汇总/数据流全链路规格.md) | 输入、受力、执行与反馈的边界说明 |
-| [项目深度审阅](项目深度审阅_2026-10-31.md) | 架构、版本证据及能力缺口 |
-| [PICO 接入手册](VR头显接入手册-Pico4Ultra.md) | 后续头显接入步骤 |
+| [hardware/paddle](hardware/paddle/README.md) | 本轮嵌入式交接、DBPF 协议、原理图、AD7190 手册、配置模板及样包 |
+| [DragonBoatVR](DragonBoatVR/README.md) | Unity 工程，含 Assets、Packages、ProjectSettings 和开发运行说明 |
+| [10月11日修改](10月11日修改) | 船桨机构原生 SolidWorks 装配与零件，保留原名及引用关系 |
+| [展示与功能接口](展示与功能接口.md) | 演示操作、统一 C# 功能接口和设备接入边界 |
+| [数据流规格](资料汇总/数据流全链路规格.md) | 软件采样、水动力、目标、执行和反馈的现有实现 |
+| [PICO 接入手册](VR头显接入手册-Pico4Ultra.md) | 后续头显、追踪与平台补偿接入 |
+| [tools](tools) | 当前构建、诊断、协议和几何分析工具；旧 48 字节 UDP 示例在 `tools/legacy` |
+| [docs/references](docs/references) | 已有龙舟／划船相关参考论文；[龙舟摆件.SLDPRT](龙舟摆件.SLDPRT) 为另一船型原件 |
 
-**从源码打开**
+## 嵌入式先对接口
 
-1. 克隆本仓库，使用 Unity **2022.3.62f3**，并安装对应的 Windows Build Support。
-2. 在 Unity Hub 中添加仓库内的 `DragonBoatVR` 目录。Library 会在本机生成；原开发机的目录联结不入库。
-3. 安装 Windows CPython，确保 `python.exe` 在 PATH 中。当前已验交付使用 CPython 3.13.14；编辑器内的独立控制器默认调用系统 Python。
-4. 打开已有的 `Assets/Scenes/Demo.unity` 或 `Assets/Scenes/DragonBoatOrnament.unity`。当前场景已保存，无须重新运行旧说明中的初始化向导。
+在仓库根目录运行，仅需 Python 3.11+ 标准库：
 
-控制器和常规构建入口使用 Python 标准库；历史 CAD 配置生成器另需 NumPy，并保留原开发机绝对路径。其四份原始提取输入按原路径纳入版本控制，跨机器重新提取 CAD 时需核对路径与散列，已有场景运行无需重做提取。
+```powershell
+python.exe -m unittest discover -s tools -p test_paddle_hardware.py
+python.exe -m unittest discover -s tools -p test_adc_replay.py
+python.exe tools/paddle_hardware.py check hardware/paddle/examples/telemetry.bin --allow-simulated
+```
 
-**构建与检查**
+这些命令不打开串口或驱动电机。后续接线和实物记录按照 [交接手册](hardware/paddle/README.md) 执行，不把模拟样包或结构检查通过当作硬件验收。
 
-在仓库根目录打开 PowerShell，将 `UNITY_EDITOR_PATH` 设置为实际编辑器路径。以下示例构建独立候选目录：
+## 从源码运行桌面演示
+
+1. 克隆仓库，在 Unity Hub 添加 `DragonBoatVR` 目录，使用 **Unity 2022.3.62f3**、URP 14；构建 Windows 时需要对应 Windows Build Support。
+2. 安装 Windows CPython，确保 `python.exe` 在 PATH。独立控制器使用标准库；本地历史发布使用 CPython 3.13.14，换版本后应验证自己的候选包。
+3. 打开已保存的 `Assets/Scenes/Demo.unity` 或 `Assets/Scenes/DragonBoatOrnament.unity`，等待导入完成后 Play。现有场景不需要重新执行初始化向导。
+
+编辑器使用模拟输入，不需要另起 mock。中文展示首页在 Player 的 `-presentation` 模式开启，详细操作见 [工程说明](DragonBoatVR/README.md)。
+
+已有完整本地发布包时，双击 [启动龙舟VR.cmd](启动龙舟VR.cmd) 或 [CAD 机构入口](启动CAD机构龙舟VR.cmd)。对外提供运行包需复制整个 `Builds/DragonBoatVR`，不能只复制 EXE；克隆仓库后没有该包，应从源码运行或构建候选。
+
+## 构建与检查
+
+在仓库根目录设置实际 Unity 路径，构建到独立候选目录：
 
 ```powershell
 $env:UNITY_EDITOR_PATH = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Unity.exe'
@@ -40,14 +56,14 @@ python.exe tools/run_closed_loop_check.py --player Builds/DragonBoatVR-Candidate
 python.exe tools/run_closed_loop_check.py --player Builds/DragonBoatVR-Candidate/DragonBoatVR.exe --cad-tendon-rig
 ```
 
-这些命令会实际运行 Unity 或 Player。按改动范围完成对应检查，保持 Unity 工程排他使用；构建成功不等于完整验收通过。构建工具会把本机 CPython 标准库打包到候选目录，不复制用户配置和 site-packages。`tools` 中部分旧 BAT 文件保留原开发机路径，其他机器优先使用 Unity Hub 和上述环境变量。
+这些命令会实际运行 Unity／Player，工程须排他使用。构建工具把调用它的 CPython 标准库随包部署；构建成功和某一项检查通过不等于完整运行或硬件验收。按 [软件验收说明](软件全链路闭环验收.md) 选择与改动对应的检查。
 
-[普通启动入口](启动龙舟VR.cmd)和[CAD 启动入口](启动CAD机构龙舟VR.cmd)面向本地已验的 `Builds/DragonBoatVR` 正式目录。Git 仓库不包含该构建包，克隆后可先在 Unity 中运行，或生成自己的候选构建。
+可选的 CAD／记录分析使用 [requirements-analysis.txt](requirements-analysis.txt)；交接对包不需要这些依赖。CAD 原始提取数据已收拢到 `hardware/paddle/cad`，工具按当前克隆目录解析原生文件，不依赖原开发机 F 盘。分析输出选择新的 `_local` 子目录，不能覆盖已确认的实物配置。
 
-**版本管理范围**
+## 版本管理
 
-提交源码、Unity 资源及 `.meta`、包配置、工具、CAD 和项目文档。Library、构建包、运行录屏／日志、历史整包归档、个人工具状态和对话导出留在本地；`.gitignore` 中的 CAD 例外仅保留工具依赖的四份输入。历史文档中指向本地验收目录、Builds 或归档的链接，仅在保有对应资料的完整工作区中有效。
+提交源码、Unity 资源和 `.meta`、包配置、必要工具、原生 CAD、硬件资料与文档。Unity 缓存、运行包、录制／日志、历史恢复副本和个人工具状态保留在本地，由 `.gitignore` 排除；`tmp` 仅提交目录占位文件。
 
-`.gitattributes` 保留文件原始字节和换行，避免换机时自动换行转换破坏既有源文件散列。本次没有超过 GitHub 100 MiB 限制的单文件，不需要 Git LFS 即可取得完整已提交内容。
+旧试算和过时入口已退出当前交付，本地恢复副本在 `_local/handoff_cleanup_20261102`。原始失败证据、历史正式包继续保留在原本的本地目录，不作为新电脑接手的依赖。
 
-仓库沿用已有的 [Apache-2.0 许可证](LICENSE)。第三方代码、模型、纹理、音频及参考文献保留各自来源与许可；Assets 中现有 LICENSE／NOTICE 文件随工程提交，根许可证不替代第三方许可。
+`.gitattributes` 保留原始字节和换行；不要自动转换 CAD、资源或已绑定来源散列的输入。仓库沿用 [Apache-2.0](LICENSE)，第三方代码、模型、纹理、音频和文献保留各自来源与许可，根许可证不替代它们。

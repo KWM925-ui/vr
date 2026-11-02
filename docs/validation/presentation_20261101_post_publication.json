@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "publication": "_archive_20261101/publication_presentation_20261101T201355219721/publication.json",
+  "buildId": "20261101T195259",
+  "sourceFiles": 765,
+  "publishedFiles": 210,
+  "candidateFiles": 210,
+  "previousMainFiles": 207,
+  "stableEvidenceFiles": 185,
+  "sourceMatches": true,
+  "publishedCandidateMatch": true,
+  "completePreviousRetained": true,
+  "stableEvidenceMatches": true,
+  "noStaging": true,
+  "noManagedResidual": true,
+  "entrypointVisualReview": "tmp/presentation_demo_20261101/entrypoint_visual_review.json",
+  "nativeHmdVerified": false,
+  "hardwareVerified": false,
+  "tendonFidelity": "FAIL_RETAINED",
+  "currentDocumentationSha256": {
+    "README.md": "1b25f30e819062df5e9e8586dcaa79614de149535f8fcee4339dcf639c3bbd6e",
+    "DragonBoatVR/README.md": "261abcfc4f1e9619115e0205b847a3c422f8576d7d725835864eb4f9b02a8734",
+    "tmp/closed_loop_20261025/IMPLEMENTATION_STATUS.md": "37f606bdcc915e281ee94b735b66aee122ac428e996c2a737004dd9eb195c7d1",
+    "tmp/project_context_audit_20261030/PROJECT_CONTEXT_CURRENT.md": "581705e1005fcf2d19d74dd90de33f61aac5ec6775a4547415f26f26fec7eb35"
+  },
+  "handoffMatchesPublishedBuild": true
+}

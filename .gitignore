@@ -14,6 +14,9 @@
 # Built Players, previous deliveries and large runtime evidence stay local.
 /Builds/
 /_archive_*/
+/_local/
+/firmware/paddle/build/
+/firmware/paddle/managed_components/
 /tools/adc_runtime_checks/
 /tools/build_results/
 /tools/check_recordings/
@@ -28,24 +31,10 @@
 /tools/wood_contact_checks/
 /tools/tendon_report.txt
 
-# Keep only the four immutable inputs consumed by build_cad_tendon_profile.py.
-# The rest of tmp contains local investigations, recordings and session state.
+# Stable CAD inputs now live in hardware/paddle/cad. Keep only the scratch
+# directory marker; investigations, recordings and session state stay local.
 /tmp/*
 !/tmp/.gitkeep
-!/tmp/independent_ux_review_20261030/
-/tmp/independent_ux_review_20261030/*
-!/tmp/independent_ux_review_20261030/hardware_cad/
-/tmp/independent_ux_review_20261030/hardware_cad/*
-!/tmp/independent_ux_review_20261030/hardware_cad/cad_observations.json
-!/tmp/independent_ux_review_20261030/hardware_cad/native_state_probe/
-/tmp/independent_ux_review_20261030/hardware_cad/native_state_probe/*
-!/tmp/independent_ux_review_20261030/hardware_cad/native_state_probe/after_rebuild.json
-!/tmp/independent_ux_review_20261030/hardware_cad/key_parts/
-/tmp/independent_ux_review_20261030/hardware_cad/key_parts/*
-!/tmp/independent_ux_review_20261030/hardware_cad/key_parts/018f5bb8e110e62c.json
-!/tmp/independent_ux_review_20261030/hardware_cad/reference_reconciliation/
-/tmp/independent_ux_review_20261030/hardware_cad/reference_reconciliation/*
-!/tmp/independent_ux_review_20261030/hardware_cad/reference_reconciliation/reconciliation.json
 
 # Local assistant state and conversation exports are not project source.
 /.workbuddy/

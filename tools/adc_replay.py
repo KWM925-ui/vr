@@ -437,6 +437,13 @@ def send_jsonl(path, port, interval=0.02, host="127.0.0.1"):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
+    inspect = commands.add_parser("ad7190", help="interpret board ADC registers and calculate electrical ratios/rates; no device access")
+    inspect.add_argument("--adc", choices=("U7", "U8"), required=True)
+    for register in ("mode", "config", "data", "status", "id", "gpocon"):
+        inspect.add_argument("--" + register, type=lambda value: int(value, 0),
+                             required=register in ("mode", "config"), help="integer or 0x hexadecimal register value")
+    inspect.add_argument("--clock-hz", type=float, help="external clock required for timing; otherwise only nominal internal clock is known")
+    inspect.add_argument("--reference-v", type=float, help="optional supplied reference voltage; excitation ratio does not need this")
     convert = commands.add_parser("convert", help="validate long CSV and create a new normalized JSONL; no network")
     convert.add_argument("--csv", type=Path, required=True)
     convert.add_argument("--out", type=Path, required=True)
@@ -454,7 +461,17 @@ def main(argv=None):
                       help="assumed PC packet replay interval in seconds (default .02), not firmware sampling")
     args = parser.parse_args(argv)
     try:
-        if args.command == "convert":
+        if args.command == "ad7190":
+            from ad7190 import inspect_registers
+            try:
+                result = inspect_registers(args.mode, args.config, args.adc, clock_hz=args.clock_hz,
+                    data=args.data, status=args.status, reference_v=args.reference_v,
+                    device_id=args.id, gpocon=args.gpocon)
+            except ValueError as error:
+                raise ReplayError(str(error)) from error
+            print(json.dumps(result, ensure_ascii=False, allow_nan=False, indent=2))
+            return 0
+        elif args.command == "convert":
             counts = convert_csv(args.csv, args.out)
         elif args.command == "validate":
             _, counts = load_jsonl(args.input)

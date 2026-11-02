@@ -1,0 +1,4 @@
+# Optional offline CAD and recorded-data calculations; hardware packet checks
+# and ADC register inspection need only Python's standard library.
+numpy==2.5.3
+PyYAML==6.0.3

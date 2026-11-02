@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "purpose": "COMMISSIONING_TEMPLATE_NOT_A_HARDWARE_PROFILE",
+  "deviceId": null,
+  "boardRevision": null,
+  "firmwareVersion": null,
+  "outputEnabled": false,
+  "commissioningMode": "READ_ONLY",
+  "transport": {
+    "type": "usb_cdc",
+    "wireFormat": "DBPF/1",
+    "plannedTelemetryPeriodUs": 10000,
+    "maximumCommandLifetimeUs": 100000,
+    "maximumPayloadBytes": 16384
+  },
+  "freshness": {
+    "maximumForceSampleAgeUs": null,
+    "maximumEncoderSampleAgeUs": null,
+    "maximumImuSampleAgeUs": null,
+    "plannedWatchdogPollPeriodUs": 1000,
+    "measuredWorstWatchdogDelayUs": null
+  },
+  "driveBus": {
+    "driverModel": null,
+    "protocol": null,
+    "configurationFile": null,
+    "controlMode": null,
+    "emergencyStopCircuitFile": null,
+    "stopAndBrakeBehavior": null
+  },
+  "motors": [
+    {
+      "logicalId": "M1",
+      "physicalDriveId": null,
+      "cadMotorInstance": null,
+      "cadWheelInstance": null,
+      "forceConnector": null,
+      "encoderCountsPerMotorRevolution": null,
+      "motorTurnsPerWheelTurn": null,
+      "encoderPositiveIsPayout": null,
+      "effectiveRadiusCalibrationFile": null,
+      "effectiveRadiusCalibrationSha256": null,
+      "forceCalibrationFile": null,
+      "forceCalibrationSha256": null,
+      "approvedMaximumTensionN": null,
+      "approvedMaximumCurrentA": null,
+      "approvedMaximumTorqueNm": null,
+      "approvedMaximumTensionSlewNPerSecond": null,
+      "approvedMaximumPayoutSpeedMPerSecond": null,
+      "approvedPayoutRangeM": null
+    },
+    {
+      "logicalId": "M2",
+      "physicalDriveId": null,
+      "cadMotorInstance": null,
+      "cadWheelInstance": null,
+      "forceConnector": null,
+      "encoderCountsPerMotorRevolution": null,
+      "motorTurnsPerWheelTurn": null,
+      "encoderPositiveIsPayout": null,
+      "effectiveRadiusCalibrationFile": null,
+      "effectiveRadiusCalibrationSha256": null,
+      "forceCalibrationFile": null,
+      "forceCalibrationSha256": null,
+      "approvedMaximumTensionN": null,
+      "approvedMaximumCurrentA": null,
+      "approvedMaximumTorqueNm": null,
+      "approvedMaximumTensionSlewNPerSecond": null,
+      "approvedMaximumPayoutSpeedMPerSecond": null,
+      "approvedPayoutRangeM": null
+    },
+    {
+      "logicalId": "M3",
+      "physicalDriveId": null,
+      "cadMotorInstance": null,
+      "cadWheelInstance": null,
+      "forceConnector": null,
+      "encoderCountsPerMotorRevolution": null,
+      "motorTurnsPerWheelTurn": null,
+      "encoderPositiveIsPayout": null,
+      "effectiveRadiusCalibrationFile": null,
+      "effectiveRadiusCalibrationSha256": null,
+      "forceCalibrationFile": null,
+      "forceCalibrationSha256": null,
+      "approvedMaximumTensionN": null,
+      "approvedMaximumCurrentA": null,
+      "approvedMaximumTorqueNm": null,
+      "approvedMaximumTensionSlewNPerSecond": null,
+      "approvedMaximumPayoutSpeedMPerSecond": null,
+      "approvedPayoutRangeM": null
+    }
+  ],
+  "imu": {
+    "model": null,
+    "firmwareProtocol": null,
+    "nativeFrameDefinitionFile": null,
+    "installationCalibrationFile": null,
+    "installationCalibrationSha256": null,
+    "clockMappingFile": null
+  },
+  "position": {
+    "measuredCableRoutingFile": null,
+    "registrationFile": null,
+    "initialBranchProcedure": null,
+    "independentReferenceMethod": null
+  },
+  "supportingFileSha256": {},
+  "acceptance": {
+    "approvedBy": null,
+    "forceCalibrationToleranceN": null,
+    "positionToleranceM": null,
+    "orientationToleranceDegrees": null,
+    "singleMotorTrackingToleranceN": null,
+    "maximumMeasuredStopDelayMs": null,
+    "notes": "Fill from actual component ratings and the agreed test range before enabling power. Software 5/300 N values are not hardware limits."
+  }
+}

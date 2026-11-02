@@ -1,6 +1,6 @@
 # VR 头显接入手册(Pico 4 Ultra)
 
-> 依据《项目现状核查与执行交接方案.md》阶段 G 编写。用户已选定 **Pico 4 Ultra**。
+> 用户已选定 **Pico 4 Ultra**。本轮三绳船桨接入另见 [嵌入式交接手册](hardware/paddle/README.md)。
 > 这是后续实机接入清单，不是已完成的 VR 验收。当前先完成桌面软件；
 > 头显到手后再确认 runtime、双目、追踪、串流和运动补偿，不预估固定验收时长。
 
@@ -12,6 +12,12 @@
 4. 确认当前实际生效的 SteamVR/OpenXR runtime 及其 PICO 兼容路径；Unity 使用 OpenXR 的方案须以真实双目与头动测试通过为准。
 
 ## 1. Unity 工程(DragonBoatVR)改动
+
+2026-10-31 已补齐软件准备：`UnityXrHeadTrackingProvider`读取有效中心眼姿态，`HeadPoseAttachment.SubmitIndependentTrackingSample`分别保留头部与平台观测时间；该版历史 GPU 夹具为 6/6、配准与时钟反例为 14/14，范围见 [软件验收说明](软件全链路闭环验收.md)。原始 GPU 记录保留在本地 `tmp/software_followthrough_20261031/xr_visual_review.json`。这些检查未使用 PICO，当前工程未安装 XR 插件，也未把新追踪组件接入两个场景；以下步骤仍需在实机接入时执行。
+
+场景接线时，将 `UnityXrHeadTrackingProvider`与`HeadPoseAttachment`放在输出主相机上，指定当前船体的`virtualBoat`和已完成实测配准的`SpatialCalibrator`。平台适配器须在 Unity 主线程调用`SubmitPlatformObservation(stageFromPlatform, observedLocalSeconds, HeadTrackingSource.ExternalTracking, tracked)`，提供同一追踪空间中的实际平台观测及其原始本地单调时间；重复头部读取不能刷新旧平台数据。设备时间若来自另一个时钟，须先确认时钟映射，不能直接填入或以平台目标代替测量。当前 Unity 节点 API 仅提供本地观察时间，未提供设备采集时间。
+
+完成上述接线和有效配准后再开启`useTrackedPose`；`stageRegistrationMeasured`由有效配准结果计算，不能手动设为真跳过检查。输出相机仅由此链路写姿态，勿同时挂接`TrackedPoseDriver`；启用追踪后，包括丢失期间，桌面 WASD 不再改写相机位置。追踪原点重置或头显身份变化会清除旧平台观测与配准，需要重新建立。`SplitViewController`已将主相机设置为双眼输出，第三人称相机禁用 XR 输出；原生左右眼、桌面监视和真实平台补偿仍须按第 2 节验证。
 
 1. Package Manager 安装:
    - `XR Plugin Management`

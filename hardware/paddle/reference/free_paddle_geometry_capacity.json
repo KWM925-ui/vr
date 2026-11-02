@@ -1,0 +1,894 @@
+{
+  "checkedUtc": "2026-10-31T07:37:56.087743+00:00",
+  "mathematicalAndIdentityChecks": "PASS",
+  "originalProductFidelity": "FAIL_RETAINED",
+  "scope": "CONDITIONAL_EXISTING_CAD_FREE_PADDLE_RECORDED_POSES_NOT_NEW_CLOSED_LOOP_OR_HARDWARE",
+  "originalBuildId": "20261031T065936",
+  "originalArtifact": "tools\\closed_loop_checks\\20261030T232642.859755Z_eabcb0ad",
+  "pairedCommands": 537,
+  "loadedTargets": 227,
+  "nativeFilesVerifiedUnchanged": 113,
+  "ownedGuideReaderExitedAtFollowup": true,
+  "protectedPreviousSolidWorksPidsStillPresent": [
+    12076
+  ],
+  "nativeGuide": {
+    "centrePartM": [
+      0,
+      0,
+      0
+    ],
+    "axleDirectionPart": [
+      1,
+      0,
+      0
+    ],
+    "outerWheelRadiusM": 0.024,
+    "grooveFace": 10,
+    "grooveTorusMajorRadiusM": 0.017799583173057052,
+    "grooveTorusMinorRadiusM": 0.001,
+    "grooveFloorRadiusM": 0.01679958317305705,
+    "cableCentrelineRadiusMeasured": false,
+    "exitEnvelopeRadiiM": {
+      "all_native_wheel_box": 0.03568012554982255,
+      "entire_native_part_box": 0.07273338618387273,
+      "conservative_100mm_ball": 0.1
+    },
+    "pointGuideOriginOffsetM": 0.0,
+    "pointGuideIsExactTangent": false
+  },
+  "mountingCasesDefinition": {
+    "platformMounted": "all guide centres and paddle transformed by the same actual source platform pose",
+    "groundFixed": "same guide centres fixed at neutral stage locations; effective local guide is R_actual^T(a_neutral - platform_delta_actual)"
+  },
+  "mappingCasesDefinition": {
+    "current": "shaft/positive/negative holes to existing guides 5/2/1",
+    "alternate": "only remaining uncertain drive guides 1 and 5 exchanged; explicit guide 2 retained; centre measurement cord excluded"
+  },
+  "robustBoundMeaning": "Every ball exit and independent variation per sample is admitted. Positive separating gaps certify failure even for that enlarged set. Zero gap does not certify feasibility. No ball is a measured cable path.",
+  "cases": {
+    "current_5_2_1_platform_mounted": {
+      "loadedTargets": 227,
+      "forceOnlyWithinFivePercent": 0,
+      "originalTaskAllTargetsWithinFivePercent": false,
+      "forceOnlyErrorN": {
+        "count": 227,
+        "mean": 17.425963804589106,
+        "minimum": 5.63323753579012,
+        "median": 15.731300230618318,
+        "p95": 30.50931727628693,
+        "maximum": 45.74981489596572
+      },
+      "forceOnlyRelativeError": {
+        "count": 227,
+        "mean": 1.090315110337076,
+        "minimum": 0.23104251037160686,
+        "median": 0.8651991496300563,
+        "p95": 2.7105700051313133,
+        "maximum": 3.6210174654764757
+      },
+      "weightedWrenchErrorN": {
+        "count": 227,
+        "mean": 26.631414443782802,
+        "minimum": 11.907702095093542,
+        "median": 24.332385791638345,
+        "p95": 44.01213940115648,
+        "maximum": 57.085931242690236
+      },
+      "signedUnboundedWrenchErrorN": {
+        "count": 227,
+        "mean": 9.198754286289235,
+        "minimum": 0.8029592375081506,
+        "median": 6.690174440597531,
+        "p95": 24.301240070204635,
+        "maximum": 36.39412397154649
+      },
+      "forceRanks": [
+        3
+      ],
+      "wrenchRanks": [
+        3
+      ],
+      "robustOriginalForceCriterionFailures": {
+        "all_native_wheel_box": 224,
+        "entire_native_part_box": 219,
+        "conservative_100mm_ball": 175
+      },
+      "downwardRequestsWithAll100mmExitsUpward": 88,
+      "sameWithSourceStopInactive": 74
+    },
+    "current_5_2_1_ground_fixed_at_neutral": {
+      "loadedTargets": 227,
+      "forceOnlyWithinFivePercent": 0,
+      "originalTaskAllTargetsWithinFivePercent": false,
+      "forceOnlyErrorN": {
+        "count": 227,
+        "mean": 17.542119637962475,
+        "minimum": 5.65017438486686,
+        "median": 15.736211867881403,
+        "p95": 31.13398671462909,
+        "maximum": 47.90891635987079
+      },
+      "forceOnlyRelativeError": {
+        "count": 227,
+        "mean": 1.0938128286705209,
+        "minimum": 0.23021828116407,
+        "median": 0.8686549439871001,
+        "p95": 2.719913169255194,
+        "maximum": 3.6287632036159274
+      },
+      "weightedWrenchErrorN": {
+        "count": 227,
+        "mean": 26.732038825020787,
+        "minimum": 11.722118369671652,
+        "median": 24.416713419075986,
+        "p95": 43.877732596533946,
+        "maximum": 57.47838855706534
+      },
+      "signedUnboundedWrenchErrorN": {
+        "count": 227,
+        "mean": 9.27790100242863,
+        "minimum": 0.8198021124760659,
+        "median": 6.74732314371369,
+        "p95": 24.056235032845628,
+        "maximum": 38.90406833218059
+      },
+      "forceRanks": [
+        3
+      ],
+      "wrenchRanks": [
+        3
+      ],
+      "robustOriginalForceCriterionFailures": {
+        "all_native_wheel_box": 224,
+        "entire_native_part_box": 220,
+        "conservative_100mm_ball": 178
+      },
+      "downwardRequestsWithAll100mmExitsUpward": 90,
+      "sameWithSourceStopInactive": 75
+    },
+    "alternate_1_2_5_platform_mounted": {
+      "loadedTargets": 227,
+      "forceOnlyWithinFivePercent": 2,
+      "originalTaskAllTargetsWithinFivePercent": false,
+      "forceOnlyErrorN": {
+        "count": 227,
+        "mean": 12.816404600772469,
+        "minimum": 0.34815021693266424,
+        "median": 12.81102799529149,
+        "p95": 22.18362056468288,
+        "maximum": 33.281982833867765
+      },
+      "forceOnlyRelativeError": {
+        "count": 227,
+        "mean": 0.9023557555902102,
+        "minimum": 0.004108498840299545,
+        "median": 0.7036512397348528,
+        "p95": 2.4137094528380088,
+        "maximum": 3.3075745347790146
+      },
+      "weightedWrenchErrorN": {
+        "count": 227,
+        "mean": 21.86332095781183,
+        "minimum": 5.533578856796853,
+        "median": 19.026681358090027,
+        "p95": 40.80169533908489,
+        "maximum": 56.11989369995629
+      },
+      "signedUnboundedWrenchErrorN": {
+        "count": 227,
+        "mean": 4.3487979681627476,
+        "minimum": 0.7471876369175363,
+        "median": 3.7920761666916354,
+        "p95": 9.865054559863552,
+        "maximum": 14.164082342864347
+      },
+      "forceRanks": [
+        3
+      ],
+      "wrenchRanks": [
+        3
+      ],
+      "robustOriginalForceCriterionFailures": {
+        "all_native_wheel_box": 137,
+        "entire_native_part_box": 98,
+        "conservative_100mm_ball": 93
+      },
+      "downwardRequestsWithAll100mmExitsUpward": 0,
+      "sameWithSourceStopInactive": 0
+    },
+    "alternate_1_2_5_ground_fixed_at_neutral": {
+      "loadedTargets": 227,
+      "forceOnlyWithinFivePercent": 3,
+      "originalTaskAllTargetsWithinFivePercent": false,
+      "forceOnlyErrorN": {
+        "count": 227,
+        "mean": 12.881487360248832,
+        "minimum": 4.0555825566567e-14,
+        "median": 12.798351498349694,
+        "p95": 22.18645881396387,
+        "maximum": 33.14567663108636
+      },
+      "forceOnlyRelativeError": {
+        "count": 227,
+        "mean": 0.9048083521473457,
+        "minimum": 4.785967499191817e-16,
+        "median": 0.7188614762884248,
+        "p95": 2.411486120073529,
+        "maximum": 3.3148259997198624
+      },
+      "weightedWrenchErrorN": {
+        "count": 227,
+        "mean": 21.952100622785395,
+        "minimum": 5.892510715935003,
+        "median": 19.34964626230769,
+        "p95": 40.85874097285786,
+        "maximum": 56.482758795310296
+      },
+      "signedUnboundedWrenchErrorN": {
+        "count": 227,
+        "mean": 4.378182196671552,
+        "minimum": 0.7530156661869949,
+        "median": 3.829406520550129,
+        "p95": 9.978150596594933,
+        "maximum": 14.166576698760753
+      },
+      "forceRanks": [
+        3
+      ],
+      "wrenchRanks": [
+        3
+      ],
+      "robustOriginalForceCriterionFailures": {
+        "all_native_wheel_box": 137,
+        "entire_native_part_box": 98,
+        "conservative_100mm_ball": 92
+      },
+      "downwardRequestsWithAll100mmExitsUpward": 0,
+      "sameWithSourceStopInactive": 0
+    }
+  },
+  "selectedCounterexamples": [
+    {
+      "line": 5336,
+      "commandSequence": 762,
+      "sourceFeedbackSequence": 519,
+      "sourceSampleTick": 1519,
+      "sourceHardwareStopActive": false,
+      "case": "current_5_2_1_platform_mounted",
+      "forceMagnitudeN": 68.09003279550582,
+      "forceOnlyBestErrorN": 43.800538980461454,
+      "forceOnlyRelativeError": 0.6432738711113155,
+      "weightedWrenchBestErrorN": 47.022754622817864,
+      "signedUnboundedWrenchErrorN": 31.183430707481502,
+      "forceRank": 3,
+      "wrenchRank": 3,
+      "originalAllowedForceErrorN": 3.404501639775291,
+      "forceOnlyWithinFivePercent": false,
+      "robustGapN": {
+        "all_native_wheel_box": 30.85898334968846,
+        "entire_native_part_box": 30.336704165398665,
+        "conservative_100mm_ball": 29.947462878401566
+      },
+      "all100mmBallDirectionsUpward": true,
+      "robustMinimumFy100mmN": 4.467224917586138,
+      "robustNegativeFyImpossible": true,
+      "targetForceN": [
+        -32.49456787109375,
+        -25.48023796081543,
+        54.13975524902344
+      ],
+      "targetTorqueNm": [
+        -46.691001892089844,
+        -19.46652603149414,
+        -37.19819641113281
+      ],
+      "platformSourcePositionM": [
+        -0.0026677663511147577,
+        0.017278400457536612,
+        0.005606158929682284
+      ],
+      "platformSourceEulerDeg": [
+        0.26856051620246,
+        -0.2664579180233593,
+        -0.5685463345672098
+      ],
+      "effectiveGuideCentresM": [
+        [
+          0.3528251647949219,
+          0.7219258546829224,
+          1.0230000019073486
+        ],
+        [
+          0.06532517820596695,
+          -0.17807413637638092,
+          1.0230000019073486
+        ],
+        [
+          0.6403251886367798,
+          -0.17807413637638092,
+          1.0230000019073486
+        ]
+      ],
+      "attachmentPointsM": [
+        [
+          0.6583177622012838,
+          -0.012571263969213486,
+          0.11898415745083776
+        ],
+        [
+          0.6545156686107145,
+          -0.4508270668128018,
+          0.24866601563968455
+        ],
+        [
+          0.8121759078921033,
+          -0.423658888336539,
+          0.24639932562822958
+        ]
+      ],
+      "centreToEyeletM": [
+        [
+          -0.3054925974063619,
+          0.7344971186521358,
+          0.9040158444565108
+        ],
+        [
+          -0.5891904904047476,
+          0.2727529304364209,
+          0.7743339862676641
+        ],
+        [
+          -0.17185071925532347,
+          0.24558475196015805,
+          0.7766006762791191
+        ]
+      ],
+      "centreToEyeletDistanceM": [
+        1.2041828729087596,
+        1.010511116878094,
+        0.8324380760759863
+      ],
+      "minimum100mmBallDirectionY": [
+        0.5420409811227649,
+        0.1733040914484323,
+        0.1780999109460304
+      ],
+      "minimumGuideShiftForAnyNegativeFyM": 0.24558475196015805,
+      "forceOptimalTensionsN": [
+        5.0,
+        44.541496563300676,
+        5.0
+      ],
+      "robustCertificates": {
+        "all_native_wheel_box": {
+          "gapN": 30.85898334968846,
+          "direction": [
+            -0.0,
+            -1.0,
+            -0.0
+          ],
+          "maximumProjectionN": -5.378745388873033,
+          "targetProjectionN": 25.48023796081543
+        },
+        "entire_native_part_box": {
+          "gapN": 30.336704165398665,
+          "direction": [
+            -0.0,
+            -1.0,
+            -0.0
+          ],
+          "maximumProjectionN": -4.856466204583234,
+          "targetProjectionN": 25.48023796081543
+        },
+        "conservative_100mm_ball": {
+          "gapN": 29.947462878401566,
+          "direction": [
+            -0.0,
+            -1.0,
+            -0.0
+          ],
+          "maximumProjectionN": -4.467224917586138,
+          "targetProjectionN": 25.48023796081543
+        }
+      }
+    },
+    {
+      "line": 5336,
+      "commandSequence": 762,
+      "sourceFeedbackSequence": 519,
+      "sourceSampleTick": 1519,
+      "sourceHardwareStopActive": false,
+      "case": "current_5_2_1_ground_fixed_at_neutral",
+      "forceMagnitudeN": 68.09003279550582,
+      "forceOnlyBestErrorN": 43.373661352090146,
+      "forceOnlyRelativeError": 0.6370045595712058,
+      "weightedWrenchBestErrorN": 46.707782266249986,
+      "signedUnboundedWrenchErrorN": 30.80016162247548,
+      "forceRank": 3,
+      "wrenchRank": 3,
+      "originalAllowedForceErrorN": 3.404501639775291,
+      "forceOnlyWithinFivePercent": false,
+      "robustGapN": {
+        "all_native_wheel_box": 30.789153975433496,
+        "entire_native_part_box": 30.259604299162994,
+        "conservative_100mm_ball": 29.86495260348839
+      },
+      "all100mmBallDirectionsUpward": true,
+      "robustMinimumFy100mmN": 4.384714642672959,
+      "robustNegativeFyImpossible": true,
+      "targetForceN": [
+        -32.49456787109375,
+        -25.48023796081543,
+        54.13975524902344
+      ],
+      "targetTorqueNm": [
+        -46.691001892089844,
+        -19.46652603149414,
+        -37.19819641113281
+      ],
+      "platformSourcePositionM": [
+        -0.0026677663511147577,
+        0.017278400457536612,
+        0.005606158929682284
+      ],
+      "platformSourceEulerDeg": [
+        0.26856051620246,
+        -0.2664579180233593,
+        -0.5685463345672098
+      ],
+      "effectiveGuideCentresM": [
+        [
+          0.3531635230550707,
+          0.712940176138615,
+          1.0124155874939664
+        ],
+        [
+          0.07461119767629346,
+          -0.1898521389455268,
+          1.0179711294555318
+        ],
+        [
+          0.6495768060557636,
+          -0.18415909942086087,
+          1.0152970918284294
+        ]
+      ],
+      "attachmentPointsM": [
+        [
+          0.6583177622012838,
+          -0.012571263969213486,
+          0.11898415745083776
+        ],
+        [
+          0.6545156686107145,
+          -0.4508270668128018,
+          0.24866601563968455
+        ],
+        [
+          0.8121759078921033,
+          -0.423658888336539,
+          0.24639932562822958
+        ]
+      ],
+      "centreToEyeletM": [
+        [
+          -0.3051542391462131,
+          0.7255114401078285,
+          0.8934314300431286
+        ],
+        [
+          -0.5799044709344211,
+          0.26097492786727505,
+          0.7693051138158473
+        ],
+        [
+          -0.16259910183633963,
+          0.2394997889156781,
+          0.7688977662001999
+        ]
+      ],
+      "centreToEyeletDistanceM": [
+        1.1906744641526286,
+        0.9981119508994339,
+        0.8215852917843016
+      ],
+      "minimum100mmBallDirectionY": [
+        0.5405812938329375,
+        0.16344921006502072,
+        0.1729124246366336
+      ],
+      "minimumGuideShiftForAnyNegativeFyM": 0.2394997889156781,
+      "forceOptimalTensionsN": [
+        5.0,
+        44.95034959538607,
+        5.0
+      ],
+      "robustCertificates": {
+        "all_native_wheel_box": {
+          "gapN": 30.789153975433496,
+          "direction": [
+            -0.0,
+            -1.0,
+            -0.0
+          ],
+          "maximumProjectionN": -5.308916014618068,
+          "targetProjectionN": 25.48023796081543
+        },
+        "entire_native_part_box": {
+          "gapN": 30.259604299162994,
+          "direction": [
+            -0.0,
+            -1.0,
+            -0.0
+          ],
+          "maximumProjectionN": -4.779366338347566,
+          "targetProjectionN": 25.48023796081543
+        },
+        "conservative_100mm_ball": {
+          "gapN": 29.86495260348839,
+          "direction": [
+            -0.0,
+            -1.0,
+            -0.0
+          ],
+          "maximumProjectionN": -4.384714642672959,
+          "targetProjectionN": 25.48023796081543
+        }
+      }
+    },
+    {
+      "line": 5350,
+      "commandSequence": 763,
+      "sourceFeedbackSequence": 520,
+      "sourceSampleTick": 1523,
+      "sourceHardwareStopActive": false,
+      "case": "current_5_2_1_platform_mounted",
+      "forceMagnitudeN": 44.75331193291782,
+      "forceOnlyBestErrorN": 33.39624288916575,
+      "forceOnlyRelativeError": 0.7462295290955103,
+      "weightedWrenchBestErrorN": 38.19659368723133,
+      "signedUnboundedWrenchErrorN": 22.342735287210704,
+      "forceRank": 3,
+      "wrenchRank": 3,
+      "originalAllowedForceErrorN": 2.237665596645891,
+      "forceOnlyWithinFivePercent": false,
+      "robustGapN": {
+        "all_native_wheel_box": 27.551370129053733,
+        "entire_native_part_box": 27.041076526800918,
+        "conservative_100mm_ball": 26.661307682802367
+      },
+      "all100mmBallDirectionsUpward": true,
+      "robustMinimumFy100mmN": 4.080609669496703,
+      "robustNegativeFyImpossible": true,
+      "targetForceN": [
+        -20.97607421875,
+        -22.580698013305664,
+        32.449581146240234
+      ],
+      "targetTorqueNm": [
+        -26.9149169921875,
+        -12.368233680725098,
+        -25.99778175354004
+      ],
+      "platformSourcePositionM": [
+        -0.0034558100084905534,
+        0.01739694029345507,
+        0.006538248763469574
+      ],
+      "platformSourceEulerDeg": [
+        0.2815121020450015,
+        -0.3452690638436278,
+        -0.5668440489068137
+      ],
+      "effectiveGuideCentresM": [
+        [
+          0.3528251647949219,
+          0.7219258546829224,
+          1.0230000019073486
+        ],
+        [
+          0.06532517820596695,
+          -0.17807413637638092,
+          1.0230000019073486
+        ],
+        [
+          0.6403251886367798,
+          -0.17807413637638092,
+          1.0230000019073486
+        ]
+      ],
+      "attachmentPointsM": [
+        [
+          0.6689520948259658,
+          0.00786422695980804,
+          0.0927691635053815
+        ],
+        [
+          0.6760349208163503,
+          -0.43398863539409743,
+          0.20945622615892678
+        ],
+        [
+          0.8330417229275828,
+          -0.4033541051429257,
+          0.20623310613554313
+        ]
+      ],
+      "centreToEyeletM": [
+        [
+          -0.316126930031044,
+          0.7140616277231143,
+          0.9302308384019671
+        ],
+        [
+          -0.6107097426103834,
+          0.2559144990177165,
+          0.8135437757484218
+        ],
+        [
+          -0.19271653429080304,
+          0.22527996876654477,
+          0.8167668957718055
+        ]
+      ],
+      "centreToEyeletDistanceM": [
+        1.2145573913123506,
+        1.0489576233507854,
+        0.8689067205087235
+      ],
+      "minimum100mmBallDirectionY": [
+        0.5193210706690149,
+        0.15040708304460923,
+        0.14639378018571653
+      ],
+      "minimumGuideShiftForAnyNegativeFyM": 0.22527996876654477,
+      "forceOptimalTensionsN": [
+        5.0,
+        22.818410807989427,
+        5.0
+      ],
+      "robustCertificates": {
+        "all_native_wheel_box": {
+          "gapN": 27.551370129053733,
+          "direction": [
+            -0.0,
+            -1.0,
+            -0.0
+          ],
+          "maximumProjectionN": -4.970672115748068,
+          "targetProjectionN": 22.580698013305664
+        },
+        "entire_native_part_box": {
+          "gapN": 27.041076526800918,
+          "direction": [
+            -0.0,
+            -1.0,
+            -0.0
+          ],
+          "maximumProjectionN": -4.460378513495253,
+          "targetProjectionN": 22.580698013305664
+        },
+        "conservative_100mm_ball": {
+          "gapN": 26.661307682802367,
+          "direction": [
+            -0.0,
+            -1.0,
+            -0.0
+          ],
+          "maximumProjectionN": -4.080609669496703,
+          "targetProjectionN": 22.580698013305664
+        }
+      }
+    },
+    {
+      "line": 5350,
+      "commandSequence": 763,
+      "sourceFeedbackSequence": 520,
+      "sourceSampleTick": 1523,
+      "sourceHardwareStopActive": false,
+      "case": "current_5_2_1_ground_fixed_at_neutral",
+      "forceMagnitudeN": 44.75331193291782,
+      "forceOnlyBestErrorN": 33.200855646101694,
+      "forceOnlyRelativeError": 0.7418636568365605,
+      "weightedWrenchBestErrorN": 38.12416584436749,
+      "signedUnboundedWrenchErrorN": 22.089086980418017,
+      "forceRank": 3,
+      "wrenchRank": 3,
+      "originalAllowedForceErrorN": 2.237665596645891,
+      "forceOnlyWithinFivePercent": false,
+      "robustGapN": {
+        "all_native_wheel_box": 27.489379148560182,
+        "entire_native_part_box": 26.97139082587246,
+        "conservative_100mm_ball": 26.585891656919166
+      },
+      "all100mmBallDirectionsUpward": true,
+      "robustMinimumFy100mmN": 4.005193643613502,
+      "robustNegativeFyImpossible": true,
+      "targetForceN": [
+        -20.97607421875,
+        -22.580698013305664,
+        32.449581146240234
+      ],
+      "targetTorqueNm": [
+        -26.9149169921875,
+        -12.368233680725098,
+        -25.99778175354004
+      ],
+      "platformSourcePositionM": [
+        -0.0034558100084905534,
+        0.01739694029345507,
+        0.006538248763469574
+      ],
+      "platformSourceEulerDeg": [
+        0.2815121020450015,
+        -0.3452690638436278,
+        -0.5668440489068137
+      ],
+      "effectiveGuideCentresM": [
+        [
+          0.3553627981187121,
+          0.7130544931614299,
+          1.010822532058687
+        ],
+        [
+          0.07678572956937975,
+          -0.1897263030747248,
+          1.0169769630697867
+        ],
+        [
+          0.6517473292985543,
+          -0.18405487804205023,
+          1.0135120286689363
+        ]
+      ],
+      "attachmentPointsM": [
+        [
+          0.6689520948259658,
+          0.00786422695980804,
+          0.0927691635053815
+        ],
+        [
+          0.6760349208163503,
+          -0.43398863539409743,
+          0.20945622615892678
+        ],
+        [
+          0.8330417229275828,
+          -0.4033541051429257,
+          0.20623310613554313
+        ]
+      ],
+      "centreToEyeletM": [
+        [
+          -0.3135892967072538,
+          0.7051902662016218,
+          0.9180533685533054
+        ],
+        [
+          -0.5992491912469705,
+          0.24426233231937264,
+          0.8075207369108599
+        ],
+        [
+          -0.18129439362902855,
+          0.21929922710087546,
+          0.8072789225333932
+        ]
+      ],
+      "centreToEyeletDistanceM": [
+        1.1993554711039325,
+        1.034820477542509,
+        0.8559550612824453
+      ],
+      "minimum100mmBallDirectionY": [
+        0.5184841691151295,
+        0.14103402561811457,
+        0.14152053398945638
+      ],
+      "minimumGuideShiftForAnyNegativeFyM": 0.21929922710087546,
+      "forceOptimalTensionsN": [
+        5.0,
+        23.105801278703172,
+        5.0
+      ],
+      "robustCertificates": {
+        "all_native_wheel_box": {
+          "gapN": 27.489379148560182,
+          "direction": [
+            -0.0,
+            -1.0,
+            -0.0
+          ],
+          "maximumProjectionN": -4.908681135254517,
+          "targetProjectionN": 22.580698013305664
+        },
+        "entire_native_part_box": {
+          "gapN": 26.97139082587246,
+          "direction": [
+            -0.0,
+            -1.0,
+            -0.0
+          ],
+          "maximumProjectionN": -4.390692812566796,
+          "targetProjectionN": 22.580698013305664
+        },
+        "conservative_100mm_ball": {
+          "gapN": 26.585891656919166,
+          "direction": [
+            -0.0,
+            -1.0,
+            -0.0
+          ],
+          "maximumProjectionN": -4.005193643613502,
+          "targetProjectionN": 22.580698013305664
+        }
+      }
+    }
+  ],
+  "sourcePlatformFrameChecks": {
+    "maximumWorldLocalMatrixDifference": 7.771561172376096e-16,
+    "maximumFixedGroundLengthDerivativeErrorMPerS": 4.0179859439604115e-10,
+    "maximumAbsoluteCableLengthDifferenceM": [
+      0.018591235635067926,
+      0.015820226348430833,
+      0.017994161024679434
+    ],
+    "maximumStationaryPaddleFixedCableSpeedMPerS": [
+      0.19895556042065238,
+      0.24656201136618033,
+      0.24888637087191692
+    ],
+    "sameTensionsForceDifferenceN": {
+      "count": 537,
+      "mean": 0.2144750347610341,
+      "minimum": 0.0,
+      "median": 0.16478118230969396,
+      "p95": 0.5304790492369958,
+      "maximum": 1.1579099123434182
+    }
+  },
+  "dryTargetGuaranteedForce100mmN": {
+    "platform_mounted": {
+      "count": 96,
+      "mean": 11.375398089487385,
+      "minimum": 10.27220513405299,
+      "median": 11.212533162041952,
+      "p95": 12.302074882058065,
+      "maximum": 12.480136217290665
+    },
+    "ground_fixed_at_neutral": {
+      "count": 96,
+      "mean": 11.374365500519145,
+      "minimum": 10.248813344806397,
+      "median": 11.209095720733352,
+      "p95": 12.294170072742315,
+      "maximum": 12.486860302750342
+    }
+  },
+  "inputSha256": {
+    "tmp\\tendon_fidelity_resolution_20261031\\analyze_free_paddle_geometry.py": "7a504273b37a1a99a8b2ca84a7f0e4ffbb3c386780f70c81a7d6bff15ba5c3b8",
+    "tmp\\tendon_fidelity_resolution_20261031\\guide_geometry_probe.json": "8319235f70cc6e46cf29e97e68bee82c0e0186b1d222baa8479067b455ca903f",
+    "tmp\\tendon_fidelity_resolution_20261031\\GuideGeometryReader.cs": "d6065e562841165f566d6dfae180303feee98a1d5f0d0da87908be6abef37461",
+    "tmp\\tendon_fidelity_resolution_20261031\\probe_guide_geometry.ps1": "b1466f4d06cf2be2ed38c8999a921cb0dc4d3e139b39571c122f97ea9bd85a97",
+    "tmp\\tendon_fidelity_resolution_20261031\\confirmed_operating_mode.json": "233653e1158fd4a2579d1dc9919ce6fe007123d75b892f3d0e671176fc69e407",
+    "tmp\\tendon_fidelity_resolution_20261031\\capacity_resolution.json": "0f8097421a867eb95e81961a9a531a67764d270e63a7178fdaaaba31c96ce26b",
+    "tmp\\tendon_fidelity_resolution_20261031\\whole_model_mechanism.json": "3c78bf245076442c1523c1a1b5b89d532c0b6dd5a430608ec685c93cc5dcd4b2",
+    "tools\\closed_loop_checks\\20261030T232642.859755Z_eabcb0ad\\observations.jsonl": "028c9eb49930ed56b3cf92f87db907bc25f0c373cc8425676cfbf6d1dc3eb2af",
+    "tools\\closed_loop_checks\\20261030T232642.859755Z_eabcb0ad\\verification.json": "77ef43a6fd86459363bd0dcf8b2893f8551ac883ec89cebaebed022a64d35993",
+    "tmp\\tendon_fidelity_resolution_20261031\\current_task\\command_timeline.json": "e9960e437e3df9b781898b8d111964835deb24a66bcceec7a7a3e068cb98a427",
+    "DragonBoatVR\\Assets\\StreamingAssets\\tendon_rig_cad.json": "954005a65a7a686f600ffe2251e90a447c5e2979bc6c2ff6c3d5f271e34260f4",
+    "DragonBoatVR\\Assets\\StreamingAssets\\tendon_cad_provenance.json": "4e11ddb62d6cf2a25ec153e3cd167bd2e038b33132c7efab83c45096bc361140"
+  },
+  "productSourceChanged": false,
+  "productRebuilt": false,
+  "productRepublished": false,
+  "commandsIssued": false,
+  "limits": [
+    "Platform/boat mounting registration, the two inferred guide roles, cable centreline/groove clearance and hardware dynamics remain unmeasured.",
+    "Recorded poses were generated by the original software geometry; alternate cases are capability counterfactuals and are not new motion trajectories.",
+    "The three-cable rank/positive-tension restriction applies at each interior free-paddle pose; it does not by itself prove every restricted rowing task infeasible.",
+    "Boundary reactions are excluded. Human support, platform inertia and paddle weight cannot be counted as motor fidelity."
+  ],
+  "sampleFileSha256": "0f785bb3568ff4526478830864b2499029e828187424669edee1358556b9b09b"
+}

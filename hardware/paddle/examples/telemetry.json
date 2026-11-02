@@ -1,0 +1,119 @@
+{
+  "deviceId": "paddle-example",
+  "deviceTimeUs": 10000,
+  "simulated": true,
+  "state": "DISARMED",
+  "faults": [],
+  "configurationId": null,
+  "appliedHostSessionId": null,
+  "appliedCommandSequence": null,
+  "motorEnabled": [
+    false,
+    false,
+    false
+  ],
+  "targetTensionN": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "adcs": [
+    {
+      "adcId": "U7",
+      "mode": 1572868,
+      "config": 855
+    },
+    {
+      "adcId": "U8",
+      "mode": 1572868,
+      "config": 855
+    }
+  ],
+  "forces": [
+    {
+      "channelId": "CH1",
+      "sampleSequence": 1,
+      "sampleTimeUs": 9000,
+      "valid": true,
+      "saturated": false,
+      "rawCode": 8388609,
+      "status": 0,
+      "forceN": null,
+      "calibrationId": null
+    },
+    {
+      "channelId": "CH2",
+      "sampleSequence": 1,
+      "sampleTimeUs": 9000,
+      "valid": true,
+      "saturated": false,
+      "rawCode": 8388609,
+      "status": 1,
+      "forceN": null,
+      "calibrationId": null
+    },
+    {
+      "channelId": "CH3",
+      "sampleSequence": 1,
+      "sampleTimeUs": 9000,
+      "valid": true,
+      "saturated": false,
+      "rawCode": 8388609,
+      "status": 0,
+      "forceN": null,
+      "calibrationId": null
+    },
+    {
+      "channelId": "CH4",
+      "sampleSequence": 1,
+      "sampleTimeUs": 9000,
+      "valid": true,
+      "saturated": false,
+      "rawCode": 8388609,
+      "status": 1,
+      "forceN": null,
+      "calibrationId": null
+    }
+  ],
+  "encoders": [
+    {
+      "channelId": "M1",
+      "sampleSequence": null,
+      "sampleTimeUs": null,
+      "valid": false,
+      "rawCount": null,
+      "payoutM": null,
+      "calibrationId": null,
+      "driveCurrentA": null
+    },
+    {
+      "channelId": "M2",
+      "sampleSequence": null,
+      "sampleTimeUs": null,
+      "valid": false,
+      "rawCount": null,
+      "payoutM": null,
+      "calibrationId": null,
+      "driveCurrentA": null
+    },
+    {
+      "channelId": "M3",
+      "sampleSequence": null,
+      "sampleTimeUs": null,
+      "valid": false,
+      "rawCount": null,
+      "payoutM": null,
+      "calibrationId": null,
+      "driveCurrentA": null
+    }
+  ],
+  "imu": {
+    "sampleSequence": null,
+    "sampleTimeUs": null,
+    "valid": false,
+    "quaternionXyzw": null,
+    "gyroRadS": null,
+    "accelerometerMps2": null,
+    "frameId": "imu_native_unregistered"
+  }
+}

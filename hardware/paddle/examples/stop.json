@@ -1,0 +1,14 @@
+{
+  "deviceId": "paddle-example",
+  "hostSessionId": "0102030405060708",
+  "action": "stop",
+  "configurationId": null,
+  "sourceSequence": null,
+  "sourceDeviceTimeUs": null,
+  "ttlUs": 0,
+  "tensionsN": [
+    0.0,
+    0.0,
+    0.0
+  ]
+}

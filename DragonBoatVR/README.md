@@ -1,80 +1,79 @@
-# DragonBoatVR — 工程使用说明
+# DragonBoatVR 工程说明
 
-> 当前交付为 `20261031T053308`。双击根目录[启动CAD机构龙舟VR.cmd](../启动CAD机构龙舟VR.cmd)使用已有 CAD 设计数据及理想机械限位；[启动龙舟VR.cmd](../启动龙舟VR.cmd)保留原默认示例配置。两个入口均保留船内/船外双视窗及两船选择，保留完整 `Builds/DragonBoatVR` 即可运行，无须另装 Python。**最新范围、验收证据及后续任务只读[执行交接](../tmp/closed_loop_20261025/IMPLEMENTATION_STATUS.md)**。最终实机由人的划桨和机构限位决定桨姿态，电脑握持只用于测试；CAD 配准、导轮/电机映射及具体限位仍有未实测假设。三绳 FIDELITY、实机/PICO 与人体手感未因此通过。下方旧版本均为历史记录。
+接真实船桨请先读 [嵌入式交接手册](../hardware/paddle/README.md)。本文说明桌面演示与 Unity 开发入口；模拟控制器、旧 UDP 姿态示例和新的 DBPF 硬件接口有不同用途。
 
-2026-10-28 05:45 历史交付：[Windows Player](../Builds/DragonBoatVR/DragonBoatVR.exe) 当时为 **054503 构建**，包含手持桨轨迹、Poly Haven 木纹、实录木材吱呀声、同步水声及 Crest 泡沫。本次还修复了平台显示模型首步把船顶高约 10 cm 的碰撞，以及部分浮力点离水时波高遥测被放大的错误；已清理旧桨锁、浮空船舷线、旧音频逻辑和 16 个零引用河景材质。
+## 打开与运行
 
-同包普通连续运行及失焦/350 ms 暂停均为 **14/14 + schema 5 独立核验 PASS**；**575 个源文件、200 个交付文件**哈希一致，两次共 **1,456** 个实际桨姿态无穿船。默认体验由独立 UDP 控制进程的实际回包驱动。普通运行桨叶相对意图偏差均值/峰值为 **0.192/0.455 m**，原始水动力峰值 **128.89 N**；这些是本次模型响应，不是实测手感精度。三绳 FIDELITY 仍 **FAIL（28.14/143.52 N 平均/峰值残差）**，完整受载手感、实物/Pico 与长期实时保证未验收。
+Unity Hub 添加本目录，使用 **Unity 2022.3.62f3**、URP 14。安装 Windows CPython，使 `python.exe` 在 PATH；编辑器中的独立软件控制器默认调用它。等待资源导入和脚本编译完成，打开 `Assets/Scenes/Demo.unity` 或 `Assets/Scenes/DragonBoatOrnament.unity` 后 Play。已有场景沿用当前保存配置，不用重新运行旧初始化向导。
 
-[连续画面与声音回看](../tools/closed_loop_checks/20261027T214641.441770Z_0c0be8d2/motion_review.html)、[原始混音](../tools/closed_loop_checks/20261027T214641.441770Z_0c0be8d2/listener_mix.wav)、[验收依据](../软件全链路闭环验收.md)和[清理与恢复记录](../tmp/cleanup_20261028/README.md)已保存。266 张画面和 13.74 秒实际混音完成核验，削波 0；尚未主观试听。保留整个 `Builds/DragonBoatVR` 目录即可运行，无须另装 Python。下方 2026-10-23 表为历史记录。
+默认 `PaddleDriver.Mode.VirtualPaddler` 会自动启动独立 UDP 模拟控制器。实际模拟回包进入水动力和船体，再产生设备目标及下一次响应。无需另起 mock；回放只作内部诊断。
 
-已经造好的 Unity 工程（含 URP 配置、全部脚本、一键搭场景工具）。**不需要手动摆场景。**
+完整本地发布包存在时，根目录 [启动龙舟VR.cmd](../启动龙舟VR.cmd) 以 `-presentation` 开启中文首页；[CAD 机构入口](../启动CAD机构龙舟VR.cmd) 另加 `-cad-tendon-rig`，仍是未实测的 CAD 设计配置。Git 不包含 `Builds`，新克隆须用编辑器或自行构建候选。
 
+## 展示操作
 
-## 一、打开工程
+| 操作 | 行为 |
+|---|---|
+| 首页／设置 | 选经典木船或雕饰龙舟、两种河景、水况；切船重新建立体验 |
+| 左侧船内窗 | 右键转头，WASD／方向键移动，R 回划桨位；视点受船体边界约束，不推动船 |
+| 右侧船外窗 | 左键环绕，滚轮调整距离；跟随同一船体 |
+| F2 | 河景与体验设置；舒适模式默认关闭 |
+| F8 | 暂停／恢复模拟划桨意图，船和波浪仍继续运动 |
+| F10／F11 | 结束／重新定位并开始体验 |
+| F1／F9 | 航行读数／完整诊断 |
+| H／操作说明 | 移动方法、VR 追踪说明和运行数据 |
+| 演示导览 | 七步展示常用功能，按钮委托现有域组件执行 |
 
-**方式 A（不需要 Hub）**：双击 `F:\vr视觉\tools\打开工程.bat`，或命令行
+产品只有船内、船外两视窗，三绳和平台装置不在产品画面显示。桌面演示失焦时只停止相机输入，仿真继续；**真实电机适配器必须另外实现失焦等生命周期停机**，不能照搬此模拟行为。
 
-```bash
-"F:/Unity/Editor/Unity.exe" -projectPath "F:\vr视觉\DragonBoatVR"
-```
+完整界面功能与 C# 调用入口见 [展示与功能接口](../展示与功能接口.md)。本地最近一次发布为 `20261101T195259`；其历史软件检查见 [软件验收说明](../软件全链路闭环验收.md)。真实 PICO、传感器、电机、平台和人体体验未验收，三绳 FIDELITY 仍 FAIL。
 
-**方式 B（装了 Unity Hub 之后）**：Hub → `Add` → `Add project from disk` → 选 `F:\vr视觉\DragonBoatVR`。
+## 代码入口
 
-编辑器版本：**Unity 2022.3.62f3**（本机已装，工程 `ProjectVersion.txt` 已对上）。
-首次打开会导入 URP 14 包并编译脚本，等进度条走完、Console 无红色报错。
+| 文件／目录 | 责任 |
+|---|---|
+| `Assets/Scripts/SimulationSession.cs` | 采样、物理、设备和记录的编排，体验生命周期 |
+| `Assets/Scripts/SimulationContracts.cs` | PaddleSample、力反馈请求、设备反馈与适配器接口 |
+| `Assets/Scripts/PaddleDriver.cs` | 桨输入模式、有效性与真实 External 入口 |
+| `Assets/Scripts/PaddleHydrodynamics.cs` | 桨的水动力及握把力矩 |
+| `Assets/Scripts/UdpClosedLoopClient.cs` | 独立软件控制器的启动、协议与时效检查；拒绝实测配置 |
+| `Assets/StreamingAssets/closed_loop_controller.py` | 软件控制器的执行与观测模型 |
+| `Assets/Scripts/DemoExperienceController.cs` | 展示界面共用的功能命令 |
+| `Assets/StreamingAssets` | 当前软件几何和装置配置；measured=false 的内容不是实物标定 |
 
-现有工程直接打开 `Assets/Scenes/Demo.unity`；日常运行沿用已保存的场景和配置。
+旧 48 字节姿态协议仍可用于明确选择外部 UDP 模式时的诊断，发送示例在 `tools/legacy/mock_hardware.py`。它没有三电机命令与本机保护合同，不用于硬件力控；新的固件和电脑接入按 [DBPF](../hardware/paddle/PROTOCOL.md) 实现。
 
-## 三、运行桌面仿真
+## 构建与验证
 
-1. 展示时双击根目录的[启动龙舟VR.cmd](../启动龙舟VR.cmd)，它固定打开[正式程序](../Builds/DragonBoatVR/DragonBoatVR.exe)。在编辑器检查时打开 `Assets/Scenes/Demo.unity`，按 **Play**；
-2. 默认使用 `PaddleDriver.Mode.VirtualPaddler`，自动启动独立 UDP 控制进程，无须手动启动 mock；
-3. 只保留左侧船内第一人称和右侧龙舟第三人称跟拍；无水装置视窗与 `F3` 入口已移除。
-4. 鼠标置于左窗：按住**右键转头**，使用 **WASD / 方向键**沿当前朝向在船舱内移动，**R** 回到原划桨位。可前后查看船舱；镜头在船舷、首尾及实体前停止，不会推动船体。右键释放、Esc 或失焦会释放鼠标。
-5. 鼠标置于右窗：**左键拖动环绕**，**滚轮调整远近**。左窗操作不会同时拖动右窗；右窗保持水面以上的船外视角。
-6. **F2** 打开/收起河景与体验菜单，可选“经典木船”或“雕饰龙舟”、“湘江·橘子洲”或“顺德·逢简水乡”，以及平静/有风水况。切船会重新开始当前体验，保留河景、水况和舒适选项；“舒适模式”默认关闭，可自行开启。
-7. **F10** 结束体验，随后 **F11** 重新定位并开始，主视角回到划桨位。菜单或 F9 诊断面板打开时暂停相机操作。窗口失焦时仿真和 UDP 闭环继续运行，相机停止接收输入。
-8. **F1** 显示/隐藏速度和距离，**F9** 显示/隐藏诊断详情。**F8** 暂停/恢复划桨意图；波浪和船体物理继续运行，船可惯性滑行，这与 F10 结束体验不同。
-
-只有单独诊断外部 UDP 输入模式时，才需要另开 mock 发送器；它不是默认动态闭环的控制器：
-
-```powershell
-Set-Location 'F:\vr视觉'
-python.exe .\mock_hardware.py
-```
-
-**桌面显示**：
-   - 左侧第一人称能看到船头、水面和桨；
-   - 右侧第三人称能看到整条龙舟、船体起伏和桨运动；
-   - 水面有起伏的浪；
-   - 船体随桨和波浪前进、起伏和横摇。
-
-## 四、故障排查
-
-| 现象 | 排查方向 | 处理 |
-|---|---|---|
-| 默认动态闭环无法启动 | 控制器配置或随包运行时缺失 | 保留完整交付目录，查看 Player 日志中的闭环启动状态与失败原因 |
-| 外部 UDP 输入模式 Alive=False | 发送器未运行或端口配置不一致 | 核对当前输入模式、发送器与收包端口；默认动态模式不依赖 mock |
-| 画面全粉 | URP 管线资产没挂上 | 检查Graphics/Quality的URP资产绑定，核对已验工程配置 |
-| 水面是纯色平面，没浪 | 水面 plane 没挂 WaterSurface，或材质没用 DragonBoatVR/WaveFieldWater | 检查 Water 对象的材质与组件 |
-| 船持续异常抖动 | 受力、碰撞、输入时序或配置变化 | 先与已确认正常的源/包比较，再查实际受力和碰撞记录；`BoatBuoyancy` 当前使用 `verticalWaterDamping`、`maxSubmergenceDepth`、`totalBuoyancyMultiplier`，没有旧说明中的 `stiffness/damping` 字段，不凭现象重调锁定参数 |
-| 船沉底或飞出 | 波浪绑定、浮力采样位置、初始姿态或非预期碰撞 | 核对实际场景、六点浸深及碰撞来源；每点浮力上限由质量和 `totalBuoyancyMultiplier` 等计算，没有 `maxForcePerPoint` 配置项，不套用旧文档的固定初始 Y 值 |
-| 桨不动但 HUD 正常 | 当前输入未收到有效的新反馈 | 默认模式检查独立控制器是否启动及反馈是否过期；外部输入模式再检查 bridge 接线 |
-
-## 五、验证命令
-
-从工作区 `F:\vr视觉` 按改动范围选用。Unity/Player 检查须排他运行；同包验收要求待测 Player 与当前源码一致，正式包与候选不同时先查[执行交接](../tmp/closed_loop_20261025/IMPLEMENTATION_STATUS.md)。已经通过且未受改动影响的检查直接复用。
+在**仓库根目录**执行。先关闭占用同一工程的 Unity／Player，设置实际编辑器路径：
 
 ```powershell
-Set-Location 'F:\vr视觉'
+$env:UNITY_EDITOR_PATH = 'C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Unity.exe'
+python.exe tools/build_closed_loop_player.py --out Builds/DragonBoatVR-Candidate
+```
+
+构建会将所调用的本机 CPython 标准库随包部署，完成后核对版本。候选包自带控制器运行时；运行时应保留整个输出目录。
+
+按改动范围选择检查，不把下面全部命令当每次文档修改都要执行的流程：
+
+```powershell
+python.exe tools/run_all_checks.py
 python.exe tools/run_runtime_check.py
 python.exe tools/run_paddle_demo.py
-python.exe tools/run_closed_loop_check.py
-python.exe tools/run_closed_loop_check.py --player Builds/DragonBoatVR/DragonBoatVR.exe
-python.exe tools/run_closed_loop_check.py --player Builds/DragonBoatVR/DragonBoatVR.exe --background-check --host-stall-check
+python.exe tools/run_closed_loop_check.py --player Builds/DragonBoatVR-Candidate/DragonBoatVR.exe
+python.exe tools/run_closed_loop_check.py --player Builds/DragonBoatVR-Candidate/DragonBoatVR.exe --cad-tendon-rig
+python.exe tools/run_closed_loop_check.py --player Builds/DragonBoatVR-Candidate/DragonBoatVR.exe --background-check --host-stall-check
 ```
 
-各命令分别在 `tools/runtime_checks`、`tools/paddle_demo`、`tools/closed_loop_checks` 保存日志、截图和 JSON。前两项采用给定运动输入的解析 fixture，后三条闭环命令分别检查编辑器、指定 Player 和该 Player 的失焦/主机暂停恢复；它们验证默认动态链路，不能由前两项替代。回放只用于内部诊断。
+前三条是编辑器范围的对应检查；后三条检查指定候选包、CAD 配置和失焦／主机暂停恢复。检查结果写入 `tools` 下相应的本地结果目录。保持原身份、时效、力／行程和退出门槛，不以改阈值取得 PASS。参数与修改约束见 [三方会话统一约定](../三方会话统一约定.md)，后续用户决定与当前硬件接入范围优先。
 
-早期状态、旧检查命令和场景初始化说明保存在[清理前原文](../tmp/cleanup_20261031/history/README.md)。当前进度只看[执行交接](../tmp/closed_loop_20261025/IMPLEMENTATION_STATUS.md)。
+## 故障定位
+
+| 现象 | 先查 |
+|---|---|
+| 默认模拟桨不动 | 控制器是否启动、实际 Python 路径、配置读取和反馈是否过期 |
+| 外部 UDP 显示 Alive=False | 是否明确选择该模式、发送器是否存在、端口及包格式是否一致 |
+| 构建包控制器启动失败 | 随包 `controller_runtime` 是否完整，查看 Player 日志里的原始原因 |
+| 画面粉色 | URP 包、Graphics／Quality 管线资产和场景引用 |
+| 船持续异常抖动、沉底或飞出 | 源码／配置是否匹配、浮力采样和非预期碰撞；不要先重调锁定波谱 |
+| 真设备接不上 | 先按硬件手册检查 DBPF；当前演示包未实现该串口适配器 |

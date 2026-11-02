@@ -16,8 +16,8 @@ from pathlib import Path
 
 import numpy as np
 
-ROOT = Path(__file__).resolve().parents[1]
-CAD = ROOT / "tmp/independent_ux_review_20261030/hardware_cad"
+from cad_sources import CAD, ROOT, native_source
+
 PROJECT = ROOT / "DragonBoatVR"
 
 
@@ -61,7 +61,7 @@ def build(base_path, reference_grip):
         raise ValueError("CAD reconciliation identity changed")
     components = {c["name"]: c for c in read(assembly_path)["components"]}
     paddle = read(part_path)
-    if sha(Path(paddle["source"])) != paddle["sha256"]:
+    if sha(native_source(paddle["source"])) != paddle["sha256"]:
         raise ValueError("Native paddle differs from the extracted B-rep")
     native_assembly = ROOT / "10月11日修改/2.1 铝型材框架.SLDASM"
     if sha(native_assembly) != observations["source_identity"]["assembly_native_sha256"]:
@@ -165,8 +165,9 @@ def build(base_path, reference_grip):
                             attachmentRegistrationErrorM=float(np.linalg.norm(cad_attachment - runtime_attachment)),
                             attachmentFromBladeTipM=relative.tolist(),
                             guideAssignment="named reference" if i == 1 else "design inference"))
-    inputs = [assembly_path, part_path, reconciliation_path, Path(paddle["source"]),
-              native_assembly, base_path, paddle_geometry_path, Path(__file__)]
+    inputs = [assembly_path, part_path, reconciliation_path, CAD / "cad_observations.json",
+              native_source(paddle["source"]), native_assembly, base_path,
+              paddle_geometry_path, Path(__file__), ROOT / "tools/cad_sources.py"]
     provenance = dict(schemaVersion=1, scope="CAD_DESIGN_SOFTWARE_PROFILE_NOT_MEASURED",
                       sourceSha256={str(p.relative_to(ROOT)): sha(p) for p in inputs},
                       registration=dict(rotationRows=cad_to_boat.tolist(),
