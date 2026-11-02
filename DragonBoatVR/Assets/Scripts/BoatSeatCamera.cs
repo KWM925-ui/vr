@@ -186,7 +186,7 @@ namespace DragonBoatVR
         void OnGUI()
         {
             if (_camera == null || !_camera.enabled || UnityEngine.XR.XRSettings.enabled
-                || RideHud.DiagnosticsVisible || DesktopViewInput.PanelVisible(_session)) return;
+                || RideHud.DiagnosticsVisible || DesktopViewInput.PanelVisible(_session) || DemoPresentationUi.Active) return;
             if (_hintStyle == null)
             {
                 _hintFont = Font.CreateDynamicFontFromOSFont(new[] { "Microsoft YaHei", "SimHei", "Arial" }, 13);

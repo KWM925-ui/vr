@@ -12,7 +12,7 @@ namespace DragonBoatVR
         {
             return Application.isPlaying && Application.isFocused && !UnityEngine.XR.XRSettings.enabled
                 && camera != null && camera.isActiveAndEnabled && !RideHud.DiagnosticsVisible
-                && !PanelVisible(session);
+                && !PanelVisible(session) && !DemoPresentationUi.BlocksCameraInput;
         }
 
         public static bool PointerInside(Camera camera)

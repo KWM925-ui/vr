@@ -6,5 +6,5 @@ if not exist "%boatExe%" (
   pause
   exit /b 1
 )
-start "" /D "%~dp0Builds\DragonBoatVR" "%boatExe%"
+start "" /D "%~dp0Builds\DragonBoatVR" "%boatExe%" -presentation -screen-fullscreen 0 -screen-width 1280 -screen-height 720
 endlocal

@@ -396,7 +396,7 @@ namespace DragonBoatVR
             // Screen IMGUI is the operator/debug view. The optional HMD readout is a
             // separate camera-relative TextMesh, so technical diagnostics never enter VR.
             if (UnityEngine.XR.XRSettings.enabled) return;
-            if (compactMetricsVisible) DrawCompactMetrics();
+            if (compactMetricsVisible && !DemoPresentationUi.Active) DrawCompactMetrics();
             if (!visible)
                 return;
             float top = Screen.height >= 480 ? 104f : 12f;
@@ -404,7 +404,8 @@ namespace DragonBoatVR
             float availableHeight = Mathf.Max(140f, Screen.height - top - 12f);
             float height = detailsExpanded ? availableHeight : Mathf.Min(294f, availableHeight);
             // Explicit heading instead of a BeginArea box title that overlaps the first row.
-            GUILayout.BeginArea(new Rect(12f, top, width, height), GUIContent.none, GUI.skin.box);
+            GUILayout.BeginArea(new Rect(12f, top, width, height), GUIContent.none,
+                DemoPresentationUi.Active ? DemoPresentationUi.LegacyPanelStyle(_font) : GUI.skin.box);
             GUILayout.BeginHorizontal();
             GUILayout.Label("划桨与设备指标", _title);
             if (GUILayout.Button("F9 隐藏", _button, GUILayout.Width(76))) visible = false;

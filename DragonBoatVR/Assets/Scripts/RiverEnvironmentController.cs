@@ -211,8 +211,16 @@ namespace DragonBoatVR
         void Update()
         {
             // Input only: all environment changes are stepped by the session.
-            if (Input.GetKeyDown(KeyCode.F2)) PanelVisible = !PanelVisible;
+            if (Input.GetKeyDown(KeyCode.F2))
+            {
+                if (DemoPresentationUi.Active) DemoPresentationUi.Instance.ToggleSettings();
+                else PanelVisible = !PanelVisible;
+            }
         }
+
+        // Presentation and camera routing share the same existing modal state.
+        // This changes visibility only, never environment or physics settings.
+        public void SetPresentationPanelVisible(bool visible) { PanelVisible = visible; }
 
         void PrepareStyles()
         {
@@ -226,7 +234,7 @@ namespace DragonBoatVR
 
         void OnGUI()
         {
-            if (_wave == null || UnityEngine.XR.XRSettings.enabled) return;
+            if (_wave == null || UnityEngine.XR.XRSettings.enabled || DemoPresentationUi.Active) return;
             PrepareStyles();
             if (!PanelVisible)
             {
